@@ -1,0 +1,18 @@
+header.bg-secondary{
+    background-color:  rgba(0,0,0,0.2) !important;
+}
+#lupa{
+    color:  white;
+}
+
+nav.navbar-dark {
+    background-color:  rgba(0,0,0,0.5) !important;
+}
+footer.bg-dark{
+    background-color:  rgba(0,0,0,0.6) !important;
+}
+main{
+    margin-top: 20px;
+}
+
+
