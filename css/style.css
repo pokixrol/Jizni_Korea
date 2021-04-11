@@ -19,4 +19,14 @@ main{
     margin-top: 40px;
 }
 
+h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    background-color: lightgray;
+    padding: 5px;
+}
 
+h3{
+color: red;
+font-size: 20px;
+}
