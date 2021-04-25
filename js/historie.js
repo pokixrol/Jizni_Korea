@@ -36,6 +36,51 @@ const events = [
     },
  ];
 
+ const prezidenti = [
+   {
+      "year":"1988-1993",
+      "name":"Ro Tche-u",
+      "text":"Ro Tche-u  zvítězil  v první přímé volbě za 16 let, přestože byl vojenským generálem a jedním z vůdců Čonova puče, protože opozice se nedokázala dohodnout na dostatečně silném protikandidátovi. Ro Tche-u byl jedním z hlavních organizátorů letních olympijských her v Soulu roku 1988.",
+      "url":"https://cs.wikipedia.org/wiki/Ro_Tche-u"
+   },
+   {
+       "year":"1993-1998",
+       "name":"Kim Jong-sam",
+       "text":"Kim Jong-sam byl prvním korejským civilním prezidentem za 30 let. V roce 1997 Jižní Koreu silně zasáhla asijská finanční krize, země musela požádat o pomoc MMF.",
+       "url":"https://cs.wikipedia.org/wiki/Kim_Jong-sam"
+   },
+   {
+      "year":"1998-2003",
+      "name":"Kim Te-jung",
+      "text":"Kim Te-džung zvítězil v prezidentských volbách v prosinci 1997. Na čtvrtý pokus podařilo nejvyšší post získat po bravurně zvládnuté, nadměrně vyostřené kampani, díky ekonomickému otřesu způsobenému asijskou finanční krizí. Po své inauguraci v únoru 1998 vyhlásil tzv. občanskou vládu a zahájil Program slunečního paprsku, který mu prospěl při zisku Nobelovy ceny za mír pro rok 2000 a nezanedbatelně rovněž prospěl severokorejskému komunistickému režimu přísunem trvale chybějících financí.",
+      "url":"#"
+   },
+   {
+       "year":"2003-2008",
+       "name":"Ro Mu-hjon",
+       "text":"Ro Mu-hjon proslul výrazně populistickým stylem a řadou kontroverzních politických kroků na domácí i mezinárodní scéně. Stal se prvním jihokorejským prezidentem, proti kterému Národní shromáždění zahájilo proceduru tzv. impeachmentu. Ústavní soud sice obvinění v několika bodech shledal jako opodstatněná, ale nikoli tak závažná, aby Roa prezidentského úřadu zbavil.",
+       "url":"https://cs.wikipedia.org/wiki/Ro_Mu-hjon"
+      },
+   {
+       "year":"2008-2013",
+       "name":"I Mjong-bak",
+       "text":"I Mjong-bak v roce 2007 zvítězil v prezidentských volbách, když získal 48,7 procent hlasů. Funkce se ujal v únoru 2008. Ihned začal realizovat svůj plán na pozvednutí jihokorejské ekonomiky (tzv. plán 7-4-7), jehož součástí byla rozsáhlá privatizace i kontroverzní plán na vybudování 540 kilometrů dlouhého vodního kanálu spojujícího Soul a Pusan. Plán 7-4-7 byl nazván podle základních ekonomických cílů: sedmiprocentní růst HDP, 40 000 dolarů HDP na hlavu a sedmá největší ekonomika světa. Jeho vládu ovšem provázela řada korupčních skandálů.<br><br>V zahraničních vztazích krom tradičního spojenectví s USA vsadil též na dialog s Japonskem, Čínou a Ruskem. Po vypuknutí finanční krize roku 2008 dokonce inicioval tzv. tripartitu, pravidelné schůzky nejvyšších představitelů Koreje, Číny a Japonska, na nichž koordinují svůj boj s krizí. Svět Iho nicméně nejvíce vnímal jako aktéra zhoršení vztahů se Severní Koreou a v souvislosti s několikerou hrozbou znovuvypuknutí vojenského střetu dvou Korejí.",
+       "url":"https://cs.wikipedia.org/wiki/I_Mjong-bak"
+      },
+   {
+       "year":"2013-2017",
+       "name":"Park Kun-hje",
+       "text":"Pak Kun-hje byla prezidentkou zvolena ve volbách konaných 19. prosince 2012. Do úřadu nastoupila 25. února 2013 a stala se tak první ženou v jihokorejském prezidentském úřadu. Je dcerou bývalého prezidenta a diktátora Pak Čong-huie, který se v zemi přes kontroverze spojené s jeho osobou těší stále značné oblibě. Sama Pak Kun-hje byla na přelomu let 2016 a 2017 parlamentem sesazena v důsledku korupční aféry. Definitivně byla funkce zbavena 10. března 2017.",
+       "url":"https://cs.wikipedia.org/wiki/Pak_Kun-hje"
+      },
+   {
+       "year":"2017",
+       "name":"Mun Če-in ",
+       "text":"Narodil se v Kodže v Jižní Koreji, ale jeho otec byl uprchlíkem z Hamhungu v Severní Koreji. Rodina se později usadila v Pusanu, kde Mun Če-in také absolvoval střední školu. Pak vystudoval právo na univerzitě v Soulu a stal se právníkem. Zajímal se zejména o problematiku lidských práv a spřátelil se s pozdějším prezidentem Ro Mu-hjonem, kterému také vedl jeho úspěšnou prezidentskou kampaň. V letech 2012–2016 byl poslancem jihokorejského parlamentu za Demokratickou stranu. Dne 10. května 2017 vyhrál se 41,4 % odevzdaných hlasů prezidentské volby",
+       "url":"https://cs.wikipedia.org/wiki/Mun_%C4%8Ce-in"
+      },
+];
+
 $(function(){
 
     $("h2").on("click", function(){
@@ -52,15 +97,26 @@ $(function(){
             </td>            
         </tr>`);
     });
+    prezidenti.forEach((prezidenti)=>{
+      $("#sestarepublika tbody").append(`<tr>
+      <td class="event-year">${prezidenti.year}</td>
+      <td>
+        <p class="event-name"><i class="fas fa-chevron-down"></i> <a href="${prezidenti.url}" target="_new">${prezidenti.name}</a></p>
+        <p class="event-text">${prezidenti.text}</p>
+      </td>            
+  </tr>`);
+     
+  });
 
     $(".event-text").hide();
 
-    $(".event-name i, .event-name span").on("click", function(){
-        $("#udalosti tr").removeClass("bg-secondary text-white");
-        $(this).parents("tr").addClass("bg-secondary text-white")
-      //$("#udalosti tr").css({"background-color":"white"});
+    $(".event-name i, .event-name span, .event-name a").on("click", function(){
+        $("#udalosti tr, #sestarepublika tr ").removeClass("bg-secondary text-white");
+        //$("#event-name a").css({"color":"white"});
+        $(this).parents("tr").addClass("bg-secondary text-white");
+      //$("#udalosti tr, #sestarepublika tr ").css({"background-color":"white"});
      // $(this).parents("tr").css({"background-color":"#ccc"});
         $(".event-text").hide();
         $(this).parent().next().show(500);
-    });        
+    });  
 })
