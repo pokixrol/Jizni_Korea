@@ -27,7 +27,40 @@ h2{
 }
 
 h3{
-color: grey;
+/*color:rgb(0, 88, 204) ;*/
+color:rgb(0, 47, 108) ;
+/*color:rgb(200, 16, 46) ;*/
 font-size: 20px;
 text-transform: uppercase;
+}
+
+#sestarepublika a {
+    font-weight: bold;
+    color:rgb(51, 204, 255);
+    font-size: 1.1em;
+}
+
+a {
+    /*color:rgb(51, 139, 255);*/
+    color:rgb(51, 204, 255) ;
+}
+
+img{
+    width: 350px;
+   margin-top: 10px;
+}
+
+/*.list-group-item{
+    background-color: rgb(124, 181, 255) !important;
+    color: rgb(0, 47, 108) !important;
+}
+
+.active{
+    background-color: rgb(0, 47, 108) !important;
+    color: white !important;
+}*/
+
+#vlajka{
+    width: unset;
+    margin: unset;
 }
