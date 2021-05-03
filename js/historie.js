@@ -53,7 +53,7 @@ const events = [
       "year":"1998-2003",
       "name":"Kim Te-jung",
       "text":"Kim Te-džung zvítězil v prezidentských volbách v prosinci 1997. Na čtvrtý pokus podařilo nejvyšší post získat po bravurně zvládnuté, nadměrně vyostřené kampani, díky ekonomickému otřesu způsobenému asijskou finanční krizí. Po své inauguraci v únoru 1998 vyhlásil tzv. občanskou vládu a zahájil Program slunečního paprsku, který mu prospěl při zisku Nobelovy ceny za mír pro rok 2000 a nezanedbatelně rovněž prospěl severokorejskému komunistickému režimu přísunem trvale chybějících financí.",
-      "url":"#"
+      "url":"https://cs.wikipedia.org/wiki/Kim_Te-d%C5%BEung"
    },
    {
        "year":"2003-2008",
@@ -124,7 +124,7 @@ const heroes = [
       "birth":"28. dubna 1545 Soul",
       "cross":"fas fa-cross",
       "death":"16. prosince 1598 Namhä",
-      "biography":"I Sun-sin (이순신) byl korejský admirál. V letech 1591-1598 během Imdžinské války vyhrál pro dynastii Čoson řadu významných námořních bitev.mPřestože neměl žádné formální vojenské vzdělání a jeho námořnictvo bylo nepočetné a špatně vybavené, jako jeden z mála námořních vojevůdců ve světové historii nebyl nikdy poražen v žádné bitvě, ačkoli jich vybojoval nejméně 23. Za jeho největší úspěch je považována bitva u Mjongnjangu v roce 1597, kdy jeho loďstvo čítající pouhých 13 lodí na hlavu porazilo 333 lodí japonského námořnictva. Tato událost byla předlohou filmu Admirál: Bouřlivé proudy (1) z roku 2014. I zemřel v bitvě u Norjangu v roce 1598. Je považován za jednoho z největších Korejců a někteří historici ho považují za korejského Horatia Nelsona",
+      "biography":"I Sun-sin (이순신) byl korejský admirál. V letech 1591-1598 během Imdžinské války vyhrál pro dynastii Čoson řadu významných námořních bitev. Přestože neměl žádné formální vojenské vzdělání a jeho námořnictvo bylo nepočetné a špatně vybavené, jako jeden z mála námořních vojevůdců ve světové historii nebyl nikdy poražen v žádné bitvě, ačkoli jich vybojoval nejméně 23. Za jeho největší úspěch je považována bitva u Mjongnjangu v roce 1597, kdy jeho loďstvo čítající pouhých 13 lodí na hlavu porazilo 333 lodí japonského námořnictva. Tato událost byla předlohou filmu Admirál: Bouřlivé proudy (1) z roku 2014. I zemřel v bitvě u Norjangu v roce 1598. Je považován za jednoho z největších Korejců a někteří historici ho považují za korejského Horatia Nelsona",
       "portraits":[
          "i_sun_sin.jpg",
          "i_sun_sin2.jpg",
@@ -136,7 +136,7 @@ const heroes = [
       "name":"I Sung-man",
       "birth":"26. března 1875 Hedžu, Korejské království",
       "cross":"fas fa-cross",
-      "death":"19. července 1965 Honolulu, Havaj, Spojené státy americké",
+      "death":"19. července 1965 Honolulu, Havaj",
       "biography":"Absolvoval chlapeckou misionářskou školu vedenou metodisty, roku 1898 byl uvězněn za podporu Klubu nezávislosti, studoval v USA (Univerzita George Washingtona), kde organizoval odboj proti japonské okupaci – doktorát získal roku 1910 v Princetonu. V roce 1919 byl prezidentem „Prozatímní šanghajské vlády“ a exilovou hlavou státu zůstal až do roku 1939. Vůdcem nově vzniklé Jižní Koreje se stal v roce 1948 a během svého funkčního období byl konfrontován s korejskou válkou, kterou vyvolal komunistický sever v čele s Kim Ir-senem. Ve vykonávání svého úřadu měl spíše nacionalistické diktátorské tendence, nejvíce se podobal posledním králům dynastie Čoson. V roce 1956 nechal změnit ústavu, aby mohl být potřetí zvolen prezidentem. Po studentských nepokojích v roce 1960 byl nucen odejít do vyhnanství. Bývá mu připisována vražda jednoho z nejvýznamnějších jihokorejských politiků Kima Ku.",
       "portraits":[
          "i_sung_man.jpg",
@@ -262,7 +262,7 @@ $(function(){
       $(".card-footer").html(`Pro více informací klikněte <a href="${hero.url}" target="_blank"><b>ZDE</b></a>.`);
       $(".gallery").empty();
       for (let i = 0; i < hero.portraits.length; i++) {
-          $(".gallery").append(`<div class="${hero.class}"><img src="../img/${hero.portraits[i]}" alt="" class="img-fluid"></div>`);        
+          $(".gallery").append(`<div class="${hero.class}"><img src="../img/${hero.portraits[i]}" alt="" class="img-fluid postavyzdejin"></div>`);        
       }
   }
   $("#postavy li:first").addClass('active');
