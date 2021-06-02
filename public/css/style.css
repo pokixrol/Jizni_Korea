@@ -50,6 +50,10 @@ a {
    margin-top: 10px;
 }
 
+#administrativni_deleni a{
+    color: rgb(0, 47, 108);
+}
+
 /*.list-group-item{
     background-color: rgb(124, 181, 255) !important;
     color: rgb(0, 47, 108) !important;
