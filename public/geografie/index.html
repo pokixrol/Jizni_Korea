@@ -1,47 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="cs">
   <head>
     <title>Geografie</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
   <body>
     <header class="jumbotron-fluid bg-secondary">
-        <h1 class="display-3 text-center text-uppercase p-5">
-        Geografie
-        </h1>
-        <p class="lead text-center">지리학</p>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-          <a class="navbar-brand" href="../easteregg/index.html"
-            ><img
+      <h1 class="display-3 text-center text-uppercase p-5">Geografie</h1>
+      <p class="lead text-center">지리학</p>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="../easteregg/index.html"
+          ><img
             id="vlajka"
-              src="../img/vlajka.jpg"
-              alt="vlajka"
-              style="height: 40px"
-          /></a>
-          <button
-            class="navbar-toggler d-lg-none"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Úvodní stránka</a>
-              </li>
-              <!-- 
+            src="../img/vlajka.jpg"
+            alt="vlajka"
+            style="height: 40px"
+        /></a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Úvodní stránka</a>
+            </li>
+            <!-- 
            <li class="nav-item dropdown active">
               <a
                 class="nav-link dropdown-toggle text-white"
@@ -57,163 +68,910 @@
                 <a class="dropdown-item" href="#">x</a>
               </div>
             </li>
-         -->   
-              <li class="nav-item">
-                <a class="nav-link" href="../historie/index.html">Historie</a>
+         -->
+            <li class="nav-item">
+              <a class="nav-link" href="../historie/index.html">Historie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Geografie</a>
+              <span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../zajimavosti/index.html"
+                >Zajímavosti</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../kultura/index.html">Kultura</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="text"
+              placeholder="Hledaný text"
+            />
+            <button
+              id="lupa"
+              class="btn btn-outline-secondary my-2 my-sm-0"
+              type="submit"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main class="container" style="border: solid #ccc 1px; margin-bottom: 20px">
+      <div class="row">
+        <div class="col-12">
+          <h2 style="margin-top: 10px">Obecně</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-8">
+          <p>
+            S rozlohou 97 235 km2 je 109. největším státem na světě, 1,2× větším
+            než Česká republika a 1,2× menším než sousední Severní Korea.
+            Hustota zalidnění je 492 obyvatel na km², což je 2,6× více než v
+            <a
+              href="https://cs.wikipedia.org/wiki/Severn%C3%AD_Korea"
+              target="_blank"
+              ><b>Severní Koreji</b></a
+            >
+            a 3,7× více než v Česku.
+          </p>
+          <p>
+            Jižní Korea zaujímá jižní část Korejského poloostrova. Ze západu je
+            omývána
+            <a
+              href="https://cs.wikipedia.org/wiki/%C5%BDlut%C3%A9_mo%C5%99e"
+              target="_blank"
+              ><b>Žlutým mořem</b></a
+            >
+            a na východě
+            <a
+              href="https://cs.wikipedia.org/wiki/Japonsk%C3%A9_mo%C5%99e"
+              target="_blank"
+              ><b>Japonským mořem</b></a
+            >.Terén je, obdobně jako v Severní Koreji, velmi hornatý a většina
+            půdy není obdělávatelná. Na jihozápadě a jihovýchodě země jsou
+            nížiny, ty ale zaujímají jen 30 % plochy země.
+          </p>
+          <p>
+            V blízkosti Korejského poloostrova je také asi 3 000 menších ostrovů
+            a ostrůvků, z nichž největší je ostrov
+            <a
+              href="https://cs.wikipedia.org/wiki/%C4%8Ced%C5%BEu_(ostrov)"
+              target="_blank"
+              ><b>Čedžu</b></a
+            >
+            (1 845 km2), asi 100 km od jižního pobřeží. Na tomto ostrově se také
+            nachází nejvyšší vrchol Jižní Koreje, vyhaslá sopka Halla-san (1 950
+            m n. m.).
+          </p>
+          <p>
+            Podnebí je v jižní Koreji mírné. V létě nastává krátké období dešťů,
+            zimy mohou být velmi tuhé. Průměrná lednová teplota v Soulu je od -7
+            °C do +1 °C, průměrná teplota v červenci je od 22 °C po 29 °C. Zimní
+            teploty jsou nižší na východním pobřeží. Většina srážek spadne v
+            letním období dešťů.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 text-center">
+          <img
+            style="margin-bottom: 20px"
+            src="../geografie/images/mapa.jpg"
+            alt="mapa"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2>Povrch</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h3>Pohoří Tchebek</h3>
+          <p>
+            Pohoří Tchebek je největší pohoří na Korejském poloostrově. Nachází
+            se na východě u pobřeží Japonského moře, z větší části v Jižní
+            Koreji, ale zasahuje i do jihovýchodní části Severní Koreje – část
+            severokorejského Tchebeku přiléhající ke
+            <a
+              href="https://cs.wikipedia.org/wiki/Korejsk%C3%A9_demilitarizovan%C3%A9_p%C3%A1smo"
+              target="_blank"
+              ><b>korejskému demilitarizovanému pásmu</b></a
+            >
+            se nazývá
+            <a
+              href="https://cs.wikipedia.org/wiki/Diamantov%C3%A9_hory_(Korea)"
+              target="_blank"
+              ><b>Diamantové hory</b></a
+            >
+            a patří mezi významné turistické cíle v Severní Koreji.
+          </p>
+          <p>
+            Celková délka od
+            <a href="https://cs.wikipedia.org/wiki/Pusan" target="_blank"
+              ><b>Pusanu</b></a
+            >
+            na jihu až k
+            <a href="https://cs.wikipedia.org/wiki/Wonsan" target="_blank"
+              ><b>Wonsanu</b></a
+            >
+            na severu je zhruba 500 kilometrů, přičemž horské pásmo je široké až
+            sto kilometrů. Jeho nejvyšším vrcholem je 1708 metrů vysoký
+            <a href="https://cs.wikipedia.org/wiki/Soraksan" target="_blank"
+              ><b>Soraksan</b></a
+            >.
+          </p>
+          <p>
+            V Tchebeku pramení významné řeky
+            <a href="https://cs.wikipedia.org/wiki/Nakdong" target="_blank"
+              ><b>Nakdong</b></a
+            >
+            a
+            <a href="https://cs.wikipedia.org/wiki/Hangang" target="_blank"
+              ><b>Hangang</b></a
+            >.
+          </p>
+          <h3>Pohoří Sobek</h3>
+          <p>
+            Pohoří Sobek začíná na předělu mezi provinciemi Kangwon a Severní
+            Kjongsang, kde se napojuje na korejské hlavní pohoří Tchebek
+            táhnoucí se podél břehu Japonského moře, a vede nejprve na jihozápad
+            jako jihovýchodní hranice Jižního Čchungčchongu, ale pak se kolem
+            Hamčchangu láme na jih a vede středem poloostrova až k jižnímu
+            pobřeží, kde tvoří předěl mezi provinciemi Jižní Čolla a Jižní
+            Kjongsang. Nejvyšší vrchol je
+            <a href="https://cs.wikipedia.org/wiki/%C4%8Cirisan" target="_blank"
+              ><b>Čirisan</b></a
+            >
+            vysoký 1915 metrů nad mořem.
+          </p>
+          <h3>Nejvyšší vrchol Halla-san</h3>
+          <p>
+            Halla-san je
+            <a
+              href="https://cs.wikipedia.org/wiki/%C5%A0t%C3%ADtov%C3%A1_sopka"
+              target="_blank"
+              ><b>štítová sopka</b></a
+            >
+            nacházející se v centrální části ostrova Čedžu. S nadmořskou výškou
+            1950 m n. m. je nejvyšší horou Jižní Koreje. K erupci došlo
+            naposledy v roce 1007.
+          </p>
+          <p>
+            Masiv sopky zabírá prakticky celý ostrov a je součástí lokality
+            <a
+              href="https://cs.wikipedia.org/wiki/Sv%C4%9Btov%C3%A9_d%C4%9Bdictv%C3%AD"
+              target="_blank"
+              ><b>světového dědictví UNESCO</b></a
+            >. Na svazích Halla-sanu se nachází nejstarší
+            <a href="https://cs.wikipedia.org/wiki/Buddhismus" target="_blank"
+              ><b>buddhistický</b></a
+            >
+            chrám na ostrově - Kwanum-sa, postavený za vlády dynastie Korjo a
+            přestavěný v 20. století.
+          </p>
+          <p>
+            Masiv Halla-sanu vznikl v několika obdobích během
+            <a href="https://cs.wikipedia.org/wiki/Plioc%C3%A9n" target="_blank"
+              ><b>pliocénu</b></a
+            >
+            a
+            <a
+              href="https://cs.wikipedia.org/wiki/Pleistoc%C3%A9n"
+              target="_blank"
+              ><b>pleistocénu</b></a
+            >. Z hornin převládají
+            <a href="https://cs.wikipedia.org/wiki/Trachyt" target="_blank"
+              ><b>trachyty</b></a
+            >
+            a
+            <a
+              href="https://cs.wikipedia.org/wiki/%C4%8Cedi%C4%8D"
+              target="_blank"
+              ><b>čediče</b></a
+            >. Vrchol je ukončený sopečným kráterem o průměru 400 m, ve kterém
+            se v současnosti nachází jezero Pängnok-tam, což znamená "místo, kam
+            chodí pít bílí jeleni".
+          </p>
+          <div class="row text-center">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img
+                style="width: 400px; margin-bottom: 20px"
+                class="img-fluid"
+                src="../geografie/images/hallasan1.jpg"
+                alt="nejvyšší hora"
+              />
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img
+                style="width: 400px; margin-bottom: 20px"
+                class="img-fluid"
+                src="../geografie/images/hallasan3.jpg"
+                alt="nejvyšší hora"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2>Vodstvo</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h3>Řeka Hangang</h3>
+          <p>
+            Hangang je řeka na Korejském poloostrově v Jižní Koreji. Je 514 km
+            dlouhá. Povodí má rozlohu 34 000 km². Pramení v horském hřbetu
+            Tchebek. Teče převážně nízkými horami a kopcovitou krajinou přes
+            Changanskou nížinu. Ústí do zálivu Kanchvaman Žlutého moře. Průměrný
+            průtok vody činí přibližně 380 m³/s. Nejvyššího stavu dosahuje v
+            létě. Do vzdálenosti více než 300 km od ústí je možná vodní doprava
+            pro
+            <a href="https://cs.wikipedia.org/wiki/D%C5%BEunka" target="_blank"
+              ><b>džunky</b></a
+            >. Na řece leží město Soul.
+          </p>
+          <h3>Řeka Nakdong</h3>
+          <p>
+            Nakdong je řeka na Korejském poloostrově v Jižní Koreji. Je 524 km
+            dlouhá. Povodí má rozlohu 24 000 km². Pramení na jihozápadních
+            svazích Východokorejských hor. Ústí do Korejského průlivu. Průměrný
+            průtok vody v ústí činí 380 m³/s. Do vzdálenosti 340 km od ústí je
+            možná vodní doprava. Na řece leží město Andong a nedaleko ústí město
+            Pusan.
+          </p>
+          <p id="idk">
+            Pro zobrazení dalších řek klikněte <a id="river"><b>ZDE</b></a>
+          </p>
+          <div id="reky">
+            <p><b>Další významné řeky:</b></p>
+            <ul>
+              <li>
+                <a href="https://cs.wikipedia.org/wiki/Kumgang" target="_blank"
+                  ><b>Kumgang</b></a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Geografie</a>
-                <span class="sr-only">(current)</span>
+              <li>
+                <a href="https://cs.wikipedia.org/wiki/Tedong" target="_blank"
+                  ><b>Tedong</b></a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../zajimavosti/index.html">Zajímavosti</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../kultura/index.html">Kultura</a>
+              <li>
+                <a
+                  href="https://cs.wikipedia.org/wiki/Pukhan_(%C5%99eka)"
+                  target="_blank"
+                  ><b>Pukhan</b></a
+                >
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input
-                class="form-control mr-sm-2"
-                type="text"
-                placeholder="Hledaný text"
-              />
-              <button id="lupa" class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
           </div>
-        </nav>
-      </header>
-      <main class="container" style="border: solid #ccc 1px; margin-bottom: 20px;">
-        <div id="administrativni_deleni">
-          <h2 style="margin-top: 10px">Administrativní dělení</h2>
-          <p>Jižní Korea se skládá z jednoho speciálního města, jednoho speciálního autonomního města, šesti metropolitních měst, osmi provincií a jedné speciální autonomní provincie.</p>
+          <h3>Národní parky</h3>
+          <p>
+            Jižní Korea má 22 národních parků, především v horských oblastech,
+            které pokrývají 6,6 procenta území státu. Vůbec první, národní park
+            Jirisan, byl vyhlášen v roce 1967. Státní organizace Korejská správa
+            národních parků byla vytvořena v roce 1987. Spravuje 21 z 22 parků.
+            Od roku 1998 podléhá ministerstvu životního prostředí. Zajímavostí
+            je, že má vlastní policejní síly, které v parcích vynucují
+            dodržování pravidel.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2>Administrativní dělení</h2>
+        </div>
+      </div>
+      <div id="administrativni_deleni" class="row">
+        <div class="col-12">
+          <p>
+            Jižní Korea se skládá z jednoho speciálního města, jednoho
+            speciálního autonomního města, šesti metropolitních měst, osmi
+            provincií a jedné speciální autonomní provincie.
+          </p>
           <ul>
             <li>Speciální město</li>
             <ul>
-              <li><a href="https://cs.wikipedia.org/wiki/Soul" target="_blank"><b>Soul</b></a> (서울특별시; 서울特別市; Soul tchukpjolši)</li>
+              <li>
+                <a href="https://cs.wikipedia.org/wiki/Soul" target="_blank"
+                  ><b>Soul</b></a
+                >
+                (서울특별시; 서울特別市; Soul tchukpjolši)
+              </li>
             </ul>
             <li>Speciální autonomní město</li>
             <ul>
-              <li><a href="https://cs.wikipedia.org/wiki/Sed%C5%BEong_(m%C4%9Bsto)" target="_blank"><b>Sedžong</b></a> (세종특별자치시; 世宗特別自治市; Sedžong tchukpjolčačchiši)</li>
+              <li>
+                <a
+                  href="https://cs.wikipedia.org/wiki/Sed%C5%BEong_(m%C4%9Bsto)"
+                  target="_blank"
+                  ><b>Sedžong</b></a
+                >
+                (세종특별자치시; 世宗特別自治市; Sedžong tchukpjolčačchiši)
+              </li>
             </ul>
             <li>Metropolitní města</li>
             <ul>
-              <li><a href="https://cs.wikipedia.org/wiki/In%C4%8Dchon" target="_blank"><b>Inčchon</b></a> (인천광역시; 仁川廣域市; Inčchon kwangjokši)</li>
-              <li><a href="https://cs.wikipedia.org/wiki/Tegu" target="_blank"><b>Tegu</b></a> (대구광역시; 大邱廣域市; Tegu kwangjokši)</li>
-              <li><a href="https://cs.wikipedia.org/wiki/Ulsan" target="_blank"><b>Ulsan</b></a> (울산광역시; 蔚山廣域市; Ulsan kwangjokši)</li>
-              <li><a href="https://cs.wikipedia.org/wiki/Pusan" target="_blank"><b>Pusan</b></a> (부산광역시; 釜山廣域市; Pusan kwangjokši)</li>
-              <li><a href="https://cs.wikipedia.org/wiki/Kwangd%C5%BEu" target="_blank"><b>Kwangdžu</b></a> (광주광역시; 光州廣域市; Kwangdžu kwangjokši)</li>
-              <li><a href="https://cs.wikipedia.org/wiki/Ted%C5%BEon" target="_blank"><b>Tedžon</b></a> (대전광역시; 大田廣域市; Tedžon kwangjokši)</li>
+              <li>
+                <a
+                  href="https://cs.wikipedia.org/wiki/In%C4%8Dchon"
+                  target="_blank"
+                  ><b>Inčchon</b></a
+                >
+                (인천광역시; 仁川廣域市; Inčchon kwangjokši)
+              </li>
+              <li>
+                <a href="https://cs.wikipedia.org/wiki/Tegu" target="_blank"
+                  ><b>Tegu</b></a
+                >
+                (대구광역시; 大邱廣域市; Tegu kwangjokši)
+              </li>
+              <li>
+                <a href="https://cs.wikipedia.org/wiki/Ulsan" target="_blank"
+                  ><b>Ulsan</b></a
+                >
+                (울산광역시; 蔚山廣域市; Ulsan kwangjokši)
+              </li>
+              <li>
+                <a href="https://cs.wikipedia.org/wiki/Pusan" target="_blank"
+                  ><b>Pusan</b></a
+                >
+                (부산광역시; 釜山廣域市; Pusan kwangjokši)
+              </li>
+              <li>
+                <a
+                  href="https://cs.wikipedia.org/wiki/Kwangd%C5%BEu"
+                  target="_blank"
+                  ><b>Kwangdžu</b></a
+                >
+                (광주광역시; 光州廣域市; Kwangdžu kwangjokši)
+              </li>
+              <li>
+                <a
+                  href="https://cs.wikipedia.org/wiki/Ted%C5%BEon"
+                  target="_blank"
+                  ><b>Tedžon</b></a
+                >
+                (대전광역시; 大田廣域市; Tedžon kwangjokši)
+              </li>
+            </ul>
+            <li>Provincie</li>
+            <ul>
+              <li>
+                <a href="https://cs.wikipedia.org/wiki/Kjonggi" target="_blank"
+                  ><b>Kjonggi</b></a
+                >
+                (경기도, 京畿道)
+              </li>
+              <li>
+                <a
+                  href="https://cs.wikipedia.org/wiki/Kangwon_(Ji%C5%BEn%C3%AD_Korea)"
+                  target="_blank"
+                  ><b>Kangwon</b></a
+                >
+                (강원도, 江原道)
+              </li>
+              <li>
+                <a
+                  href="https://cs.wikipedia.org/wiki/Ji%C5%BEn%C3%AD_Kjongsang"
+                  target="_blank"
+                  ><b>Jižní Kjongsang</b></a
+                >
+                (경상남도, 慶尙南道)
+              </li>
+              <li>
+                <a
+                  href="https://cs.wikipedia.org/wiki/Severn%C3%AD_Kjongsang"
+                  target="_blank"
+                  ><b>Severní Kjongsang</b></a
+                >(경상북도, 慶尙北道)
+              </li>
+              <li>
+                <a
+                  href="https://cs.wikipedia.org/wiki/Ji%C5%BEn%C3%AD_%C4%8Colla"
+                  target="_blank"
+                  ><b>Jižní Čolla</b></a
+                >
+                (전라남도, 全羅南道)
+              </li>
+              <li>
+                <a
+                  href="https://cs.wikipedia.org/wiki/Severn%C3%AD_%C4%8Colla"
+                  target="_blank"
+                  ><b>Severní Čolla</b></a
+                >
+                (전라북도, 全羅北道)
+              </li>
+              <li>
+                <a
+                  href="https://cs.wikipedia.org/wiki/Ji%C5%BEn%C3%AD_%C4%8Cchung%C4%8Dchong"
+                  target="_blank"
+                  ><b>Jižní Čchungčchong</b></a
+                >
+                (충청남도, 忠淸南道)
+              </li>
+              <li>
+                <a
+                  href="https://cs.wikipedia.org/wiki/Severn%C3%AD_%C4%8Cchung%C4%8Dchong"
+                  target="_blank"
+                  ><b>Severní Čchungčchong</b></a
+                >
+                (충청북도, 忠淸北道)
+              </li>
+            </ul>
+            <li>Speciální autonomní provincie</li>
+            <ul>
+              <li>
+                <a
+                  href="https://cs.wikipedia.org/wiki/%C4%8Ced%C5%BEu_(provincie)"
+                  target="_blank"
+                  ><b>Čedžu</b></a
+                >
+                (제주도, 濟州道)
+              </li>
             </ul>
           </ul>
         </div>
-    <div>
-      <svg  fill="#7c7c7c" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" baseprofile="tiny" version="1.2" viewbox="0 0 1000 1064" xmlns="http://www.w3.org/2000/svg">
-        <path d="m372.9 1006.4-1.3 0.9-1.7-0.5-0.6-0.7v-1.6l1.1-3.1 0.5-0.5 1.3 1.1-0.1 0.5 0.6 1.5 0.2 2.4zm255-217.6-1.3 0.6-0.9-0.2 0.2-1 1-0.5 1.5-1.8 0.2 0.9 0.7 0.2v0.8l-1.4 1zm-31.8-1.6 0.9 0.7-0.7 0.9-1.8-1-2.4 0.4-1.1-1.7 0.9-1.3-0.9-0.4-0.8-1.1 0.6-0.5 1.8 1.7 2.4 2.1 1.1 0.2zm-24.2-7.3 1.1 1.2 0.9-0.7 0.9 0.4 0.5-0.6 1.5 0.2 0.6 0.4-0.6 1.2-1.4 0.2-3.2-0.7-0.3-1.6zm-3.9-1.1-0.5-0.5-3.1-1-1-1.6 1.1-1.6 3.3 0.7 1.1 2.2v0.9l-0.9 0.9zm49.9-9.3-0.3 0.5h-2.9l-1-0.3-2.5-1.4 0.5-0.6 2.6-0.8 1.1 0.6 2.5 2zm-33.1-2.5 0.2 0.8-1.9-0.6-0.7-1.7 0.2-0.9 0.7-0.4 1.6 0.9 0.7 1-0.8 0.9zm33.7-3.4 3.2 1.5 1.9-0.3 1.5 0.7v1.1l-0.9 0.4-1.4-0.2-1.4-0.9-3.4-0.6-0.7-1 1.2-0.7zm-4.8-8.4 1.1 3.9 0.7 1.1 1.2 0.4 0.6 1.8-0.9 1.7-1.8 1-2.7-0.4-0.9-1 0.4-0.9-0.2-1-1.2-2.2-0.1-2.9 1.3 1.5 0.5-1.5-0.4-0.6v-1.2l1-1.2 0.7 0.2 0.1 1.2 0.6 0.1zm-55.3-2.9h-0.4l-1.2-2.6 2.2 0.4 0.5 0.7-0.2 1.3-0.9 0.2zm9.6-1.9-1.7 1.5-2.7-4.1 0.7-1.4 1.7-0.6 6.7 1.6-0.1 1-2.1 0.4-2.5 1.6zm51.5-17.4-0.6 0.3-0.8-4.3 0.6-1.9-0.6-1.6 3.1-1.9 0.2 2.1-1.4 2.4 0.7 0.8v2.2l-0.2 1.1-1 0.8zm19.6-10.9-2.2 1.7-0.4-0.9-0.8-0.8-0.8 0.3-0.8 0.8-0.5-0.6 0.1-1.2 1.4-0.7 0.2-0.9-0.6-0.9 1.3-0.6 0.9-0.8v-1.3l1.6-0.7 0.6-1 0.8-0.1 0.1 2.1-0.5 1.8v1.7l-0.4 2.1zm-13.5-15.9 0.1 1.9-1.9-1.8-1.1-1.3 1.9-0.2 1 1.4zm-304.3-140.8-1.9 1.5-0.6-0.8 0.3-2 1.7-1.4 1.1 1.7-0.6 1zm-26.4-7.3 1.1 1 1.2 0.6-1 0.7-2.3 0.2-0.9-1-0.5 1.3-0.6 0.6-0.7-1v-1.5l-0.7-1.4-0.1-1.1 2 0.4 0.9 1 1.6 0.2zm-14.3-4.7-1.6 0.7-1.2-0.1 0.4-1.5 2.1-0.3 0.3 1.2zm-61.6-53.7-0.4 0.9-0.8 0.2 0.3 1.2-0.9 0.6-1.1-0.8-0.5-1.4 1.4-1.4 2 0.7zm16.4-20.1-2.9 1.2-1.9-0.4 0.9-1.3 1.2-1.3 2.1 0.3 0.6 1.5zm42.5-21.1-0.9 1.2-1.5-0.9-1.5 0.6-0.1-0.5 0.7-2.1 1.1-1.1 0.6-1.9 0.7 0.4 0.5 2.3 1.1 1.2-0.7 0.8zm10.8-9.5 0.8 2.2 0.7 0.9 2.7 0.6v0.7l-1.3 0.6-9.9-2.7-0.7-1.2 0.5-1.1h1l2.1 1 0.8-0.4 0.2-1.1 1.7-0.5 0.8 0.1 0.6 0.9zm-55.3-58.5-0.5 1-0.8 0.4-0.7-0.5-2.4 1.2-1.1-1 0.8-0.5 3.5-1.5 0.9-1.8 0.7 0.9-0.4 1.8zm-13.1-69.2 0.9 0.4 0.5 0.9-2.6 0.2-1.2-1.5-0.9-2.7h1.3l0.9 1.4-0.3 0.8 1.4 0.5zm70.6-3.5-2.6 0.7-0.7-0.6-1-2.6 0.4-1 3.8 1 0.5 1.6-0.4 0.9zm-76.1-8.8v1.4l-1.9-0.2v1.3l-0.2 1.3-1 0.2v-0.9l-0.8-0.6 0.1-1.3 0.7-0.5 0.1-1.3 0.8-0.2 2.2 0.8zm19-3.5-1.5 4.7h-1.3l-0.6-0.8 1.5-1.3-1.2-0.6-0.9 0.1 1-1.5 3-0.6zm48.1-1.7 0.6 3.5-1-1-0.8-0.3v-2.1l1.2-0.1zm-20.6-13.4 1.5 1.2 0.4 1.7 0.8 0.8 0.8 1.4-1.5-0.6-0.8-1.4h-1.2l-1.4-0.5-0.8-1.6h1.4l0.8-1zm-25-0.7 1 1.3 0.4 0.9v2l-2.3-0.1-0.8-1.2-0.4-1.8 0.3-1 1.8-0.1zm85.8-8.6 0.7 3.5-2.6-1.1-0.7-1.7 1.1-1.4 1.5 0.7zm-56.2-7.8 5.9 2 2-0.4 0.4 1.1-1.1 1.7-1.8 0.3-1.5-0.5-1.4-0.8h-1.1l-2.3-1.7 0.2-1.4 0.7-0.3zm23.5-20.6-1.8 1-2-0.1-1.2-4.1-0.8-0.8-0.1-1.3 0.7-1.7 0.9-0.2 1.3 1 1.9 2.5 1.5 1.5-0.4 2.2zm5.1-28.2-0.5 0.5-4.7-1.3-0.6-1 1.4-1.5 1.3-0.7 0.5-0.7 1.1-0.6 1.4 0.3 0.7 1-0.2 3.2-0.4 0.8zm-20.7-2.8-1 0.4-0.5-0.7-1.1-2.9-1.5-2 1-0.6 2.6 1.4 2.2 2.4 4.7 0.2 0.7 0.9-2 0.8-5.1 0.1zm-98.8-15.2-1.2 0.4 0.5-1.9 1.5-0.6 0.3 1-1.1 1.1zm86.6-4.9-0.8 0.3-2.6-1.9-1.9-2.4v-0.6l4.1-0.4 0.3 0.8-0.2 2.9 1.1 1.3zm-9.4-9.3 0.8 2.6-0.4 1.3-1.3-0.2-2.5-2.3-2.3-0.2-1.1-1.1 5.8-2 1 1.9zm-9.4-2.5-0.5 1.5-0.6-0.4-1.5-0.2-0.3-1.3 1.1-0.5 1.8 0.9zm14.7-5.9-0.4 0.4-2.2-1.2 1-0.5 1.9 0.1 1 1.1-1.3 0.1z" name=""/>
-        <path class="provincie" id="prov_severni_cchungcchong" d="m639.7 322.2-1.9 2.2-2.1 1.3-1.9-0.7-1.5 0.9-3.7 3.9-4 3.4-2.7 2.5-3.2 1.1-2 1.6-1.4 2.5-4.9 3.5-3.4 5-1.7 3.7-2 3.7 1.1 2 2.1 1.9-2.3 7.8-13.3 5.5-5.6-1.8-2.4-4.8-3.7-3.2-2.7-1.9-2-2.3-2.1 2-1.6 2.6-0.8 3.1-1.1 3.3-4.6-0.4-4.9-1.7-2.5-1.7-2.7 1.8-2.6 3.5-3.2 0.2-2.5-1.6-1.9 3.2-2 4.3-1.1 4.1 3.1 3.9 2.3 4.4-11.3-1.7-6-2.7-3.4 5.2-5.6 2.6-4.9 3.3-0.4 2.4 0.1 1.8-0.9 2-3.5 4.8-2.3 2.5-2.3 0.4-2.4 1.1 1.8 4.5 6.2 1.1 7.7 11.3-2.8 2.8-1.6 4.5-0.6 10.7-1 4.7 1 3.4 1.8 3.1-2.3 4.5-3.5 3.1 0.9 9.3 6.4-1.5 3.8 1.3 4.5 3.7 3.1 1.5 8.1-2 3.5 2.7 1.8 10.2-3.3-0.2-3.8-0.7-3.9 3.3 0.9 5.3 0.1 2.6-0.4 3.3-1.5 1.8-1.2 2.2-1.4 5-2.4 4.8-4 1.4-3.8 1.8-2 2.2-2.1 1.8-2.3-1.2-2.3-2.2-5.8 2.6-5.1 3.1-2.6-0.7-1.4-1.8-7.1-2.4-2.4-2.8-2.7-1.6-1 1.4-1.3 0.3-1.5-1.4-1.3-1.6-3.6-5.6-3.3-5.7-1.3-6.8 0.2-6.7-1.6-5.9-4.9-3-4.7-1.5-5.1 1.1-0.4-5.6 0.3-5.4 1.9-7.6 3.5-6.5 1.5-3.3 1.6-2.9 2.6-2 0.6-3.4-2-0.7-2.2-1-2.7 2-2.1 2.8-1.6-5.2-0.3-3.5-1.9-1.1 0.2-2.2-2.2-0.5-1.8 2.6-5.1 1.2-4.8-1.4 0.6-3.4-0.9-2.2-1.4-0.7-1.1-1.2-0.6-1.5 0.4-1.5 0.7-1.9 0.3-2.1-0.3-2-0.5-1.2 0.3-1.5 0.8-1.9 0.1-2.1-12-0.8-11.7 2.4 0.7-6.1 2-5.7-0.3-3.3 3.1-6.7 4.4-6.4 3.3-5.8 1.4-1.4 1.5 0.2 1.4-0.4 0.8-1.5 0.3-1.7 0.4-2.2 0.8-2 0.4-2.3-0.3-2.2-1.1-2-1.3-1.2 0.2-4.1-2.1-1.4-2.7-5.5-2.1-1.3-1.9-1.9-1.3-3 7.1-2 6.8-3.3 5.2-1.8 1.5-5.8 2.5-2.8 4.1-1.7 1.9-2.5 1.3-3.3 2.5-2.6 3.1 0.6 0.9 1.2 3.9-2.8 7.6-14.1 1.7-3.2 2.5-1.9 1.3-1.9 1.1-2.1 16.7-4.6 16.8-2.3-1.4 9.6 4.9-1.2 4.8 0.4 2.7 1.5 1.2-1.1 1.1-1.3 3.2-2.2-0.9-9.7 3-3.7 8.1-2.7 6 6.4v4.3l2 2.7 5.2-1.2 5.2-3 3.2-2.4 3.8 0.8 3.1-1.7 3.7-2.8 8.8 3.1 9 1.5 2.9 0.8-1.8 4.2-4.6 3.3-2.7 4.2 1.7 1.9 2.2 1.3h1.5l1.4-0.7 4.8-1.6 7.5-0.8 1.6 1.7-0.3 2.8 3.2 3.3 1.1 2.6 2.9-0.2 3.4-0.6 3.8-1.2 3.8-0.1 3.7 2.9 4.2 2.7 4.1 0.8 4.1 0.5 3.2 1.4 3.1 2z" name="North Chungcheong">
-         <title>Severní Čchungčchong</title>
-        </path>
-        <path class="specialni_mesto" id="mesto_incchon" d="m311.6 226.7 1 2.4-0.8 0.4-1.4 1-0.5 0.7-2.8 0.6-1.2-0.2-5.4 2.4-2 1.8-1.1 2-6.9 5.2-1.5-0.3h-2.1l-0.7-2.5-1.2-0.8-0.6 0.7-0.8-1.9-1-0.2-1.6 1.7-1.2-0.6-1.7-0.4 1-1-0.3-1.1-1.7-1.6-0.5-1.1 0.6-1.5 1-0.2 1.3 0.6 7.2-5 5.1-0.6 3.5 0.1 3.2-1.7 1.1-4.5 2.2-0.8 1.9 1.9 2.7 1.2 1.8 0.2 1.3 0.7 1.2 1.6 0.9 0.8zm22.7 25-0.4-1.4-8.3-1-3.9 4.9-4-3 1.6-3.7 2.1-3.1-1.3-2.3-5.4-2.9 0.3-3.6-0.5-2.9 1.6-2.7 4.5-1.3 1.4-0.7 0.3-1.7-2.1-0.6-0.6 1.8-3.3 0.3-0.8-2-0.4-3.6 0.8-4.9 15.3-0.5 9.4 9-0.1 4.7 1.7 3.9 2.6 1.7 1.5 2.4-1.5 5-2.2 4.3-3.3 2.4-5 1.5z" name="Incheon">
-         <title>Inčchon</title>
-        </path>
-        <path class="provincie" id="prov_kangwon" d="m762 402.5-1.6-0.1-5.3-1.2-5.1 2.3-10.9-4.1 1.7-4.7-0.5-4.4-1.4-4.9-0.4-5.5 2.1-5.3 1.7-4.9-1.2-1.5-1.4-1.3 0.7-4.5-11.6-0.9-3.4-1.9-3.7-1.6-1.5-3.6-1.1-4.2-5.2-2.5-3.3-4.9-0.7-6.5 1.1-4.9 2.7-2 3-1.1 4.6 1.8 3.8-2.8-1.6-4.6-4.9-3-5.4-1.2-4.3 2.2-4.2 1.1-5.8-2.7-6.2-1-2.1 0.8-1.7-0.2-1.4-1.8-1.9-0.8-4.5 3.5-4.7 1.9-0.4-3.5 0.4-3.4-2.8-1.4-3-0.7-2.2-3.9-4.4-0.4-4.3 2.1-2.8 3.5 1 4.9-0.5 4.5-0.9 4.2-4.1-0.3-4.7-1.1-3.9-1.6-4.1-2.2-3.1-2-3.2-1.4-4.1-0.5-4.1-0.8-4.2-2.7-3.7-2.9-3.8 0.1-3.8 1.2-3.4 0.6-2.9 0.2-1.1-2.6-3.2-3.3 0.3-2.8-1.6-1.7-7.5 0.8-4.8 1.6-1.4 0.7h-1.5l-2.2-1.3-1.7-1.9 2.7-4.2 4.6-3.3 1.8-4.2-2.9-0.8-9-1.5-8.8-3.1-3.7 2.8-3.1 1.7-3.8-0.8-3.2 2.4-5.2 3-5.2 1.2-2-2.7v-4.3l-6-6.4-8.1 2.7-3 3.7 0.9 9.7-3.2 2.2-1.1 1.3-1.2 1.1-2.7-1.5-4.8-0.4-4.9 1.2 1.4-9.6-16.8 2.3-16.7 4.6 8.5-15.9 7.1-17.4 9.7-20.8 1.2-4.5-0.9-4.5 2.1-3.6 2.9-3.6 3.2-1.3 1.6-3.5-1.8-3.1-2.3-2-3.8-0.4-3.9-1.5-5.3-0.7-8.9-4.9-4-1.7-4-2.6-4.3-0.7-4.3 1.4-3.5-3 0.3-3.3 1.7-3.4 0.6-3.9 0.1-4.1-4.2 1.4-1.9-2.4 4.6-5.5-0.8-3.6-1.2-3.6 0.9-2.7-0.1-3.3-0.3-3.1 8.1-5.9 3.2-1.1 1.8-2.8 0.8-8.1-3.7-5.8-3.1-0.6-2.9-1.3-2.2-6-3.5-0.1-3.8 0.2-4-3-2-5.3-0.8-9.5-1.5-4.7-1.1-1-1.2 0.3-0.9 0.8-1 0.1-2.7-1.9-6.6 2.3-6.1-1.4-2.4-1.5-2.5-2.3-0.1-3.8 1.2-3.6 1.6-2.6-1.1-0.9-1.3-0.3-1.3 0.2-1.1 0.9-2.1 2.7-2.4 2.4-3.6 0.6-3.1-2.1-0.6-2-0.3-2-1.1-0.7-1.2 1.3-0.4 2-0.1 6.6-2 3.3-5.8-2.8-5.3-4.8-1.9-2-2 0.3-1.7-2.6-1.1-3.3-1.5-1.7-1.7-1.4-1.3-3.2-7.9-5-3.2-1.6 1-1.1 8.6-7.2 10.1-6.3 10.6-4.4 10.2-1.1 5.1 0.6 19.5-1.7 15 4.5 4.8-0.4 9.3-2.8 30.5-2.7 1.3 0.9 2 2.9 1.9 2 2.2 0.5 10.5-2.2 16.6 1 10.8-0.9 10.8-3.8 10.1-6.6 8.4-8.8 3.7-5.3 3.1-5.6 2-6.3 0.7-7.1-1.3-7-0.4-3.5 1-2.6 4.3-3.4 9-4.7 12.1 24 1.5 6.4 3.7 9.7 14 27.7 10.9 29.1 1.8 3.1 5.6 7.1 2.2 5.9 26.4 37.8 10.2 14.9 12.3 13.6 1.7 1.4 8.2 9.7 0.5 4.1v4.9l1 4.2 5.6 3.1 1.6 3.4 4.6 15.1 2.1 3.4 2.5 1.5 2 2.2 7.2 14.2 4.4 5.4 1.5 3 0.5 3.2 1.1 3.1 7.7 8.4 2.4 6.9 2.2 15.1 2.9 8.2 8.2 11.4 0.6 2.3-1 2.3-1.4 2.2-1 2.2v1.9l1.1 6.2 1.4 17.7 1.5 8.2 5.2 16.6 0.5 8.2-1.7 7.5-3.5 6.9-2.9 8.1z" name="Gangwon">
-         <title>Kangwon</title>
-        </path>
-        <path class="specialni_mesto" id="mesto_soul" d="m398.4 211.4-1.5 5.7 4.4-0.1 3.7-1.3 3.2-0.1 1.2 2.9-0.4 3-2.2 1.1-2.4 1.6v3.6l1.3 1.5-2.7 3.7-1.5 2.6-4.1 2.4-4.5 1.1-4.7 2.3-1.8-4.1-3.9 0.9-4 1.2-2.7 1.6-2.9 0.5-6.8-0.3-4.7-6.1-4.6-1.4-3.1-2-0.8-5.8-3.2-4.4-3.7-4.6 2.3-5.1 4.5 0.2 5 3.1 3.8-1.2 3.4-2.1 0.2-3.4 0.9-3.2 7.1-0.7 3.7-4.6 2.2-4.8 3.2-3.3 4.9-1.2 5.7 0.4 2.7 4.7 1.1 6.4 1.6 4.4 0.1 4.9z" name="Seoul">
-         <title>Soul</title>
-        </path>
-        <path class="provincie" id="prov_kjonggi" d="m245.6 280.6-0.7 1.2-2 2.1-1.4 0.6-1.9 0.3-1.6-0.7-1.4-2.9-1.5 0.8-0.7-0.2 0.5-4 0.9-2.7 1.1-1.6 1.3 0.9 1.1 1.9 1.2 0.9 3.9 2.1 1.2 1.3zm50.4-1.9-1.3 1.6-1.8 0.4-1.2-0.9-1.3 0.1-1.1-0.6-0.3-2.5 0.3-2.6 1.3-1.8 2.8-1.5 3.6 0.3 1.6 1.1 0.6 2.4-0.7 0.9-1.7 0.5-0.6 1.3-0.2 1.3zm15.2-7.5 0.6 1.6 1.9 1.1 3 1.2 0.8 0.9 0.8 2.6-0.8 1.8-8.1 6.5-3.7 0.4 0.1-1 1.7-2.3 0.2-1.4-0.7-1.1 2-2.4 0.1-2.4-0.8-2.9-1.2-2-1.2-1.4 0.4-0.4 2.6 1.3 2.2-2 0.5 0.2-0.4 1.7zm-139.3-74.8-0.9 0.4-1.4-3.5 0.2-1.8 1.2-0.2 1.8 0.3 1.1 1.1-0.5 2.2-1.5 1.5zm107-0.9-3.2 0.2-10.7-8.4 1.4-1.2 0.6-1.6 0.9-3.8 1.3-2 0.9-0.7 0.9-0.3 0.6 0.4 0.6 1.4 0.5 3.7 1 2 1 1.1 4.1 3.4 1.5 1.8 0.3 1.9-1.7 2.1zm-253.9-24 0.8 0.7-0.3 1-1.1 0.3-1.5-0.4-1.1 0.5-1 1.2-1.4 0.7 0.7-2.1 1.1-0.8 0.3-1.1 2.1 0.1 1.4-0.1zm239.1-6.6 3 1.8 3.1-0.1 2.9 0.5 1.5 1.6-1.1 3.6-2.8 2.4-3.4 0.3-6.6-1.5-3.3 1.6h-1.5l-0.6-2.2 0.3-0.7 1.8-5.5 2-1.9 2.2-0.6 2.5 0.7zm40 37.3-1.8 4.2-1.6 1.4-1.2 0.2-0.9-0.5-1.7-1.8-1.2-0.7-0.8 0.3-1.3 1-8.3 0.5-3.1-1.5-3.3-4.3 4.9-1.3 1.2-0.8 1.3-2.1-0.2-0.9-0.9-0.6-0.8-1.1-5.6-10.8-0.4-1.7 0.6-2.1-0.1-9.5 0.6-2.2 1.6-0.5 3.7-4.4 2.9-0.7 2.5 1.8 2.4 2.8 2.4 2.2 5.1 2.6 2 2 0.8 3.2-0.2 1.7-0.8 2.7-0.2 1.2 0.4 1.3 1.4 2.7 0.4 1.5 0.5 7.2-0.5 1.7 0.8 1.1 1.4 3-2 1.2zm-287.2-37-1.2 0.7-1.2-0.1-1 0.4-0.8 0.8-1-1.6-1.2-1.7 0.5-1.5 2.6-2.2 2.5-2.4 1.2 0.2 1.2 0.6 0.3 1.3-0.8 1.8-0.4 2-0.7 1.7zm2.9-34.2 1.8 2.1-0.3 3-2.2 1.6-3-1.9-4.1 0.4-0.8 0.4 0.1 2.1 1.5 0.7 1.8 0.4 0.9 0.7-3.2 2.6-6.5-0.9-4.8-4.1 1.6-7.1 4.1 1.4 8.7-3.1 4.4 1.7zm454.9 169.6-1.1 2.1-1.3 1.9-2.5 1.9-1.7 3.2-7.6 14.1-3.9 2.8-0.9-1.2-3.1-0.6-2.5 2.6-1.3 3.3-1.9 2.5-4.1 1.7-2.5 2.8-1.5 5.8-5.2 1.8-6.8 3.3-7.1 2-7.4-1-6.1-5.1-6.9-3.1-13.1 5.6h-6.2l-7.5-1.5 2.1-1.6 2.4-1.1 1.7-1.9 1-4.8-0.3-0.9-1.7-2 0.8-0.8h1.7l2.2-1.3 1.4-0.2 1-0.7 0.5-2.3-9.5 2.7-1.4 2 0.5 6.1-1.2 1.4-3.7 1.2-5.2-0.7-6.2-3.6-5.6-5.6-2.2-5.3 9.5-1v-1.2l-2.1-1.5 1.7-0.2 1.7 0.1 1.6 0.5 1.3 1.1-0.6-3.8-2.2-3.4-1.6-3.8 1.2-5.3-1.8-0.8-1.4 1.8-0.8 3.2-0.3 3.2-0.8 3.5-1.5 0.8-1.5-1.5-3 0.6-3 0.8-7.3-2.2v-2.3l-0.7-1.9 0.6-2.7-0.3-3.4 1.8-3.4 2.2-3 2.5-1.2 2.7-1 4-0.1 4.3-1.2 0.9-1.3 0.3-3.7-1-0.7-2.2 1.2-3.3 2.9-2.1-0.5-1.5-0.9-0.8-1.5v-2.4l-3.7 1.9-3.1 2.2-5.6 6.1-1.5 1.2-1.8 0.6h-1.7l-1-1.1v-1.8l1-1.8 2.3-3.3-4.6 1.1-1.4-0.5-0.6-2.7 0.9-2 1.9-1.1 2.2-0.8 1.6-0.9 1.9-2.6-0.5-0.7-4.2 0.6-1.4-0.9-1.1-2.1-1.1-2.7-1.2-2.5 0.7-0.2 1.4-1.2 1.2 0.9 1.7-0.1 3.1-0.8 2.5 0.7 2.1 1.3 2.1 0.6 2.4-1.2-0.2 2.3 0.2 2.1 0.8 1.7 1.5 0.7 1.7-0.6 0.7-1.9 0.8-4.3 2.7-4 2.2 0.4 2.5 1.5 3.5-0.6-0.8-1.6-1-1.2-1.2-0.8-1.5-0.4h-2.2l-1-1.5-2.3-0.4-1.9 0.6-1.9-0.1-3-0.6-5-1.6-6.9-5.2-0.3-2.3 3-4.5 2.1-2.1 5-1.5 3.3-2.4 2.2-4.3 1.5-5-1.5-2.4-2.6-1.7-1.7-3.9 0.1-4.7-9.4-9-15.3 0.5-2-4.7-3-5.1-1.8-1.8-0.1-2.7-0.6-4-1.7-6.3-2.3-16.5 0.6-2.7 2.1-0.4 8.7 3.2 2.8-0.6 2.3-1.1 2.1-0.4 2.1 1.4 0.8 2.4 0.3 3.6-0.2 3.8-0.9 2.6-0.1 4.7 4.9 4.1 6.2 2.6 3.8 0.2-3-3.1-9.1-6.6 2.6-7.1 0.8-4.2-0.6-3-1.5-3.1-0.3-4.1 0.7-4 1.6-3.2-1.2-1.5-1.5 0.2-2.4 1.7-1.1-17.3 0.8-4.7 1.9-1.4 3-0.4 4-1.5 6.3-5.1 13.6-20.7 2.7-2.8 6.1-4.7 2.6-3.1 5.4-13.3 1.9-2.5 3.2 1.6 7.9 5 1.3 3.2 1.7 1.4 1.5 1.7 1.1 3.3 1.7 2.6 2-0.3 1.9 2 5.3 4.8 5.8 2.8 2-3.3 0.1-6.6 0.4-2 1.2-1.3 1.1 0.7 0.3 2 0.6 2 3.1 2.1 3.6-0.6 2.4-2.4 2.1-2.7 1.1-0.9 1.3-0.2 1.3 0.3 1.1 0.9-1.6 2.6-1.2 3.6 0.1 3.8 2.5 2.3 2.4 1.5 6.1 1.4 6.6-2.3 2.7 1.9 1-0.1 0.9-0.8 1.2-0.3 1.1 1 1.5 4.7 0.8 9.5 2 5.3 4 3 3.8-0.2 3.5 0.1 2.2 6 2.9 1.3 3.1 0.6 3.7 5.8-0.8 8.1-1.8 2.8-3.2 1.1-8.1 5.9 0.3 3.1 0.1 3.3-0.9 2.7 1.2 3.6 0.8 3.6-4.6 5.5 1.9 2.4 4.2-1.4-0.1 4.1-0.6 3.9-1.7 3.4-0.3 3.3 3.5 3 4.3-1.4 4.3 0.7 4 2.6 4 1.7 8.9 4.9 5.3 0.7 3.9 1.5 3.8 0.4 2.3 2 1.8 3.1-1.6 3.5-3.2 1.3-2.9 3.6-2.1 3.6 0.9 4.5-1.2 4.5-9.7 20.8-7.1 17.4-8.5 15.9zm-76.3-89.2-0.1-4.9-1.6-4.4-1.1-6.4-2.7-4.7-5.7-0.4-4.9 1.2-3.2 3.3-2.2 4.8-3.7 4.6-7.1 0.7-0.9 3.2-0.2 3.4-3.4 2.1-3.8 1.2-5-3.1-4.5-0.2-2.3 5.1 3.7 4.6 3.2 4.4 0.8 5.8 3.1 2 4.6 1.4 4.7 6.1 6.8 0.3 2.9-0.5 2.7-1.6 4-1.2 3.9-0.9 1.8 4.1 4.7-2.3 4.5-1.1 4.1-2.4 1.5-2.6 2.7-3.7-1.3-1.5v-3.6l2.4-1.6 2.2-1.1 0.4-3-1.2-2.9-3.2 0.1-3.7 1.3-4.4 0.1 1.5-5.7z" name="Gyeonggi">
-         <title>Kjonggi</title>
-        </path>
-        <path class="provincie" id="prov_severni_colla" d="m269 598.6 0.3 1.1-0.6 1.5-2.9 2.5-1.9 2.2-1.8 1.4-0.9 0.2-0.7-0.7-0.5-1.3 0.3-1.2 1.7-0.9-1-0.8 1.2-1 0.6-0.8 1.5-0.4-0.2-1.1 2.4 0.4 1.8-1.7 0.7 0.6zm207.6-80.7 1.3 1.6 1.5 1.4 1.3-0.3 1-1.4 2.7 1.6 2.4 2.8 7.1 2.4 1.4 1.8 2.6 0.7 5.1-3.1 5.8-2.6 2.3 2.2 2.3 1.2 2.1-1.8 2-2.2 6.5 11.1-0.8 12.5-5.8 6.2-1.5 4.1-7.9 4.2-3.9 1.2-2.1-0.2-1.6 1-3 6.4-3.4 3.6-3.6 3.2-1.8 5.1-0.4 6-2 4.4-2.5 4.6-1.8 5.9-1.4 6-2.2 4.6-0.1 4.9 4 1.7 0.6 2.1 0.3 2.5 1.8 4.6-0.3 4.9 1.6 3.7 2.3 1.5-1 5.4-6.6 7.9-1 5.2-0.3 4.8-3.3 3.4-9-7.3-10.1-3.7-5.8 3.2-4.6 5-4.9 0.7h-5.3l-5.7 0.8-5.9-0.1-2.7-1.6-2.4-1.9-2.7 0.7h-3.3l-4.8 0.8-4.5 2.7-5.9-0.9-3.8-4 0.2-6.4-3.3-3.7-0.9-3.6 1.4-5.6-3.2-4.9-4.7 0.3-1.1 2-1.6 1.5-1 2.6-0.4 2.7-4.8 0.1-7.5-10.1-4.8-4-2.8-1.1-2.8-0.2-2.7 3.1-5.3-0.5-4 3.5v2.7l0.1 2.6-1.4 2.2-2 1.5 0.1 2 0.3 2-1.3 2.8-2.1 1.8-2.6 1.3-2.7 0.7-2.3 1.4-2.1 1.6-5.3 0.8-5.1 1.8-4.7 1.2-3.9-1.3 0.2-5.3 1-5.2 0.9-7.1-4.5-1.2-15.4 4.3-3.3 1-2.2-2.5-0.7-2 1.1-4.6 2.7-5.7 4.3-10 3.6-5.3 5.2-1.8 5.9-1.2 5-0.3 2.3-1.9 2.3-3.2 3.1-0.8 2.8 3.2 2.9 3.6 2.1 0.7-2-7.3-1.5-3.3-2.4-1.4-22.4 3.7-7.8-4.9 0.6-7.3 3.7-1.9 3.2-3.2 3-3.4 4.7-2.8 5.9-3.2 4.4-6.2 0.7-5.8 4.2-2.6 1-0.8 5.6-0.6 5.6 0.7 3.5 2.7 2.5 0.6 1.7 3 0.7-1.6 0.5-2.2 0.2-2.3-3.5-2.8-3.1-1.5-3.4-2.3-2.8-2.1-1.4-0.8 0.4-1.7 1.3-1.8 1.3-1.1 1.4-0.3 8.9 0.6 1.9-0.2 1.4-0.7 1-1.8 0.4-1.4 0.7-1 2.2-0.4 0.7-0.6-0.8-1.5-1.7-1.4-1.9-0.7-0.5 0.4-11.6 4.7-3.9 0.2-7.7-0.5-7.5-0.6-0.1-3.4-0.5-4.6-1.5-1.3-4.7-1.6-6.9 1.1-0.7-5.9 14.3-1.6 7.8-1 7.9-0.4 2.6-1.6 2.7 0.8 3.3-1.7 5.8-4.4 7.4-3 3.2-2.2 0.3-2.8-9.3 2.8 7.1-8.8 7.6-0.8 8.9-1.9 16.4-5.2 5.8 1.2-1.4 8.6 3.4 5.3 4.6-0.9 4.5-1.7 8.7-1.7 2.3-0.8 2.2-1 3.3-0.7 2.2-3.3 2.6-2.7 5.1 4.5 7.1 12.8 5.2 2.6 2.1 0.6 0.9 1.9-1.1 2.2 0.6 1.6 9.2 1.2 3.4-0.8 4.7-0.2 4.7-1.3 3.8-3.4 3.8-3.8z" name="North Jeolla">
-         <title>Severní Čolla</title>
-        </path>
-        <path class="specialni_mesto" id="mesto_kwangdzu" d="m368.2 668.9 8.1 3.1 3.2 8.9-6.2 8.3-9.8-1.6-8.6-5.2-4.3-9.5 3.4-3.2 5.7 1.5 4.1-1 4.4-1.3z" name="Gwangju">
-         <title>Kwangdžu</title>
-        </path>
-        <path class="provincie" id="prov_jizni_cchungcchong" d="m284.4 429.5-0.3 2.2 0.4 1.9 1.2 3.6 2.2 3.3 0.9 3.1-1.6-0.7-7 0.4-2.3-0.4-0.4-2.9 0.8-1 1.2-1.2 0.6-1.7-3.7 2.4-1.8-0.9 0.5-2.9 2.8-4-1-1.2-2.2 2.6-0.7-1.8-1.7 0.9 0.9-4.7-0.6-7.3-0.8-4.3-1.6-5.5 1.4-1.8 2.8-2.6 3-1.1 2.1 3.4 0.3 1.2-0.7 1.5-1.2 0.9 0.1 1.4 2.7 6 0.4 2-0.7 1.6 0.8 1.4 1.8 1.1 1.4 2.4h-3.3v1.2l1.1 0.2 2.2 1.3zm88.1-84 7.5 1.5h6.2l13.1-5.6 6.9 3.1 6.1 5.1 7.4 1 1.3 3 1.9 1.9 2.1 1.3 2.7 5.5 2.1 1.4-0.2 4.1 1.3 1.2 1.1 2 0.3 2.2-0.4 2.3-0.8 2-0.4 2.2-0.3 1.7-0.8 1.5-1.4 0.4-1.5-0.2-1.4 1.4-3.3 5.8-4.4 6.4-22.5-9-3.7 10.2 0.5 29.9-2.4 2.3-1.4 4.1 14.4 2.9 10.8-3 8.4 13.3 2.9 5.6 0.8 14.3 3.3 10.7 7.8-2.1 6.9-5.1 2.3-0.8 4.1-3.3 2.3-8.5 2.1-3.4 0.7-4.6 2.1-2.8 2.7-2 2.2 1 2 0.7-0.6 3.4-2.6 2-1.6 2.9-1.5 3.3-3.5 6.5-1.9 7.6-0.3 5.4 0.4 5.6 5.1-1.1 4.7 1.5 4.9 3 1.6 5.9-0.2 6.7 1.3 6.8 3.3 5.7 3.6 5.6-3.8 3.8-3.8 3.4-4.7 1.3-4.7 0.2-3.4 0.8-9.2-1.2-0.6-1.6 1.1-2.2-0.9-1.9-2.1-0.6-5.2-2.6-7.1-12.8-5.1-4.5-2.6 2.7-2.2 3.3-3.3 0.7-2.2 1-2.3 0.8-8.7 1.7-4.5 1.7-4.6 0.9-3.4-5.3 1.4-8.6-5.8-1.2-16.4 5.2-8.9 1.9-7.6 0.8-7.1 8.8-3.3 1-3.2 2.2-2.7 2.6-2.9 1.4-3.5 0.6-3.4 1.5-2.4-1.2-0.8-1.3-0.2-1.8-0.9-2.5-1.3-2.1-2.6-3.5-1.5-2.4 2.2-1.8-1-1.2-4.1-1.6-3.7-6.2-2.7-1.2-2.1 1.2h-1l-0.1-2.2-3.6-2.3-3.1 0.5-0.9 3.7-0.6 1.3-1-1 0.6-5.8 5.4-2.7 4.7-1.5 6.6 1.9-2.3-3.9-1.3-1.5-1.8-1.3-1.1-0.2-1.2 0.7-0.9-0.5-1.2-1.3-1-1.4 3.3-9.1 1.9-4.1 2.4-1.5-1.8-2.2-6.7-2-2.4-1.3 2.4-2.2 7-1.7 1.5-2.1-1.1-2.6-2.5-0.6-5.2-0.1-1-0.7-1.9-2.3-1.3-1.1v-1.4h2.1l-2.4-4.4 2.9-1.6 3.2-1 3.1-4.4 6.5-1.8 3.1-1.7h-9.3l-2.2 1.3-3.4 5.1-2.5 0.5-1.6-1.9-1.4-3.7-0.9-3.7 0.1-2.2 3.3-3.9 1.5-2.4-0.5-1.1-3 1.1-1.4-1.2-1.3-0.9-0.7-0.1-0.7-1.8 0.7-1.7-0.2-1.8-0.8-3.4-0.9-1.4-0.1-0.9 2.2-0.1 3.1-1.5 3.3 0.1 0.3-2.4 0.9-2.1-1.3-1.7-1.8-0.4-2.6-2.5 1.6-2.3 2.3-1.8-1.5-2.8-3.8-0.7-0.8-3.3 1.2-2.4 3.7-0.6-2.1-2.4-0.7-1.2-0.5-1.8-1.4 1.2-2.2 2.4-2.5 1.1-0.5 1.4 0.1 1.4 1.1 1.7 0.2 3.3-1.2 3.9 0.7 5.2-1.7 4.4-1.4 1.8-2.9-2.3-3.1-0.1-3-2.1 0.7-10.6 1-3.9-1.8-0.8 0.5-5-1.7-2.1-2.5 0.5-1.5 2.5-0.4 3.2-1.1 2.3-3.6 0.1 1.5 3 2.9 4.6 1 3.3-1.7 1.5 0.2 1.6 2.7 3.6-2.5 0.5-2 1.2-1.7 1.6-1.4 2.1v-1.5l-0.5-2.8-0.6-1.1 2.2-4.8-4.6-7.7 1.4-3.8-1.2-5.4-3 1.7-4.1 5.3-3.1 1.1-1.9 0.4-1.6 0.6-1.6 0.1-1.9-1.1-1.1-2.8-0.3-1.8 0.8-0.8 6.5 0.1 1.7-1.2-0.1-2.9-1.7-3.1-2.4-1.2-2.5-0.8-2.1-1.7-0.8 2.4-0.5 4.9-0.9 2.3-1.8 1.7-0.6-1.6 0.2-5-0.3-4.8 0.4-1.3 4.1-5.2 0.8-1.8 0.6-2.5 0.5 1.9 1.5 3.4 1.1 1.6 0.8-0.8 1.1 0.1 2.5 0.7-1.6-2.4-1.7-3 4.5 1.3 1.9-0.5 1.2-2.3-4.1-0.3-2.5-1.1-0.3-2.5 2.6-4.2-3.5-3 0.2-2.7 2.7-2.3 3.9-1.4-1 4.9 0.4 1.3 2.1 0.5 4-0.1 1-0.7 1.1-1.8 0.2-4.5-0.4-5.9 0.8-4.9 3.7-1.2-0.5 2.8 0.1 4.2 0.7 4.4 2 5.2-1 1.8-1.5 1.7-1 1.7v1.8l1 2.9 0.2 0.8-0.9 1-3.4 2.3 0.1 1.7 0.5 1.8 0.9 1.1 1.1-0.5 2.7-2.5h2l4.5 3.1-3.3-7.1-1.1-4.4 1.7-2 2.5 3.3 1.6 1 0.7-2.2 0.7-0.6 1.6-0.7 3.2-0.8v-1.2l-1.3-0.2-3-1.3v-1.2l3.8-0.9 2.2-3.7 0.6-4.4-1.2-3.3-1.4-0.5-4.2-0.1-2-0.8-1.5-1.9-0.5-1.8 0.7-0.6 2.3 1.6 1-3.1-1.1-1.8-2.4-0.7-2.9 0.2 1.2-1.5 1.5-1.1 1.7-0.3 1.6 0.9 1.5 1.1 1.3 0.3 0.6-0.6-0.7-1.5v-1.5l5.9-0.1 2.8 1 1.1 2.6-0.8 1.6-1.5 1.7-0.9 2.3 1 3.2 1.4-1.4 1.8-1 1.5 0.1 0.7 1.6 0.2 1.4 0.7 1.3 0.2 1.3-1.8 2.3-0.4 1.2v8.8l0.5 2.6 1.2 1.8 1.1 0.7 0.6-1 0.6-4.9 2.9-9.5 0.7-4.6 0.8-1.1 1.9 1.3 2.8 3 1.1 2.2 0.8 2 1.2 1.3 2.3 0.1v-1.3l-1.2-1.5-1.3-4-1.3-2-9.7-10.3-0.6-0.5 0.5-2.2 1.3 0.3 1.7 1.5 2.5 3.2 1.3 1.1 1.7 0.8h1.9l1.5-0.9 0.1-1.3-1-1.3-2.3-0.6-3-1.4-3.3-3.1-1.4-4.6-0.4-3.1h2.9l2.5 1.2 2.3 2 6.2 4.3 1.2 1.3 2.4 1.7 2.3 1.2 1.6 2.7-0.7 2.7-1.6 1.8 0.4 1.5 1.5 3 0.2 1.8-0.6 3.3 1.8-1.2 0.7-1.5 0.4-1.6-0.6-4.9 0.6-1.6 2.5-4.5 2.6-1.2h2.5l2.7 0.3 3 1.2 3.9 1 2.7 1.8 3.4 3.4 0.2 4.3-2.5 8.5 1.9-1.2 3-3.9 1.6-0.3 1.1 1.7 0.7 2.9 0.3 5.6-0.1 1.2-0.8 2.7-0.1 1.6 0.3 1.6 1.4 2.4 1.3 6.1-0.4 1.8-2.6 0.8 0.5 1.7 0.6 1.1 0.9 0.8 1.3 0.6 0.9-4.5 1.6-2.6 0.8-2.8-1.3-5 3.2 1 3.3 0.4-5.4-6.1-1.6-3.3 3.2-1.4 2.9-0.5 6.9-2.8 3-2.3z" name="South Chungcheong">
-         <title>Jižní Čchungčchong</title>
-        </path>
-        <path class="specialni_mesto" id="mesto_tedzon" d="m434.4 429.6-0.4 1.5 0.6 1.5 1.1 1.2 1.4 0.7 0.9 2.2-0.6 3.4 4.8 1.4 5.1-1.2 1.8-2.6 2.2 0.5-0.2 2.2 1.9 1.1 0.3 3.5 1.6 5.2-0.7 4.6-2.1 3.4-2.3 8.5-4.1 3.3-2.3 0.8-6.9 5.1-7.8 2.1-3.3-10.7-0.8-14.3-2.9-5.6-8.4-13.3 17.5-4.8 3.6 0.3z" name="Daejeon">
-         <title>Tedžon</title>
-        </path>
-        <path class="specialni_mesto" id="mesto_tegu" d="m656.6 550.7-2.5 2.6-1.1-0.4-1.5 0.1v1.3l-0.2 1.7-1.5 3.9v1.2l-0.4 1.9-3.6 2.1-9.1-2.4-5.1-0.5-2.3 1.8-2.2 4-1.3 1-1.4-1.2-2-1.3-2.8-2.3-1.8-3.6-2.3-2.3-2.5-0.9-0.9-3.6 2.1-3.1h2.4l2.6-0.4 0.6-1.9 0.3-1.9-1.4-0.5-1.5-0.3 1.7-3.8 2.8-3-1-8.9 7.4-6.2 10.1-1.4 8.3-0.5 6.4 4.6 2 3.5-0.1 1.6-0.8 1.3 0.1 4.9 1.3 2 1.7 1.4 0.3 3.1 0.1 3.3-0.9 3.1z" name="Daegu">
-         <title>Tegu</title>
-        </path>
-        <path class="provincie" id="prov_jizni_kjongsang" d="m579.8 789.2h0.7l3-1.4 0.4 0.4-0.3 1-1.5 1.9-1.7 0.6-1.5-0.3-1.2 0.2-1.7 0.8-0.8 0.8-1 0.2-0.1-0.7 0.5-1.3-0.1-1-0.7-0.7-1.3-0.6 0.5-1.9v-1l0.7-0.6 1-0.3 5.1 2.7v1.2zm17-36.8 1.1 0.6 1.5-0.6 2.4-0.7 2.8-0.1 1.6 1.5 0.4 2.5-0.9 1.5 0.6 0.9-0.7 1.2-1.6-0.6-0.6 0.8 1.3 0.3 1.3 1.1-0.6 1.1-1.6 2-2.6 0.1-1.2-1.5-0.6-1.5-1.3-0.1 0.3-1.2-0.4-1.3-2.1-0.3-0.7-0.6 1.5-1.2 0.3-1.4-1.5-1.3-2.9-0.9-1.8 0.5h-1.1l-0.3-1.3 1.3-1.4 1.8-0.5 2.5 1 1.8 1.4zm-21.7 4.5-0.5 0.5-2.4-0.8-1.8-1.2-1-1.6 0.2-1 1.1-1.8 2.1-1.6 2 0.5 2.4 2.6 0.9 1.5-0.7 1.1h-1.7l-0.8 0.4 0.2 1.4zm-36.1-13.4 0.8 0.6 0.9-2.1 1.9-3 1.5-0.2 0.5 1.3 1.6 1.3 0.3 2.3 0.9 3.2 1.6 1.8 0.9 1.3-1.7 0.4-7.2-1.9-3.9 1.3-2.3-0.3-2.3-1.4-1.4-2.8 1.1-3 2.1-2.8 1.4-2.6 1.5-1.9 2.5-0.6 0.8 2.1-1.1 3.1-0.6 2.1 0.2 1.8zm-10.1 8.6 1.9 3.4 3.1-0.5 3.9-1.6 3.6-0.7 5.4 0.9 1.1 0.4 0.8 2.2-0.5 1.9-0.9 2-0.4 2.5 0.4 4-0.1 2.3-0.9 1-1.3 0.7 1.4 3.9-0.7 2-2.4 0.4-2.4-1.4-2.5-1.1-2.9 1.4-2.6 0.3-1.5-3.7-1.8-7.8-2.6-1.4-2.1 1.5-1.4 3.2-0.5 4-1 1.7-2.2 0.1-2.4-0.8-1.4-1-1-1.7-0.3-3.1-0.3-2.5-4.4-14.2-0.6-3.5 0.4-3.3 1.9-3.5 1.2-0.9 1.2-0.2 1-0.7 0.7-4.2 0.9-1.3 2.6-2 2.1-1 2.4 0.8 2.1 1.8 1.2 2.5-0.2 2.5-1.4 2.4-3.6 3.8 0.7 1.3 0.7 3.4 0.9 1.7 1.3 1 3.4 1.1zm122.5-25.1 1 1.8 0.7 1.9-0.1 2.6-0.6 2.3-2.5 6.5 3.2-1.1 1.5-1.1 0.5 0.4 0.2 3.3-0.2 2.2-0.7 2.5-1.4 1.3-2.1-0.9 0.8 2.6 2.1 4.4 0.4 2.9-1.2 0.5-2.8-0.9-2.9-1.6-1.8-1.3-0.5 2.7-0.5 1.4-2.8 3.2-0.9 2.6 1.9 1.4 2.6 1.1 1.3 1.5-2.4 2.1-11.5 3.6-3.4 0.2 5.4-3.9-2.3-1.1-0.8-1.7 0.1-2.3 0.8-2.8-4.9 2.5-1.5-1-0.7-2.2 0.1-2.2 1-1 4-0.8 1.1-2.2 0.1-3 0.8-3.4-2.2-1.3-1.6 2-5.7 2.5-2.5 2.1-1.8-2.8-2.2-2.5-1.9-2.8-0.5-3.6 1.1-2.3 2-2 2.4-1.6 2.1-0.9 5.9-1.2h1.7l2.6 1.1 2 1.4 2.2 1.1 2.9 0.2v-1.2l-2.9-2-1.7-2.9-0.8-3.3-0.1-3 2.1 0.2 11-6.3-1.9-3.6 0.9-3.5 2.5-1.9 2.8 1.1 0.7 1.6v1.8l-1 7.2 0.1 1.2 0.7 2.2zm17.1-7.6-0.8 0.3-0.4-0.8-0.8-3.4-1.2-1.3-0.4-1 0.2-1.3-0.6-1.6-0.8-1.6 0.4-1.4 1.7-0.9 1.8-0.2 1.6 0.5 1.1 2.4-0.1 4.9-0.7 4-1 1.4zm27.9-113.6 0.7 7.7-4 8 2.4 4.8 9.8 1.5 4.1 3.2 6.8 7.8 8.1 4.5 3.7 2.8 1 5.4 3.5 3.4 4.5 1.6 0.6 0.6-0.7 2.6-0.3 3.5-0.9 1.9-1.1 1.6 0.9 2.6v1.1l-1.7 3.6-2.6 5.4-2.8 3.4-1.8 3.8-0.3-0.7-3.2-3.3-2.8-3.7-3.7-2.9-2.8-4-0.9-4.2-3.1-2-4-0.2-3.7 1.5-3 2.2-2.3 2.8-1.6 11.5-2.3 3.4-2.4 3-1.3 2.4-0.8-0.7-1.4 2.2-4.8 8.5-2.2 0.1-0.2-3.9 0.2-3.7-1.1-0.1-1.3 3-1.2 4.7-3.9-0.5-10.4 0.2-0.6-3.6-1.1-1.9-1.4 5.4-1.6 0.8-3.7-1.7-1.7-3.2-1.9-0.2-2.4 1.8v-8.4l-0.7-0.7-1.3 0.5-1.2 1.8-0.1 3-2.5-2-1.9-2.8-2.2-1.8-3.2 1.3 0.7-2.7-1.3-3.9 0.6-1.5-1.6-5-0.9-0.6-1.8 1.7-2 3.1v2.1l2 4.2 1.1 5.1 0.7 1.8 1.3 2.3 2.7 3.6 0.4 1.8-0.8 2.5 1.3 0.2 3 1.2-1.4 0.9-1.3 0.4h-3.3l-1.6-0.4-0.5-1-0.1-1.3-0.5-1.3-1.5-1.6-1.1-0.9-8.6-3-2.4-0.1-5.2 1-1.4 0.7 0.1 1.3 1.8 2.6-2.9 0.6-5.5 2.8-6.2 1.7-0.8 2.4-0.3 2.7-1.7 1.7v1.3l15.8-8.4 2.7-0.2 0.5 3.4 1 2.5 0.3 2.3-1.3 2.5-2 1.2-3.1 0.5-3.1-0.2-2-0.8-1.1 1.9 0.7 0.9 1.5 0.8 1 1.7 0.2 2.4-0.2 4.1-1.1 7.9 1.4 1.3 1.4-0.4 1.1-1.6 0.5-1.9 2.1 2.6-2.2 3.9-4 5.2-3.5 1.1-4.8-0.3 0.1-3h3.1l1.3-0.3 0.8-1.2-9.9-1.2-2-0.8-2.3-3.1-0.3-1.6 1.6-1 3.7-1.5-3.6-7.2-2.6 2.6-2.6 5-3.7 0.2-3.3-4.5-1.8-1.1-3.6-0.4-1.6 1-0.8 2.3-0.4 3 0.1 2.9-3.3-0.6-7.4 0.3-2.9-1.6-0.3-1-0.1-2.9-0.1-0.7-0.8-0.2-1.7 0.3-2.3-0.5-3.7-0.3-1.3-0.7-0.8-1.6 0.1-1.5 0.7-2.8-0.3-14.3 0.3-2.3 1.2-2.5 0.7-1.8 0.2-2.4-2.5 3-2 3.4-2.5 2.6-3.8 0.3 2.9 6.9-2 1.3-4.3-0.1-4.1 2.6-1.6-4.6-1-1.9-1.8-1.4-0.5 6.2-1.7 5-3.3 2.9-4.2 0.4-3.2-1-1.2 0.1-1 0.9-2.4-1.9-1.6-0.5-0.4-0.8v-3.6l-2.1-5.3-9.9-10.7-1.7-3.6-1.4-4.1-3.5-3.7-3.9-2.8-2.1-3.9-0.7-10.3-1.6-5-3.2-3.8 0.8-4.2 3.3-3.4 0.3-4.8 1-5.2 6.6-7.9 1-5.4-2.3-1.5-1.6-3.7 0.3-4.9-1.8-4.6-0.3-2.5-0.6-2.1-4-1.7 0.1-4.9 2.2-4.6 1.4-6 1.8-5.9 2.5-4.6 2-4.4 0.4-6 1.8-5.1 3.6-3.2 3.4-3.6 3-6.4 1.6-1 2.1 0.2 3.9-1.2 7.9-4.2 1.5-4.1 5.8-6.2 1.3 4.3 3.2 1.9 2.9 2.3 0.2 1.6 0.6 1.6 2.6 1 4.8 0.4 2 1.7 2.6 1.7 4.5 0.4h4.5l4.1 1.3 3 3.3 2.1 4 3.5 2.5 0.9 1.8 0.6 1.7 2.4 1.5 2.1 2.5-0.1 4.6-1.9 4.4 2.5 9 9.8 0.4 4.7-0.6 4.6 0.7 4.3 2.1 4 3 4.5 0.9 8.5-4.3 4.3 0.9 3.9-5.6 3.7-2.9 1.3 10.8 4 4.9 4.9 3.1 5.8-0.6 5.9-1.1 5.2 1.6 4.9 2.6 5.9 0.2 5.2-4.1 2.2-0.8 2.3-0.3 2.2-1.9 1.8-2.4 5.7-2.3 6.1 1.5 4.7 2.2 4.4-1.5z" name="South Gyeongsang">
-         <title>Jižní Kjongsang</title>
-        </path>
-        <path class="provincie" id="prov_jizni_colla" d="m274.6 918.7-0.6 0.7 0.3 1-0.7 0.5h-1.5l-0.3 1.3v1.2l-1.1-0.2-2.4-4 1.9-0.4 1.5 0.5 2.9-0.6zm93.8-3.3-3.6 0.6-0.4-3 1.3-0.8 1.2 0.2 1.5 3zm59.7-16.2 1 0.5 1-0.1 0.4 2.4 0.7 0.4 0.4 1.3-0.7 0.4-1.9-0.8-0.9-1.4-0.9-1.8 0.2-1.2 0.7 0.3zm-2.7-0.5 0.4 0.8-0.6 1.8 0.3 1.9 2 3.4 0.9 0.8 1.2 0.3 0.4 0.7-0.2 0.9-2.2-1.1-2.2-0.5-0.9-1.9-0.4-1.6-1.1-1-0.3-1.3 0.2-2.5 1.1 0.1 1.4-0.8zm-341.5 1.9-0.5 0.9-1.8-0.9-3.1-2.8-1.8-1.1-0.4-1.5 0.8-2 1.2-1.1 1.8 0.6 1.4 1.7 2.2 4.7 0.2 1.5zm232.1-9.1-3.6-0.5 1-1.2-0.5-1.1 0.5-0.5 1.1 0.2 1 1.6 0.5 1.5zm-5.8-13.3 1 0.1 1.3-0.4h1.8l2.2 0.9 1.3 1.6-0.3 0.9-1.3-0.7-0.2 0.7-2.1-1h-1.5l-0.8 0.9-0.6 1-1.7 1.2-1.6 1.4-2.4 1.4-3-0.1-1.7-2.2-0.1-2.9 1.4-2.9 2.8-1.9h2.4l3.1 2zm15.5 9.5-1.6 0.4-0.8-0.5-0.3-0.9-1.6-0.8-0.3-2.5 1-4.5 0.3-2.4-1-1-0.3-0.9 1.3-1.2 0.1-0.7h1.3l2.7 1.4 0.4 1.9-1.5 1.3-0.3 1.4 1.6 2.4 0.6 0.4 0.6 0.9-1.2 0.7-0.2 1.1v2l-0.8 1.5zm15.2-12.4-0.4 1.3-1-1.6-0.9-0.8 0.4-1.5-0.1-1 2.3-1.9 1 2.6-0.2 1.6-1.1 1.3zm25 3.2-1 1.8-1.8 1-2.4 0.2-1.7-0.9-1.4-1.3-1.1 0.1-0.5 1-0.6-0.4-0.7-2.9 1-2 0.3-1.8 0.6-1.5 1.1-1.1 2.3-1.1 2.7 0.7 1.6 2.3 2.4 2.5-0.4 2.4-0.4 1zm-52.3-2.3-0.8 0.6-2.4-0.6-1.3-1.2-0.3-0.8-1.4-0.4-0.2-0.6 1.3-3.1-0.1-1.5 0.9-0.7-0.9-1.9 0.5-0.4 2.5 1 3.3 0.6 2.5 1.5 0.7 0.9 0.1 1.7-1.1 0.9-0.5 2.2-2.3 0.1-1.3 0.3 0.8 1.4zm-100.3-12-1.7 1.8-1.2 0.4h-1.4v-0.9l0.6-1.7 0.8-0.7 2.9 1.1zm206.6 4.7-0.4 1-2.9-0.6-2.8 0.7 1.3-4.1 1.6-1.5 0.5-1 1.6-0.9 0.7 0.1 0.7 1.7-0.2 2.1-0.9 1.6 0.8 0.9zm-102.7-6.5 1.4 0.6 0.8 1.6-0.8-0.1-1.1 1-0.7-0.2-1.7 0.5-1-1.6 1.3-1.2 1.8-0.6zm-88.3-0.6 0.9 0.6 0.6-0.2 0.2 2-1.4 2.9-1.1-0.4-0.9-1-0.8 1.8-0.6-1.4-1.8-0.9 1.1-1 1.4 0.2 1-0.2 1-0.8-0.1-1 0.5-0.6zm-20.4-0.9 0.2 2.4-0.4 0.5-0.6-1.5-1.2 0.4-0.5 1.1-1.7-1.1 1.3-1.7 1.5-0.5 1.4 0.4zm255.3-0.9-0.7 0.5-1.3-1.4 1.3-0.6 0.7 0.2v1.3zm-154-4.1 0.9 0.8-2.1 1.1-1.5-0.3-1.4 0.2v-1.8l1.5 0.5 2.6-0.5zm132 0.4-1.5 0.9-0.5-3.1 2.2-0.1-0.2 2.3zm-7.6-2.5 0.6 1.3 1.9-0.8 0.6 0.8-0.7 0.5-0.4 1-2.4 2.5 0.4-5.3zm-208.6-3.6 5.5 1.1 2.3-0.4 1 0.6-0.1 2.1 0.2 1.4-0.7 1.1-1.6 0.2-0.9 0.7-0.6-0.3-0.7-1-0.8 0.9-1 0.2-3.3-1.4-1.1-1.6-0.1-1 0.7-0.9v-1l1.2-0.7zm150.4 1.4-1.2 0.5-1.1-0.1-0.5-0.8-0.8-0.5-0.8-0.9 0.1-1.7 0.5-1.2 2.1-1.2 3.9-0.1 2.5 1.3 0.1 1.3-0.8 1.1-3.1 2.3h-0.9zm-156.2-6.6 2.1 0.9 1.3-0.8 3 0.4 3.2 1.8 0.3 1.1-0.8 0.3-3.7-1-3.2 0.6-2.2-0.5-0.7-2.3 0.7-0.5zm75.7 0.9-0.7 0.5-0.9-1.2 0.2-1.1 1.6 0.7-0.2 1.1zm58.3-2.5 1.2 0.3 1.3-0.2 1.8 0.2 2.2 0.6 1.4 0.8-0.3 1.4-0.9 1.1-0.4 2-1 1.1-1.3-0.3-1.5 0.3-1.5 1.4-1.4 0.3-0.8-1.1-0.3-1.5-0.9-1.2-1.2-0.5-1.6 0.2-1.9 0.7h-1.5l-1.2-0.7-3.5-1.6-0.2-0.6 1.6-0.2 1.6-0.5 1.2-0.7 1.3 0.2 1.4 0.7 1.8-0.7 2.1-1.8 1.6-0.4 0.9 0.7zm32.1-1.5 1.2 0.6 2.2-0.7 1.6-0.2 0.7 0.7 2.3 3.5-0.9 0.2-1.4-0.7-1.5-0.4-1.2 0.5 1.4 1.1-1.1 1.1-2.8 2.2-1.6 0.7-0.2-1.7 0.8-1.2 1-0.6-0.6-0.8-3.4-0.7 0.4-0.8-0.4-0.9-1-0.7-2.7-0.2-1-0.4-0.1-0.6 1.2-0.3 0.9-0.6 1.5-1.8 1.9-1.6 1.2 1.1 1 1.5 0.6 1.7zm-273.6-5.4-1.6 0.5-0.6-0.4-1 1-2.1-3.5 1-0.2 1.4 0.5 2.9 2.1zm226.1 11.9 2.9 2.8 0.3 1.2 0.9 2.2-0.6 0.5-1.5-0.4-2.7-1.4-0.6 0.2-0.2 1.1-0.7 0.4-1.4-0.6-2.4-0.6-3-1v-1.2l1.4-1.2-0.3-1.4-1.4-0.3-1.7 0.4-2-0.6-1.9-1.2-1.1-1.4-0.4-2.1-0.2-2.4 0.1-2.4 0.7-2.4 1.2-1.9 1.7-0.8 3.7-0.5 1.8 0.6 1.7 1.2 1.9 2.2 1.5 3.7 0.4 3 0.5 1.5 0.9 1.1 0.5 1.7zm31.7-15.4-0.8 3.1-0.6 0.6 0.6 2.1-1.2 1.2h-1.3l-0.7 1.1-1 0.8-1.2 0.5-2-0.6-1.1-0.9-0.8-1.6 0.4-1.9-0.3-0.7-1 0.6-1 1.2-0.7 0.1 0.1-5.1-0.6-0.8 1.1-0.3 1.1 0.8 3.6 0.2 1.3 0.3 1 0.9 1.4 0.4 1.3-0.1 1.1-1.3 0.7-1.8 0.5-0.2 0.1 1.4zm51.3 4.4-0.6 0.2-2.3-0.7-0.6-0.9 0.2-2.5-1.3-0.7-0.3-1.6 0.5-0.4 0.8 0.2 0.7 1.2 1 0.8 0.4 1.1 1.7 2.7-0.2 0.6zm-64.9-3.4 0.1 1.2-1.1 0.2-3.3-1-1.3 0.3-0.8 1.2-4.2 2-1.5 1.9-0.4 2.1-0.9 0.6-1-1.2v-2l-0.3-1.6-1.5-0.7-0.7-0.7 1.3-2.2 1.1-2.5 2.2-2.9 3.1-1.7 3.3-0.8 2 0.3 0.7 1.2 0.2 1.2-0.9 0.9 0.2 0.4 1.4 0.9 1.2 1.4 1.1 1.5zm-247.4-8.3-2.2 1.5-0.3-0.8 1.5-2.5 0.8 0.3 0.2 1.5zm276.2-3.1 1.6 0.8 0.5-0.4 1.2 1.3 1.8 4.7-0.7 0.9v1.4l-0.7 0.7-0.8 0.2-0.7-3.1-1.4 1.5-0.8-0.6-2.7-6.2 0.8-0.8 1.9-0.4zm120.5 9.3-0.2 0.3-1.9-1.5-0.6-1.2 0.8-0.9-0.8-0.8 0.9-1.6 0.4-1v-1.3l0.2-1.2 0.8-0.3 0.5 0.9 1.3 1-1 4.5v1.8l-0.4 1.3zm-50.2-10.3 0.8 0.3 1.4-1.4 1.5-0.1 3.5 3.7 0.7 1.9v1.1l-1.2 1.3-2.9 1.9-2.5 0.8-0.9-0.5-0.1-1.7-1.1-1.1-1.6-0.5-0.7-1 0.4-0.8-2.7-1.9 0.5-1.4-0.3-1.9 0.7-0.5 2.3 1.2 2.2 0.6zm-43.7 7.6-6.6 1.2-2.5-0.3-1.8-0.9-3.8-2.6v-1.4l0.8-1.1 0.2-0.9-0.6-0.8-1.5-1 2.2-1.7 2.5-1 5.2-1 4.9-0.5 2.6 0.2 2.2 1 1.7 3.1-0.5 3.6-2.1 2.9-2.9 1.2zm-182.5-11.7 1.7 0.6-0.4 0.8-1.8 1.3-1.3 1.5-1.1 0.5-0.3-2.3-0.7-1.4 2.1-2.1 0.4-1.2 1.4 0.3 0.9 0.8-0.9 1.2zm279.4 1-0.9 0.7h-1.1l-0.9-0.4-1.1 0.6v-1.9l1.1-1.7 1.5-0.7 1.3-0.2 0.4 0.4-0.9 1.1 0.4 0.9 0.2 1.2zm-109.1-6.4-1.1 1.4-2.1 0.8-0.7-1.1-0.9-0.3-0.1-1.5 1.1 0.1 0.5-1 1.9 1.1 0.4-1.6 1.1 0.4-0.1 1.7zm53.9-0.6-0.9 1.1 5 1.6 0.8 1.7-0.3 0.6-1.3 0.9-1.5-0.1-3.4 0.9-1.2 0.5-1.9-1.9-0.1-1.2 1.3-0.8 1.2 0.1-1-1.5-0.4-1.5-2.3-0.6 0.7-0.7-0.2-0.8 0.5-1.4 1.3-1.5 2.5-0.2 1.6 1.4-2 1.5 1.1 0.8 0.5 1.1zm48.3 5.3-1.3 0.1-0.8-1.1-1.5-0.8-2.3-0.8-1.5-1.2-0.7-1.7-0.8-1.1-1.3-0.7-1.1-1.4 0.8-1.6 2.7-1.3 2.9-0.4 2 1.5 2.4 4.7-0.2 2 1.3 0.3 1 0.6 0.7 1.1-0.3 1.2-2 0.6zm-231.6-9.5 1.1 0.8 0.7-0.2 3.6-2.3 0.1 1.7 4.7 7.6 0.3 2.7-0.5 2.9-0.8 2.9-3.1 6.7-1.3 2-1.6 1.1-0.2-0.6-2.7-2.6-1.3-0.8v1.2l-0.6 3.1-15.1 8.2-1.8 0.7-6.7 0.5-1.8-0.5-0.4-1.6 0.9-1.4 1.2-1.2 0.4-1-0.8-1.2-4.6-2.8v4l-3.3-3.9 2-6.4 4.5-5.2 4.4-0.3 1.4-4.2 1-1.5 1.4-1.6 1.7-1 1.5-0.2 1.2-0.9 0.4-2.7 1.9 2.3 2.5 0.3 2.2-1.5 1-2.9-1.2-2.4-4.1-3.3 1.1-1.6 2.5-0.1 2.7 1.4 2.2 1.8 1.7 0.9 1.6 3.1zm214-7.2 0.5 0.3h1.9l0.5-0.5 1.1 0.4 0.7 1.3-0.6 0.9-0.9 0.4-0.8-1.6-1 1.9-0.9 0.7-2.7 0.4-1.7-2.4-1-0.3 0.8-1.8 0.8-0.8 1.7-0.8 0.7 0.2 0.7 0.7 0.2 1zm-89.2-4.3-0.9 0.4-1-2.4 1-0.6 1.4 1.3-0.5 1.3zm72-3.6 1 1 0.1 1-1.9 0.5-0.7 1.8-1.1-0.3-0.6-1.3-2.3-0.4-0.4-1.1 0.7-1.4 1.8 0.9 0.6-0.7 1.4-0.5 1.4 0.5zm-237.6 16.2-1.7 0.2-1.9-0.5-0.5-1 1.9-0.4 1.7-1.5-0.2-0.6-3.5-0.8 0.9-1 2.2-0.4h2.3l1.8-1.4 0.7-1.9-0.7-1.9-1.6-2.6-1-3.2 1.2-0.9 1.9 1.5 1.2 1.2 1.9 1.1 0.1 1.7 0.7 1.4-0.2 1.9-0.5 2.2-0.1 1.8-0.9 1-2.6 2.2-3.1 1.9zm-31.7-17.1 0.4 2-0.3 0.8-0.9 0.7-2.4 0.8-1.3-0.1-1.3 0.6-1.1-0.5v-1.1l1.1-0.2v-0.5l-3-2.5 0.9-0.3 1.3 0.7 1.6 0.3 3.5-2.1h1.1l0.4 1.4zm28.6 10-1.5 0.7-1.3-1.1-0.6-6.7 0.6-3.7 1.3-1.7 2 4.4 1.7 2.5 1.3 2.7-0.4 2.3-1.4 0.4-1.7 0.2zm-9.7-11.5v2l-1.4-0.6-0.6-1.1-0.6 0.3-1.5-0.3-0.8-1.7 1.9-1.5 1.6 0.3 0.5 1.5 0.5 0.1 0.4 1zm-79.8-2.7-1.1 1.1-1.6-1.2 0.5-1.1 0.9-0.3 0.3-0.9 2.4-0.1-0.4 1-1 1.5zm108.3-2.8 0.2 0.8 2.5-2 1.8 1.9 0.3 2.6 1.8-0.1 0.3 0.7-3 1.5-0.8 1.1h-1.1l-1.2-0.4-0.9 0.4-0.5 0.7-1.5 0.2-1.8 1-1.1-0.4 0.6-4.9-1.2-0.6-0.9-0.9 0.6-0.7 1.1-0.6 0.6-0.8 3-2.2 0.7-0.1 1.1 0.5 0.1 1.1-0.7 1.2zm-123.6-3-0.8 1.3-1.4-1.9 1.9-1 1.2 0.8-0.9 0.8zm9.2-4.3 0.5 1.4h1.4l1.8-0.5 0.3 0.8-2.1 2.2-0.4 1.1-2.5 2.9-0.5 1.4-1.1 1.7-1.4 1.9-1.6-0.7-1-2.7 0.2-2.6 0.9-2.3 1-2.1 1.2-1.8 1.3-1 1.3-0.3 0.7 0.6zm106.7-1.1-0.9 0.9-1.3-1.1 0.5-1.2 1.6-0.9 0.1 2.3zm-143.1-2.8 0.4 0.5 1.2-0.4v3.1l-1 2.2-2.2 1.5 0.5 1.6-1.4 0.7-0.3 1.1-1.1-1.4 0.2-0.9-0.3-1.4 1.1-0.9 0.5 0.3 1.8-3.6 0.1-1.9 0.5-0.5zm410.5 26.2-1.8 0.1-1.8-0.9-5.6-5.7-0.7-2.3 1-3.5 0.7-0.9 3-2.3 0.5-1.1 1.2-4.9-2.4-2.6 0.3-1.5 1.7-0.8 2-0.3 1.7 0.8 0.4 1.8-0.8 2.1-1.9 1.8 1.6 0.4 1.5 2.3 1.1 2.8 1.3 4.9 0.2 2.8-0.5 2.7-1.2 2.7-1.5 1.6zm-8.8-24.4-1.6 1.3-1.3-0.7-1.2-1.8 1-1.2 1.2 1.4 1.9 1zm-275.9 5.6-2.4 3.2-1.1 0.8h-2.7v-0.6l-2.3-1.4-2.5-1-0.7 0.2-1.4-3.2 1.1-1.5 4.6-1.9 2.9-3.9 1-0.5 0.6 0.4 1.3 2.5 1.9 1.7 0.5 0.8 0.2 1.5-0.3 1.5-0.7 1.4zm18.8-17.9 1.5 0.7 0.9 1 1.4 0.7 1.9 0.2 1.6 0.3 1 1 0.6 1.1v2.2l0.6 1.7v2.1l-0.9 1.8-2 0.2-1.9-1.8-1.4-2.2h-1.7l-1.4 1-1.2 0.1-1.1-0.8-0.3-1.6-1.4-2.7-3.2-3.3-0.6-1.6 1.5 0.4h1.3l1.1-0.6 1.7-0.2 2 0.3zm31.8 1.9-0.6 0.1-1.4-3.8 1.2-0.7 0.6-0.9 0.7 0.3 1.1 1.1-0.9 1.1-0.9 0.5-0.1 0.8 0.4 0.5-0.1 1zm-49.3-4 0.1 4.1-2.6-0.8-0.8-0.5-1.3 1.8h-2.2l-2-0.4-0.8 0.5-0.4 2.6-0.8 2.3-1.4 1.7-1.9 0.8-1.8-0.2-1.4-1.3-0.8-2-0.3-2.6 0.5-2.4 1.2-1.7 1.8-1.1 1.9-0.7 2.2 0.8 2.8-0.6 5.2-2h1.8l0.6 0.5 0.4 1.2zm231-3.8-0.2 2.1-1.7 1.1-0.6 1.3-1-0.3-0.6-0.6 0.7-0.7-0.1-1.2 0.9-0.8 1.4 0.3 1.2-1.2zm-207.1 7-1.9 0.5-1.8-1-2.1-1.8-2.6-1-2-1.1 1.6-1.4 3.9-0.6 2.3-1 1.2-1 1.5 0.7 1.6 2.3-1.1 1.8 0.4 2.6-1 1zm-2.5-22.1 0.8 0.4 0.7 1.1 0.2 1.2-2.1 1.4 0.7 3-0.3 1.8-1.2 0.7-1.5-0.1-1 1.2v2.1l-0.5 1.9-1.7 0.9-1.4-0.1-0.3-1.9-2.4-2.7-1.3-1.8-1.1-2.1 0.5-1.5 2.3-1.2 1.9-0.2 1.5 0.9h1.5l0.4-1.2-0.3-2.3 1.5-1.4 3.1-0.1zm249.9-3.5 1.3 0.7 1.5-0.2 0.9 0.5-3.5 4.1-1.7 0.3-1.2-0.4-1.5-1.5-0.2-0.8 0.9-1.3 1.7-1.3 1.8-0.1zm-215.5 7.5 0.3 4-3.1 2.9-1.7-0.6 1-1.2 0.5-1.1-0.4-0.7-5.1-2.8-4.7 0.7-2 1.1-2.4 0.3-1.9-0.6-0.9-1.3 0.8-1 2.5-0.1 3.3-1.2 1-1.3 0.2-0.8 2-0.6 0.7-1.2 0.1-1.4-1.3-1.7-0.5-1.9 1.7-0.9 2.8 0.6 2.8 1.5 2 2-0.2 1.1-1.4 0.2-2.4 1.6-0.3 0.9 0.3 2 1 0.4h2.3l3 1.1zm-42.8-10.2 0.4 2.8-0.5 2.6-1.2 2.4-1.9 1.6-2.3 0.6-1.3-0.5-1-0.9-1.4-0.4-5.1 1.1-2 0.1v-1.2l1.6-1.4 2.8-4.6 2.2-2 2.5 0.5h1.3l0.6-1.2 0.7-2.5 1.6-0.4 1.7 1.2 1.3 2.2zm24.9-1-1.4 0.6h-2l-0.8-1.8 0.4-1.8 1.2-0.7h2.7l0.9 0.4 0.1 0.8-0.5 2-0.6 0.5zm4.7-10.2 0.6 0.8 1.3 0.7 1.9 4.5-0.6 1.1-2.5-0.9-0.6-2-1.4-2.6-1-1.3 2.3-0.3zm-9.9 0.6-0.3 2.5-0.8-0.5-1.2-2.7 0.7-1.7 2.1-1.4 0.2 0.8-0.7 3zm7.4-2-0.9 0.8-1-1.5 0.2-1.1-0.1-2.4-1-1.2 0.7-0.5 1 0.3 1.3 1.1 1.3 1.7 0.1 2.7-1.6 0.1zm-14.2-4.5 1.1 0.6 0.3 0.9-0.3 2.7-2 1.6-3 0.7-0.3 1.2 0.3 1.2-0.2 0.5-2.9 0.7 0.3-1.2 1.1-2.6 0.4-4.1 1.7-0.7-0.1-1.1-0.9 0.3-4.3 0.2-1.6-0.1-1.1-0.5-0.1-0.9 1.7-0.9 0.8-1.2 1.5-0.9 0.7-0.8 1.1-0.4 2.8 0.6 1.4 1.4 0.4 2.1 1.2 0.7zm-4.3-11.2 1.4 0.6 2-0.1 1.4 0.4 1.1 1.7 0.1 2.9-1.4 1.1-0.9-0.4-1.4-1.5-0.7-0.5-1.6 0.4-0.2-0.9-1.4-0.2-0.2-0.5 1.1-0.8-1.8-0.4 0.3-0.9 1.2-0.8 1-0.1zm-18.7-6.9v3.4l-1.6-1.1-0.9-1.4 0.1-1.6 1.7-0.6 0.7 1.3zm25.9-1.7 1.5 0.9 1.3-0.4 1.6-0.8 0.9 0.5 0.4 0.8 1.7-0.3 0.4 1.3-1.1 1.1-1.4 0.1-0.6 0.7v1l1.7 1.8 1.5 0.7 1.6 0.1 0.9 1.3 0.5 1.7 0.8 1.1 0.3 1.5-0.6 1.9-2.9-0.5-1.4-2.2v-1.7l0.3-0.9-1-0.3-4.1-0.7-0.9-0.8-2.1-0.3-1.6-1.1-0.8-1-1.7-4 1-1.6 2-0.6 1.8 0.7zm-11.8 8.3-0.6 1.5-0.9 0.3-4.2-1.2-1.5 0.3-1.4-1.2-0.7-0.1 1.3-6.2 0.8-1.8 1.1-0.6 1.9-0.6 1.7-0.9 0.8-1.2 1.2-2.7 2.9-1.8 3.2-0.8 2.4 0.7-4.8 2.8-1.1 1.6-0.1 1.9 0.7 2 2.1 3.5-1.7 0.7-1.8 1.7-1.3 2.1zm5.5-41.7-1.4 1.1-1.6-3.1v-0.6l1.2-1.9 1 0.5 0.8 0.9 0.3 1.8 0.5 0.9-0.8 0.4zm-17.8-14.5 0.4 1.2-1.5 1.4-2.6 0.7 0.4-1-1.5-1.4 1.7-1-1.3-1 2-1.6 1 0.9 0.3 0.7 0.8 0.3 0.3 0.8zm250.1 14.1-0.8 4.2 3.2 3.8 1.6 5 0.7 10.3 2.1 3.9 3.9 2.8 3.5 3.7 1.4 4.1 1.7 3.6 9.9 10.7 2.1 5.3v3.6l0.4 0.8-1-0.3-6.5 0.1-2.1-0.4-0.8-1-0.4-1.4-1-1.9-1.8-1.4-0.4 1.4 0.3 2.4 0.3 1-1.1 3.5-0.7 1.3-1.4 1.7-6 4.7-3.3 1.5-2.4-2-3-6.1-2.5-1-1.7 2.5-0.9 3.8 0.2 3.3 1.5 3.4 2.4 4.4 2.8 3.8 2.6 1.7 1.7 2.3 1.7 0.8 2-1.3 4.9-4.6 3.4-0.5 2.9 0.6 2.7 0.2 2.9-1.6-0.1 3.8-0.5 2.7-1.6 5.5-1.8 9.6-1.3 2.2-5.6 1.9-4.4-2.2-3.5-0.8-2.9 6.4-1-0.6-1.2 0.6 1.2 2.5 1 2.7 1.1 8.6-0.7 1.6-1.6-0.9-2.6-2.7-3.8-0.5-2.8-1.5-1.9-2.9-0.7-4.3 0.9-4.1 2.1-4 1.5-3.8-0.7-3.2-1.3-1.8-2.5-5.5-0.7-0.4-1.8-0.2-0.8-0.8v-1l0.7-1.9-2.4-5-0.4-1.9 0.1-1.2 0.7-1.9 0.2-0.9-0.4-1.1-0.7-0.9-0.7-0.2-0.9 1.2-2.7 6.9-1.1 1.5-6.7 2.3-3.2 0.4-6.8-0.1-2.6 0.7 2.1 1.7 4.1 1.8 3.3 1v1.2l-6.7 2.2-3.4 1.9-0.6 2.6 1.4 1.1 3-1.2 1.6 0.7 1.1 1.9-0.4 0.6-1.2 0.8 2.2 7.6 4.5 4.1 5 3.2 3.4 4.9-1.7-0.3h-2.7l-1.2 0.3 6.8 2.6 0.8 2.1 0.5 4.1-3.1 2.8-3.1-0.2-1.9 0.5-7.2-4.5-2.3-0.7-2.1 0.4-2.5 1.2-2.2 1.5-0.9 1.5 2.2 4.6 2.3 0.5 1.3 0.9 6-1.6 3.3 2.8-7.5 6.9-2.7 3.8-2.9-1.3-4.5 3.4 0.5 3.4 2 2.2h-4.4l-6.5-8.6-2.2-4.5-5.9-6.5-1.8 0.4-6.3 3.3 0.6 2 0.5 0.8-2.6-0.9-2.5-0.5-2.1-1.1-1.5-2.8-0.2-2.8 1-1.7 3.5-2.1 1.2-1 3.2-4.2 1.9-4.2 1.2-1.4 2.3-1.1-0.2 3.2-0.8 3.1-2.3 5.6 4.7-0.3 3.8-1.4 2.4-3.2-0.1-5.7-0.9-2.2-1.2-1.3-1-1.5-0.1-2.9 0.8-1.5 4.6-5.1 1.6 0.9 1.1 1.2 0.3 1.5-0.9 1.8 1 2.5 1.4 1.8 1.8 0.6 2.4-0.9 1-1.4 2.2-4.6 1.2-2-2.2-3.3-0.8-3.4-1.1-1.6-3 2.3-3.5 1.5-2.8-2.4-3.9-6.3-2.3 3.5-3.2 8.3-2.2 2.7-2.3 0.9-1.9-0.1-4-0.8-1.8 0.6-1.8 1.6-2.8 3.8-1.3 1.1-5.8 3.4-3.1 2.4-2 1.2-2 0.5-1.2 0.6-0.2 1.6v2.1l-0.3 2.2-1 1.6-1.5 1.7-0.7 2.1 1.2 2.5-8.7 8.6 0.2 7.9-1.4 1.4-4.3-2.1-1.3 1.6-0.7 1.9 0.1 2.1 0.9 2.2-2.1-0.6-4.4-3.2-6.1-1.8-1.4-0.8-1.2-3.7 0.6-9.7-0.6-3.8 0.9-2.4-0.2-3-1-2.6-1.8-1.3-1.7 0.5-1.8 1.6-1.3 2.1-0.5 1.8 0.6 2.7 1 2.3 0.1 1.6-4.9 1.7 0.6 2.3 3.6 4.5-6.1 3.5-2.3 2.1 2.4 1 0.5 0.4v1.9l-0.5 0.4-1-0.2-1.5-0.9-0.7-0.2-2.1 0.3-0.4 0.9-0.1 1.4-0.8 1.9-1.2 0.9-4.7 1.2-1.8 1.4-0.6 1.3-3.8 12.9-0.4 1.9v2.2l-3.8-0.8-7.3 2.4-1.8-0.4-0.3-2.2 1.5-4.7-0.3-2.1-1.4-1.3-2-0.4-4.1 0.2v-1.2l1.1-1.8 0.3-3 1.2 0.1 0.7-0.5 2.3-4.1 0.4-1.9-0.6-2-0.8-0.6-1.2-0.4-2.3-0.3-1.7-0.5-0.3-1 0.9-1.2v-2.5l0.6-2.4-0.3-1.2-2.5 0.8 0.7-4.6 3.1-2.3 4.3-0.9h3.9l-0.7-1.5-1-1.2-1.2-0.8-1.5-0.5 2.5-1.7 1.5-2.1 0.1-1.8-2-1.1-0.7 0.3-1.4 1.8-1 0.7h-1.3l-2.1-1.3h-1l-1 0.8-0.7 1.4-0.5 1.7-1.4 0.3-2.9-0.3-3.4 0.1-1.8 0.3-2.4 0.9-0.3-3-1.3-1.8-3.8-1.9 0.1-0.6-0.8-1.5-1-1-0.9 2-1.1 0.7-1.3 0.2-1-0.4-3.3-3.1-0.4-0.2-0.5-1.9 0.9-0.9 0.6-1 0.6 0.9h1.6l1.1-0.9-0.6-2-4.2-2.1-3.3-2.4-0.3-5.5 1.4-6.2 1.6-4.3 0.2-1.5-0.1-1.7 0.2-1.5 1.3-0.7 2.4 0.5 0.9 0.6 1.1 2.3 4.8 7.3-1.5 2-0.5 1.9 0.3 2 0.5 2.1 3.3 9.2 2 1.2 7.8 1.3 3.4 2.3 1.8-0.2 1.3-3.3-1.8 0.3-0.9-0.5-3.3-0.7-1.5-2.4-2-2 0.5-4.5-2.1 0.4-1 2.7-1.6 0.2-1-3.6-0.5-4.8 1.2-2.8-0.9-3.3 4.3-0.4 6.6 1.4 0.9 1.5-0.4 2.5v1.6l0.3 1.1 1.7 1.1 0.9 1.3 2.1 1.3 2.8 1.2 1.8 1.6 3.8 2.7 0.7-0.8-3.3-4.4 2-0.4 6.7 3.7 4.5 1.5 3.4-0.9-3.4-0.5-2.7-1.8-4.7-4.1 1.1-1.5-3.4-2.5-5.2-6.6-2.9-1.4-3.9-0.8-4.7 0.3-3.2-2.1-4 1.1-3.6-1.2-0.5-1.8 2.2-2.9 2.3-0.9 4.7 0.7 6-2.6 7.2 5.3 2.5-0.5 1.4 1.2 0.7 0.3-0.7-3.7 0.3-3.4 1.9-2.5 3.9-1 7.3 2.2 3.7 0.3-1.2-2.5 2.5-1.2 1.3-0.3 1.6 0.1-2.3-2.7-3.6-0.7-8.2 0.8 0.6-1.9-0.6-2.6v-2l0.6-1.3 1.5-2.1v-2l-1.2-2.9-2.2-0.6-2.4 1.1-1.7 2.4-0.2 1.6 1.1 3.2 0.2 1.8-0.3 0.3-1.9 3.8-1.8 6.5-1.6 2.3-3.1 0.3v-0.5l-1-0.7 0.6-1.1 0.9-2 0.6-1-2.1-1.1-1.5 0.6-1.4 1.3-2.1 0.6-4.2-0.9-1.3 0.6-0.3 2h-2.1l-3.5 1.1-1.6-0.9-0.6-2 1.2-1.9 3.2-3.2 1.2-1.8 0.6-1.4 0.4-2.8-0.5-2.9 0.6-1.4 2-1.8-1.9-1.6-1.8-3.2-0.9-3.8 0.3-3.2 2.2-2 3-2.1 0.9-1.7-3.9-0.9-1.8 0.3-1.9 1.9-2.8 1.2 0.3 1.9 0.7 2.2 0.1 1.8-2.2 2.1-2.9 0.2-2.8-0.9-1.9-1.4 2.1-1.3-1.4-1-1.2-1.2-0.9-1.4-0.8-1.8 1.8-0.9 1.8 0.1 3.9 0.8-0.4-4.1 4.4-4.4-1.2-4.1-4.5-6.2-2.8-2.6-3-1 1.2 4.3-1.1 2.5-2.2 0.1-2.2-3 1.4-2-4-5.4-0.6-3.2 2.3-2.7 3.2-0.4 2.9 1.4 1.3 3.1 2-1.3 1.1-2.2 1.3-4.4 1.1 2.2 0.2 1.8-0.4 3.6-0.8 1.8-0.1 1.1 0.3 1.2 1.3-0.3 0.5 0.3 0.8 3.7 0.6 0.6 1.9 1.1 1.5 0.6 2.7 0.1 1.2 0.7-0.9 2.2 0.2 2.1 1.1 2 1.7 1.7 4-9 0.4-3.1v-3.5l-0.8-1.2-3-0.8-1.2-0.7-1.1-1-1.6-4.4-5.2-6.1-1.2-2.7 0.3-1 1.5-1.8 0.4-1.8-1.7-1.2-0.8-1.6 0.3-2.6-2 0.8-2.1 0.3-4.5 0.1 1.7-2.2 2.9-0.7 3.3-0.2 2.9-0.7-1-0.3-1-0.9-1.3-0.2 0.8-1.8 3-2.9 0.5-1.5-1-3.8 0.5-3 1.4-3 3.5-5.3 0.9 0.9 2.3 3 2.8 0.9 1.4-0.1-0.4-1.4-3-3.5 3.3-1 15.4-4.3 4.5 1.2-0.9 7.1-1 5.2-0.2 5.3 3.9 1.3 4.7-1.2 5.1-1.8 5.3-0.8 2.1-1.6 2.3-1.4 2.7-0.7 2.6-1.3 2.1-1.8 1.3-2.8-0.3-2-0.1-2 2-1.5 1.4-2.2-0.1-2.6v-2.7l4-3.5 5.3 0.5 2.7-3.1 2.8 0.2 2.8 1.1 4.8 4 7.5 10.1 4.8-0.1 0.4-2.7 1-2.6 1.6-1.5 1.1-2 4.7-0.3 3.2 4.9-1.4 5.6 0.9 3.6 3.3 3.7-0.2 6.4 3.8 4 5.9 0.9 4.5-2.7 4.8-0.8h3.3l2.7-0.7 2.4 1.9 2.7 1.6 5.9 0.1 5.7-0.8h5.3l4.9-0.7 4.6-5 5.8-3.2 10.1 3.7 9 7.3zm-108.1 4.2-4.4 1.3-4.1 1-5.7-1.5-3.4 3.2 4.3 9.5 8.6 5.2 9.8 1.6 6.2-8.3-3.2-8.9-8.1-3.1z" name="South Jeolla">
-         <title>Jižní Čolla</title>
-        </path>
-        <path class="specialni_mesto" id="mesto_pusan" d="m710.4 706.9-1.3 1.6-1-0.8-1.1-1.4-3-1.7-1.5-1.7 0.1-2.4 1.2-1.2 1.6 0.1 1.5 2.1 1.4 1.5 1.1 0.6-1 0.8-0.2 1.4 2.2 1.1zm16.2-20.3-0.8 1.5-4.2-0.1-2.2 0.4-1.7-0.1-1.7 0.8-1.9 0.2-0.1 2.7 1.2 1.9 0.2 2.3-0.8 2.5-3.5 1.7-4.6-4-1.3-1.5-4.2 4.4-1.9 3.6-0.6 3.7-1.2 0.9-0.8-1.9-1.9-2 0.5 5.7h-1.2l-0.5-1.3-0.7-0.3-3.1 2.1-1.1-1.3-1.3-4.4 0.6-3.9 1.2-5 0.2-2.8 1.3-2.4 2.4-3 2.3-3.4 1.6-11.5 2.3-2.8 3-2.2 3.7-1.5 4 0.2 3.1 2 0.9 4.2 2.8 4 3.7 2.9 2.8 3.7 3.2 3.3 0.3 0.7z" name="Busan">
-         <title>Pusan</title>
-        </path>
-        <path class="specialni_mesto" id="mesto_ulsan" d="m767.7 599.7 1.3 2.2-0.6 4.2-0.3 5-1.1 7.6-1.6 3.2-2.6 3.5-2.4 1.3-1-3.4-1-4.5-2-3.3-2.2-0.6-1.3 3.8 2.1 0.5 1.3 1.6 0.6 2.4 0.2 2.8-0.7 2.6-1.6 0.6-1.8 0.2-1.3 1.2 0.2 1.4 0.2 3.6 0.7 3.8-2.8 4.8 1.3 1.8 1 1.1-0.2 2.6-3.2 1.1-3.1 1.8-4.4 4.4-3.7-0.1-0.1 0.2-0.6-0.6-4.5-1.6-3.5-3.4-1-5.4-3.7-2.8-8.1-4.5-6.8-7.8-4.1-3.2-9.8-1.5-2.4-4.8 4-8-0.7-7.7 3.8-3.1 4.1-2.4h2.4l1-2-1.5-2.5-0.8-2.7 5.3-4.1 6.7-2.4 5.5-0.8 5.3 1.1 5.6 2.4 1.4 2.4 0.1 2.9 0.4 2.6 2 1.4 2.6 0.7 14.8-2.6 12.5 3h0.1z" name="Ulsan">
-         <title>Ulsan</title>
-        </path>
-        <path class="provincie" id="prov_severni_kjongsang" d="m762 402.5 0.8 8.1 2.2 8.1 0.8 8.1-0.9 16.8-1 3.6-4.9 6-1.9 3.3-0.8 3.9-0.7 23.7 0.5 3.2 1 1.8 1 0.7 0.9 1 0.9 6.7 1.2 5.1 1.3 0.9 0.8 1.1-0.6 3.1-1.3 1.7-1.6 0.8-1.6 0.5-2.6 2.2-0.2 2.7 3.4 3.1 2.4 2.7 2.5 3.1 3.2 0.5 4.1-3.2 10-11 2-3.3 2.6 2.1 0.6 3.4 1.1 3.5 0.8 3.9-2.5 3.9-5.7 11.3-0.4 5.1-1.7 13.4-4.1 11.6 0.2 7.3-4.2 12.6-3.1 6.1-1.3 3.1 1.3 3.4 1.2 1.5h-0.1l-12.5-3-14.8 2.6-2.6-0.7-2-1.4-0.4-2.6-0.1-2.9-1.4-2.4-5.6-2.4-5.3-1.1-5.5 0.8-6.7 2.4-5.3 4.1 0.8 2.7 1.5 2.5-1 2h-2.4l-4.1 2.4-3.8 3.1-4.4 1.5-4.7-2.2-6.1-1.5-5.7 2.3-1.8 2.4-2.2 1.9-2.3 0.3-2.2 0.8-5.2 4.1-5.9-0.2-4.9-2.6-5.2-1.6-5.9 1.1-5.8 0.6-4.9-3.1-4-4.9-1.3-10.8-3.7 2.9-3.9 5.6-4.3-0.9-8.5 4.3-4.5-0.9-4-3-4.3-2.1-4.6-0.7-4.7 0.6-9.8-0.4-2.5-9 1.9-4.4 0.1-4.6-2.1-2.5-2.4-1.5-0.6-1.7-0.9-1.8-3.5-2.5-2.1-4-3-3.3-4.1-1.3h-4.5l-4.5-0.4-2.6-1.7-2-1.7-4.8-0.4-2.6-1-0.6-1.6-0.2-1.6-2.9-2.3-3.2-1.9-1.3-4.3 0.8-12.5-6.5-11.1 3.8-1.8 4-1.4 2.4-4.8 1.4-5 1.2-2.2 1.5-1.8 0.4-3.3-0.1-2.6-0.9-5.3 3.9-3.3 3.8 0.7 3.3 0.2-1.8-10.2-3.5-2.7-8.1 2-3.1-1.5-4.5-3.7-3.8-1.3-6.4 1.5-0.9-9.3 3.5-3.1 2.3-4.5-1.8-3.1-1-3.4 1-4.7 0.6-10.7 1.6-4.5 2.8-2.8-7.7-11.3-6.2-1.1-1.8-4.5 2.4-1.1 2.3-0.4 2.3-2.5 3.5-4.8 0.9-2-0.1-1.8 0.4-2.4 4.9-3.3 5.6-2.6 3.4-5.2 6 2.7 11.3 1.7-2.3-4.4-3.1-3.9 1.1-4.1 2-4.3 1.9-3.2 2.5 1.6 3.2-0.2 2.6-3.5 2.7-1.8 2.5 1.7 4.9 1.7 4.6 0.4 1.1-3.3 0.8-3.1 1.6-2.6 2.1-2 2 2.3 2.7 1.9 3.7 3.2 2.4 4.8 5.6 1.8 13.3-5.5 2.3-7.8-2.1-1.9-1.1-2 2-3.7 1.7-3.7 3.4-5 4.9-3.5 1.4-2.5 2-1.6 3.2-1.1 2.7-2.5 4-3.4 3.7-3.9 1.5-0.9 1.9 0.7 2.1-1.3 1.9-2.2 4.1 2.2 3.9 1.6 4.7 1.1 4.1 0.3 0.9-4.2 0.5-4.5-1-4.9 2.8-3.5 4.3-2.1 4.4 0.4 2.2 3.9 3 0.7 2.8 1.4-0.4 3.4 0.4 3.5 4.7-1.9 4.5-3.5 1.9 0.8 1.4 1.8 1.7 0.2 2.1-0.8 6.2 1 5.8 2.7 4.2-1.1 4.3-2.2 5.4 1.2 4.9 3 1.6 4.6-3.8 2.8-4.6-1.8-3 1.1-2.7 2-1.1 4.9 0.7 6.5 3.3 4.9 5.2 2.5 1.1 4.2 1.5 3.6 3.7 1.6 3.4 1.9 11.6 0.9-0.7 4.5 1.4 1.3 1.2 1.5-1.7 4.9-2.1 5.3 0.4 5.5 1.4 4.9 0.5 4.4-1.7 4.7 10.9 4.1 5.1-2.3 5.3 1.2 1.6 0.1zm-105.4 148.2 0.9-3.1-0.1-3.3-0.3-3.1-1.7-1.4-1.3-2-0.1-4.9 0.8-1.3 0.1-1.6-2-3.5-6.4-4.6-8.3 0.5-10.1 1.4-7.4 6.2 1 8.9-2.8 3-1.7 3.8 1.5 0.3 1.4 0.5-0.3 1.9-0.6 1.9-2.6 0.4h-2.4l-2.1 3.1 0.9 3.6 2.5 0.9 2.3 2.3 1.8 3.6 2.8 2.3 2 1.3 1.4 1.2 1.3-1 2.2-4 2.3-1.8 5.1 0.5 9.1 2.4 3.6-2.1 0.4-1.9v-1.2l1.5-3.9 0.2-1.7v-1.3l1.5-0.1 1.1 0.4 2.5-2.6zm338.6-316.2-3 1.6-4-0.8-3.9-2.4-2.6-3.1-0.9-4.1 1.4-3 2.8-1.9 5.6-1 3.8-1.4 1.9-0.4 2.7 2.1-0.2 5-1.7 5.7-1.9 3.7z" name="North Gyeongsang">
-         <title>Severní Kjongsang</title>
-        </path>
-        <rect id="m_kangnung" x="640.5" y="160.55" width="23.586" height="23.586" fill="#002f6c" fill-rule="evenodd">
-         <title>Kangnung</title>
-        </rect>
-        <rect id="m_pchjongcchang" x="564.76" y="214.9" width="23.586" height="23.586" fill="#002f6c" fill-rule="evenodd">
-         <title>Pchjongčchang</title>
-        </rect>
-        <path class="provincie" id="prov_cedzu" d="m350.7 994.4 1.8 2.8 2.4 1.8 7.6 3.1 2.3 2.3 1.6 5.7 1.5 2.2 1.8-1.7 0.4-0.8 1.2 2.5-0.8 0.8-1.5 0.5-1.1 1.3 0.1 1.1 1 1.8v1l-0.5 1-1.7 2.3-2.8 3.4-5.4 4.3-1.7 3.5-2.3 4.2-0.2 1.7-1 2.5-3.9 0.4-1.5 0.8-4.2-0.3-6 4.8-16 2.9-5.4 4.6-6.5 1.4-7.1-0.7-8 1.5-6.6-2-15.1 0.2-4.7 2.2-2.7 5-2.6 0.5-2.5-1.2-3.6-5.9-4.8-1.6-4.7-4.9-1.6-5.9 2.8-7.8 2.7-4.7 1.6-1.7 5.5-3.3 4.7-8.2 4.3-1.1 2-4.3 7.4-2.6 16.2-4.6 4-3.5 15.4-1.6 10.5-4.6 2.6 0.7 12.7-2 7.5-0.7 4.9 0.9z" name="Jeju">
-         <title>Čedžu</title>
-        </path>
-        <path class="specialni_mesto" id="mesto_sedzong" d="m417.6 396.7-3.1 6.7 0.3 3.3-2 5.7-0.7 6.1 11.7-2.4 12 0.8-0.1 2.1-0.8 1.9-0.3 1.5 0.5 1.2 0.3 2-0.3 2.1-0.7 1.9-3.6-0.3-17.5 4.8-10.8 3-14.4-2.9 1.4-4.1 2.4-2.3-0.5-29.9 3.7-10.2 22.5 9z" name="Sejong">
-         <title>Sedžong</title>
-        </path>
-        <circle cx="382.7" cy="319.5"/>
-        <circle cx="449.5" cy="323.2"/>
-        <circle cx="509.5" cy="584.4"/>
-        <g fill="#002f6c" fill-rule="evenodd">
-         <rect id="m_cchuncchon" x="488.1" y="142.17" width="23.586" height="23.586">
-          <title>Čchunčchon</title>
-         </rect>
-         <rect id="m_cchongdzu" x="437.29" y="385.21" width="23.586" height="23.586">
-          <title>Čchongdžu</title>
-         </rect>
-         <rect id="m__hongsong" x="310.46" y="388.48" width="23.586" height="23.586">
-          <title>Hongsong</title>
-         </rect>
-         <rect id="m__andong" x="623.82" y="417.2" width="23.586" height="23.586">
-          <title>Andong</title>
-         </rect>
-         <rect id="m__condzu" x="391.26" y="552.48" width="23.586" height="23.586">
-          <title>Čondžu</title>
-         </rect>
-         <rect id="m__cchangwon" x="609.06" y="638.79" width="23.586" height="23.586">
-          <title>Čchangwon</title>
-         </rect>
-         <rect id="m__muan" x="300.33" y="699.97" width="23.586" height="23.586">
-          <title>Muan</title>
-         </rect>
-         <rect id="m__cedzu" x="297.56" y="1010.7" width="23.586" height="23.586">
-          <title>Čedžu</title>
-         </rect>
-         <rect id="m_suwon" x="383.85" y="259.69" width="23.586" height="23.586">
-          <title>Suwon</title>
-         </rect>
-        </g>
-       </svg>
-       
-    </div>  
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2>Interaktivní mapa</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div>
+            <p class="alert alert-success">
+              <input
+                type="checkbox"
+                id="kraje"
+                checked
+                data-toggle="toggle"
+                data-onstyle="success"
+              />
+              Kraje
+              <input
+                type="checkbox"
+                id="mesta"
+                checked
+                data-toggle="toggle"
+                data-onstyle="success"
+              />
+              Města
+              <input
+                type="checkbox"
+                id="unesco"
+                data-toggle="toggle"
+                data-onstyle="success"
+              />
+              Památky UNESCO
+            </p>
+            <svg
+              fill="#7c7c7c"
+              stroke="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              baseprofile="tiny"
+              version="1.2"
+              viewbox="0 0 1000 1064"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m372.9 1006.4-1.3 0.9-1.7-0.5-0.6-0.7v-1.6l1.1-3.1 0.5-0.5 1.3 1.1-0.1 0.5 0.6 1.5 0.2 2.4zm255-217.6-1.3 0.6-0.9-0.2 0.2-1 1-0.5 1.5-1.8 0.2 0.9 0.7 0.2v0.8l-1.4 1zm-31.8-1.6 0.9 0.7-0.7 0.9-1.8-1-2.4 0.4-1.1-1.7 0.9-1.3-0.9-0.4-0.8-1.1 0.6-0.5 1.8 1.7 2.4 2.1 1.1 0.2zm-24.2-7.3 1.1 1.2 0.9-0.7 0.9 0.4 0.5-0.6 1.5 0.2 0.6 0.4-0.6 1.2-1.4 0.2-3.2-0.7-0.3-1.6zm-3.9-1.1-0.5-0.5-3.1-1-1-1.6 1.1-1.6 3.3 0.7 1.1 2.2v0.9l-0.9 0.9zm49.9-9.3-0.3 0.5h-2.9l-1-0.3-2.5-1.4 0.5-0.6 2.6-0.8 1.1 0.6 2.5 2zm-33.1-2.5 0.2 0.8-1.9-0.6-0.7-1.7 0.2-0.9 0.7-0.4 1.6 0.9 0.7 1-0.8 0.9zm33.7-3.4 3.2 1.5 1.9-0.3 1.5 0.7v1.1l-0.9 0.4-1.4-0.2-1.4-0.9-3.4-0.6-0.7-1 1.2-0.7zm-4.8-8.4 1.1 3.9 0.7 1.1 1.2 0.4 0.6 1.8-0.9 1.7-1.8 1-2.7-0.4-0.9-1 0.4-0.9-0.2-1-1.2-2.2-0.1-2.9 1.3 1.5 0.5-1.5-0.4-0.6v-1.2l1-1.2 0.7 0.2 0.1 1.2 0.6 0.1zm-55.3-2.9h-0.4l-1.2-2.6 2.2 0.4 0.5 0.7-0.2 1.3-0.9 0.2zm9.6-1.9-1.7 1.5-2.7-4.1 0.7-1.4 1.7-0.6 6.7 1.6-0.1 1-2.1 0.4-2.5 1.6zm51.5-17.4-0.6 0.3-0.8-4.3 0.6-1.9-0.6-1.6 3.1-1.9 0.2 2.1-1.4 2.4 0.7 0.8v2.2l-0.2 1.1-1 0.8zm19.6-10.9-2.2 1.7-0.4-0.9-0.8-0.8-0.8 0.3-0.8 0.8-0.5-0.6 0.1-1.2 1.4-0.7 0.2-0.9-0.6-0.9 1.3-0.6 0.9-0.8v-1.3l1.6-0.7 0.6-1 0.8-0.1 0.1 2.1-0.5 1.8v1.7l-0.4 2.1zm-13.5-15.9 0.1 1.9-1.9-1.8-1.1-1.3 1.9-0.2 1 1.4zm-304.3-140.8-1.9 1.5-0.6-0.8 0.3-2 1.7-1.4 1.1 1.7-0.6 1zm-26.4-7.3 1.1 1 1.2 0.6-1 0.7-2.3 0.2-0.9-1-0.5 1.3-0.6 0.6-0.7-1v-1.5l-0.7-1.4-0.1-1.1 2 0.4 0.9 1 1.6 0.2zm-14.3-4.7-1.6 0.7-1.2-0.1 0.4-1.5 2.1-0.3 0.3 1.2zm-61.6-53.7-0.4 0.9-0.8 0.2 0.3 1.2-0.9 0.6-1.1-0.8-0.5-1.4 1.4-1.4 2 0.7zm16.4-20.1-2.9 1.2-1.9-0.4 0.9-1.3 1.2-1.3 2.1 0.3 0.6 1.5zm42.5-21.1-0.9 1.2-1.5-0.9-1.5 0.6-0.1-0.5 0.7-2.1 1.1-1.1 0.6-1.9 0.7 0.4 0.5 2.3 1.1 1.2-0.7 0.8zm10.8-9.5 0.8 2.2 0.7 0.9 2.7 0.6v0.7l-1.3 0.6-9.9-2.7-0.7-1.2 0.5-1.1h1l2.1 1 0.8-0.4 0.2-1.1 1.7-0.5 0.8 0.1 0.6 0.9zm-55.3-58.5-0.5 1-0.8 0.4-0.7-0.5-2.4 1.2-1.1-1 0.8-0.5 3.5-1.5 0.9-1.8 0.7 0.9-0.4 1.8zm-13.1-69.2 0.9 0.4 0.5 0.9-2.6 0.2-1.2-1.5-0.9-2.7h1.3l0.9 1.4-0.3 0.8 1.4 0.5zm70.6-3.5-2.6 0.7-0.7-0.6-1-2.6 0.4-1 3.8 1 0.5 1.6-0.4 0.9zm-76.1-8.8v1.4l-1.9-0.2v1.3l-0.2 1.3-1 0.2v-0.9l-0.8-0.6 0.1-1.3 0.7-0.5 0.1-1.3 0.8-0.2 2.2 0.8zm19-3.5-1.5 4.7h-1.3l-0.6-0.8 1.5-1.3-1.2-0.6-0.9 0.1 1-1.5 3-0.6zm48.1-1.7 0.6 3.5-1-1-0.8-0.3v-2.1l1.2-0.1zm-20.6-13.4 1.5 1.2 0.4 1.7 0.8 0.8 0.8 1.4-1.5-0.6-0.8-1.4h-1.2l-1.4-0.5-0.8-1.6h1.4l0.8-1zm-25-0.7 1 1.3 0.4 0.9v2l-2.3-0.1-0.8-1.2-0.4-1.8 0.3-1 1.8-0.1zm85.8-8.6 0.7 3.5-2.6-1.1-0.7-1.7 1.1-1.4 1.5 0.7zm-56.2-7.8 5.9 2 2-0.4 0.4 1.1-1.1 1.7-1.8 0.3-1.5-0.5-1.4-0.8h-1.1l-2.3-1.7 0.2-1.4 0.7-0.3zm23.5-20.6-1.8 1-2-0.1-1.2-4.1-0.8-0.8-0.1-1.3 0.7-1.7 0.9-0.2 1.3 1 1.9 2.5 1.5 1.5-0.4 2.2zm5.1-28.2-0.5 0.5-4.7-1.3-0.6-1 1.4-1.5 1.3-0.7 0.5-0.7 1.1-0.6 1.4 0.3 0.7 1-0.2 3.2-0.4 0.8zm-20.7-2.8-1 0.4-0.5-0.7-1.1-2.9-1.5-2 1-0.6 2.6 1.4 2.2 2.4 4.7 0.2 0.7 0.9-2 0.8-5.1 0.1zm-98.8-15.2-1.2 0.4 0.5-1.9 1.5-0.6 0.3 1-1.1 1.1zm86.6-4.9-0.8 0.3-2.6-1.9-1.9-2.4v-0.6l4.1-0.4 0.3 0.8-0.2 2.9 1.1 1.3zm-9.4-9.3 0.8 2.6-0.4 1.3-1.3-0.2-2.5-2.3-2.3-0.2-1.1-1.1 5.8-2 1 1.9zm-9.4-2.5-0.5 1.5-0.6-0.4-1.5-0.2-0.3-1.3 1.1-0.5 1.8 0.9zm14.7-5.9-0.4 0.4-2.2-1.2 1-0.5 1.9 0.1 1 1.1-1.3 0.1z"
+                name=""
+              />
+              <path
+                class="provincie"
+                id="prov_severni_cchungcchong"
+                d="m639.7 322.2-1.9 2.2-2.1 1.3-1.9-0.7-1.5 0.9-3.7 3.9-4 3.4-2.7 2.5-3.2 1.1-2 1.6-1.4 2.5-4.9 3.5-3.4 5-1.7 3.7-2 3.7 1.1 2 2.1 1.9-2.3 7.8-13.3 5.5-5.6-1.8-2.4-4.8-3.7-3.2-2.7-1.9-2-2.3-2.1 2-1.6 2.6-0.8 3.1-1.1 3.3-4.6-0.4-4.9-1.7-2.5-1.7-2.7 1.8-2.6 3.5-3.2 0.2-2.5-1.6-1.9 3.2-2 4.3-1.1 4.1 3.1 3.9 2.3 4.4-11.3-1.7-6-2.7-3.4 5.2-5.6 2.6-4.9 3.3-0.4 2.4 0.1 1.8-0.9 2-3.5 4.8-2.3 2.5-2.3 0.4-2.4 1.1 1.8 4.5 6.2 1.1 7.7 11.3-2.8 2.8-1.6 4.5-0.6 10.7-1 4.7 1 3.4 1.8 3.1-2.3 4.5-3.5 3.1 0.9 9.3 6.4-1.5 3.8 1.3 4.5 3.7 3.1 1.5 8.1-2 3.5 2.7 1.8 10.2-3.3-0.2-3.8-0.7-3.9 3.3 0.9 5.3 0.1 2.6-0.4 3.3-1.5 1.8-1.2 2.2-1.4 5-2.4 4.8-4 1.4-3.8 1.8-2 2.2-2.1 1.8-2.3-1.2-2.3-2.2-5.8 2.6-5.1 3.1-2.6-0.7-1.4-1.8-7.1-2.4-2.4-2.8-2.7-1.6-1 1.4-1.3 0.3-1.5-1.4-1.3-1.6-3.6-5.6-3.3-5.7-1.3-6.8 0.2-6.7-1.6-5.9-4.9-3-4.7-1.5-5.1 1.1-0.4-5.6 0.3-5.4 1.9-7.6 3.5-6.5 1.5-3.3 1.6-2.9 2.6-2 0.6-3.4-2-0.7-2.2-1-2.7 2-2.1 2.8-1.6-5.2-0.3-3.5-1.9-1.1 0.2-2.2-2.2-0.5-1.8 2.6-5.1 1.2-4.8-1.4 0.6-3.4-0.9-2.2-1.4-0.7-1.1-1.2-0.6-1.5 0.4-1.5 0.7-1.9 0.3-2.1-0.3-2-0.5-1.2 0.3-1.5 0.8-1.9 0.1-2.1-12-0.8-11.7 2.4 0.7-6.1 2-5.7-0.3-3.3 3.1-6.7 4.4-6.4 3.3-5.8 1.4-1.4 1.5 0.2 1.4-0.4 0.8-1.5 0.3-1.7 0.4-2.2 0.8-2 0.4-2.3-0.3-2.2-1.1-2-1.3-1.2 0.2-4.1-2.1-1.4-2.7-5.5-2.1-1.3-1.9-1.9-1.3-3 7.1-2 6.8-3.3 5.2-1.8 1.5-5.8 2.5-2.8 4.1-1.7 1.9-2.5 1.3-3.3 2.5-2.6 3.1 0.6 0.9 1.2 3.9-2.8 7.6-14.1 1.7-3.2 2.5-1.9 1.3-1.9 1.1-2.1 16.7-4.6 16.8-2.3-1.4 9.6 4.9-1.2 4.8 0.4 2.7 1.5 1.2-1.1 1.1-1.3 3.2-2.2-0.9-9.7 3-3.7 8.1-2.7 6 6.4v4.3l2 2.7 5.2-1.2 5.2-3 3.2-2.4 3.8 0.8 3.1-1.7 3.7-2.8 8.8 3.1 9 1.5 2.9 0.8-1.8 4.2-4.6 3.3-2.7 4.2 1.7 1.9 2.2 1.3h1.5l1.4-0.7 4.8-1.6 7.5-0.8 1.6 1.7-0.3 2.8 3.2 3.3 1.1 2.6 2.9-0.2 3.4-0.6 3.8-1.2 3.8-0.1 3.7 2.9 4.2 2.7 4.1 0.8 4.1 0.5 3.2 1.4 3.1 2z"
+                name="North Chungcheong"
+              >
+                <title>Severní Čchungčchong</title>
+              </path>
+              <path
+                class="specialni_mesto"
+                id="mesto_incchon"
+                d="m311.6 226.7 1 2.4-0.8 0.4-1.4 1-0.5 0.7-2.8 0.6-1.2-0.2-5.4 2.4-2 1.8-1.1 2-6.9 5.2-1.5-0.3h-2.1l-0.7-2.5-1.2-0.8-0.6 0.7-0.8-1.9-1-0.2-1.6 1.7-1.2-0.6-1.7-0.4 1-1-0.3-1.1-1.7-1.6-0.5-1.1 0.6-1.5 1-0.2 1.3 0.6 7.2-5 5.1-0.6 3.5 0.1 3.2-1.7 1.1-4.5 2.2-0.8 1.9 1.9 2.7 1.2 1.8 0.2 1.3 0.7 1.2 1.6 0.9 0.8zm22.7 25-0.4-1.4-8.3-1-3.9 4.9-4-3 1.6-3.7 2.1-3.1-1.3-2.3-5.4-2.9 0.3-3.6-0.5-2.9 1.6-2.7 4.5-1.3 1.4-0.7 0.3-1.7-2.1-0.6-0.6 1.8-3.3 0.3-0.8-2-0.4-3.6 0.8-4.9 15.3-0.5 9.4 9-0.1 4.7 1.7 3.9 2.6 1.7 1.5 2.4-1.5 5-2.2 4.3-3.3 2.4-5 1.5z"
+                style="fill: #002f6c; fill-opacity: 1"
+                name="Incheon"
+              >
+                <title>Inčchon</title>
+              </path>
+              <path
+                class="provincie"
+                id="prov_kangwon"
+                d="m762 402.5-1.6-0.1-5.3-1.2-5.1 2.3-10.9-4.1 1.7-4.7-0.5-4.4-1.4-4.9-0.4-5.5 2.1-5.3 1.7-4.9-1.2-1.5-1.4-1.3 0.7-4.5-11.6-0.9-3.4-1.9-3.7-1.6-1.5-3.6-1.1-4.2-5.2-2.5-3.3-4.9-0.7-6.5 1.1-4.9 2.7-2 3-1.1 4.6 1.8 3.8-2.8-1.6-4.6-4.9-3-5.4-1.2-4.3 2.2-4.2 1.1-5.8-2.7-6.2-1-2.1 0.8-1.7-0.2-1.4-1.8-1.9-0.8-4.5 3.5-4.7 1.9-0.4-3.5 0.4-3.4-2.8-1.4-3-0.7-2.2-3.9-4.4-0.4-4.3 2.1-2.8 3.5 1 4.9-0.5 4.5-0.9 4.2-4.1-0.3-4.7-1.1-3.9-1.6-4.1-2.2-3.1-2-3.2-1.4-4.1-0.5-4.1-0.8-4.2-2.7-3.7-2.9-3.8 0.1-3.8 1.2-3.4 0.6-2.9 0.2-1.1-2.6-3.2-3.3 0.3-2.8-1.6-1.7-7.5 0.8-4.8 1.6-1.4 0.7h-1.5l-2.2-1.3-1.7-1.9 2.7-4.2 4.6-3.3 1.8-4.2-2.9-0.8-9-1.5-8.8-3.1-3.7 2.8-3.1 1.7-3.8-0.8-3.2 2.4-5.2 3-5.2 1.2-2-2.7v-4.3l-6-6.4-8.1 2.7-3 3.7 0.9 9.7-3.2 2.2-1.1 1.3-1.2 1.1-2.7-1.5-4.8-0.4-4.9 1.2 1.4-9.6-16.8 2.3-16.7 4.6 8.5-15.9 7.1-17.4 9.7-20.8 1.2-4.5-0.9-4.5 2.1-3.6 2.9-3.6 3.2-1.3 1.6-3.5-1.8-3.1-2.3-2-3.8-0.4-3.9-1.5-5.3-0.7-8.9-4.9-4-1.7-4-2.6-4.3-0.7-4.3 1.4-3.5-3 0.3-3.3 1.7-3.4 0.6-3.9 0.1-4.1-4.2 1.4-1.9-2.4 4.6-5.5-0.8-3.6-1.2-3.6 0.9-2.7-0.1-3.3-0.3-3.1 8.1-5.9 3.2-1.1 1.8-2.8 0.8-8.1-3.7-5.8-3.1-0.6-2.9-1.3-2.2-6-3.5-0.1-3.8 0.2-4-3-2-5.3-0.8-9.5-1.5-4.7-1.1-1-1.2 0.3-0.9 0.8-1 0.1-2.7-1.9-6.6 2.3-6.1-1.4-2.4-1.5-2.5-2.3-0.1-3.8 1.2-3.6 1.6-2.6-1.1-0.9-1.3-0.3-1.3 0.2-1.1 0.9-2.1 2.7-2.4 2.4-3.6 0.6-3.1-2.1-0.6-2-0.3-2-1.1-0.7-1.2 1.3-0.4 2-0.1 6.6-2 3.3-5.8-2.8-5.3-4.8-1.9-2-2 0.3-1.7-2.6-1.1-3.3-1.5-1.7-1.7-1.4-1.3-3.2-7.9-5-3.2-1.6 1-1.1 8.6-7.2 10.1-6.3 10.6-4.4 10.2-1.1 5.1 0.6 19.5-1.7 15 4.5 4.8-0.4 9.3-2.8 30.5-2.7 1.3 0.9 2 2.9 1.9 2 2.2 0.5 10.5-2.2 16.6 1 10.8-0.9 10.8-3.8 10.1-6.6 8.4-8.8 3.7-5.3 3.1-5.6 2-6.3 0.7-7.1-1.3-7-0.4-3.5 1-2.6 4.3-3.4 9-4.7 12.1 24 1.5 6.4 3.7 9.7 14 27.7 10.9 29.1 1.8 3.1 5.6 7.1 2.2 5.9 26.4 37.8 10.2 14.9 12.3 13.6 1.7 1.4 8.2 9.7 0.5 4.1v4.9l1 4.2 5.6 3.1 1.6 3.4 4.6 15.1 2.1 3.4 2.5 1.5 2 2.2 7.2 14.2 4.4 5.4 1.5 3 0.5 3.2 1.1 3.1 7.7 8.4 2.4 6.9 2.2 15.1 2.9 8.2 8.2 11.4 0.6 2.3-1 2.3-1.4 2.2-1 2.2v1.9l1.1 6.2 1.4 17.7 1.5 8.2 5.2 16.6 0.5 8.2-1.7 7.5-3.5 6.9-2.9 8.1z"
+                name="Gangwon"
+              >
+                <title>Kangwon</title>
+              </path>
+              <path
+                class="specialni_mesto"
+                id="mesto_soul"
+                d="m398.4 211.4-1.5 5.7 4.4-0.1 3.7-1.3 3.2-0.1 1.2 2.9-0.4 3-2.2 1.1-2.4 1.6v3.6l1.3 1.5-2.7 3.7-1.5 2.6-4.1 2.4-4.5 1.1-4.7 2.3-1.8-4.1-3.9 0.9-4 1.2-2.7 1.6-2.9 0.5-6.8-0.3-4.7-6.1-4.6-1.4-3.1-2-0.8-5.8-3.2-4.4-3.7-4.6 2.3-5.1 4.5 0.2 5 3.1 3.8-1.2 3.4-2.1 0.2-3.4 0.9-3.2 7.1-0.7 3.7-4.6 2.2-4.8 3.2-3.3 4.9-1.2 5.7 0.4 2.7 4.7 1.1 6.4 1.6 4.4 0.1 4.9z"
+                style="fill: #002f6c; fill-opacity: 1"
+                name="Seoul"
+              >
+                <title>Soul</title>
+              </path>
+              <path
+                class="provincie"
+                id="prov_kjonggi"
+                d="m245.6 280.6-0.7 1.2-2 2.1-1.4 0.6-1.9 0.3-1.6-0.7-1.4-2.9-1.5 0.8-0.7-0.2 0.5-4 0.9-2.7 1.1-1.6 1.3 0.9 1.1 1.9 1.2 0.9 3.9 2.1 1.2 1.3zm50.4-1.9-1.3 1.6-1.8 0.4-1.2-0.9-1.3 0.1-1.1-0.6-0.3-2.5 0.3-2.6 1.3-1.8 2.8-1.5 3.6 0.3 1.6 1.1 0.6 2.4-0.7 0.9-1.7 0.5-0.6 1.3-0.2 1.3zm15.2-7.5 0.6 1.6 1.9 1.1 3 1.2 0.8 0.9 0.8 2.6-0.8 1.8-8.1 6.5-3.7 0.4 0.1-1 1.7-2.3 0.2-1.4-0.7-1.1 2-2.4 0.1-2.4-0.8-2.9-1.2-2-1.2-1.4 0.4-0.4 2.6 1.3 2.2-2 0.5 0.2-0.4 1.7zm-139.3-74.8-0.9 0.4-1.4-3.5 0.2-1.8 1.2-0.2 1.8 0.3 1.1 1.1-0.5 2.2-1.5 1.5zm107-0.9-3.2 0.2-10.7-8.4 1.4-1.2 0.6-1.6 0.9-3.8 1.3-2 0.9-0.7 0.9-0.3 0.6 0.4 0.6 1.4 0.5 3.7 1 2 1 1.1 4.1 3.4 1.5 1.8 0.3 1.9-1.7 2.1zm-253.9-24 0.8 0.7-0.3 1-1.1 0.3-1.5-0.4-1.1 0.5-1 1.2-1.4 0.7 0.7-2.1 1.1-0.8 0.3-1.1 2.1 0.1 1.4-0.1zm239.1-6.6 3 1.8 3.1-0.1 2.9 0.5 1.5 1.6-1.1 3.6-2.8 2.4-3.4 0.3-6.6-1.5-3.3 1.6h-1.5l-0.6-2.2 0.3-0.7 1.8-5.5 2-1.9 2.2-0.6 2.5 0.7zm40 37.3-1.8 4.2-1.6 1.4-1.2 0.2-0.9-0.5-1.7-1.8-1.2-0.7-0.8 0.3-1.3 1-8.3 0.5-3.1-1.5-3.3-4.3 4.9-1.3 1.2-0.8 1.3-2.1-0.2-0.9-0.9-0.6-0.8-1.1-5.6-10.8-0.4-1.7 0.6-2.1-0.1-9.5 0.6-2.2 1.6-0.5 3.7-4.4 2.9-0.7 2.5 1.8 2.4 2.8 2.4 2.2 5.1 2.6 2 2 0.8 3.2-0.2 1.7-0.8 2.7-0.2 1.2 0.4 1.3 1.4 2.7 0.4 1.5 0.5 7.2-0.5 1.7 0.8 1.1 1.4 3-2 1.2zm-287.2-37-1.2 0.7-1.2-0.1-1 0.4-0.8 0.8-1-1.6-1.2-1.7 0.5-1.5 2.6-2.2 2.5-2.4 1.2 0.2 1.2 0.6 0.3 1.3-0.8 1.8-0.4 2-0.7 1.7zm2.9-34.2 1.8 2.1-0.3 3-2.2 1.6-3-1.9-4.1 0.4-0.8 0.4 0.1 2.1 1.5 0.7 1.8 0.4 0.9 0.7-3.2 2.6-6.5-0.9-4.8-4.1 1.6-7.1 4.1 1.4 8.7-3.1 4.4 1.7zm454.9 169.6-1.1 2.1-1.3 1.9-2.5 1.9-1.7 3.2-7.6 14.1-3.9 2.8-0.9-1.2-3.1-0.6-2.5 2.6-1.3 3.3-1.9 2.5-4.1 1.7-2.5 2.8-1.5 5.8-5.2 1.8-6.8 3.3-7.1 2-7.4-1-6.1-5.1-6.9-3.1-13.1 5.6h-6.2l-7.5-1.5 2.1-1.6 2.4-1.1 1.7-1.9 1-4.8-0.3-0.9-1.7-2 0.8-0.8h1.7l2.2-1.3 1.4-0.2 1-0.7 0.5-2.3-9.5 2.7-1.4 2 0.5 6.1-1.2 1.4-3.7 1.2-5.2-0.7-6.2-3.6-5.6-5.6-2.2-5.3 9.5-1v-1.2l-2.1-1.5 1.7-0.2 1.7 0.1 1.6 0.5 1.3 1.1-0.6-3.8-2.2-3.4-1.6-3.8 1.2-5.3-1.8-0.8-1.4 1.8-0.8 3.2-0.3 3.2-0.8 3.5-1.5 0.8-1.5-1.5-3 0.6-3 0.8-7.3-2.2v-2.3l-0.7-1.9 0.6-2.7-0.3-3.4 1.8-3.4 2.2-3 2.5-1.2 2.7-1 4-0.1 4.3-1.2 0.9-1.3 0.3-3.7-1-0.7-2.2 1.2-3.3 2.9-2.1-0.5-1.5-0.9-0.8-1.5v-2.4l-3.7 1.9-3.1 2.2-5.6 6.1-1.5 1.2-1.8 0.6h-1.7l-1-1.1v-1.8l1-1.8 2.3-3.3-4.6 1.1-1.4-0.5-0.6-2.7 0.9-2 1.9-1.1 2.2-0.8 1.6-0.9 1.9-2.6-0.5-0.7-4.2 0.6-1.4-0.9-1.1-2.1-1.1-2.7-1.2-2.5 0.7-0.2 1.4-1.2 1.2 0.9 1.7-0.1 3.1-0.8 2.5 0.7 2.1 1.3 2.1 0.6 2.4-1.2-0.2 2.3 0.2 2.1 0.8 1.7 1.5 0.7 1.7-0.6 0.7-1.9 0.8-4.3 2.7-4 2.2 0.4 2.5 1.5 3.5-0.6-0.8-1.6-1-1.2-1.2-0.8-1.5-0.4h-2.2l-1-1.5-2.3-0.4-1.9 0.6-1.9-0.1-3-0.6-5-1.6-6.9-5.2-0.3-2.3 3-4.5 2.1-2.1 5-1.5 3.3-2.4 2.2-4.3 1.5-5-1.5-2.4-2.6-1.7-1.7-3.9 0.1-4.7-9.4-9-15.3 0.5-2-4.7-3-5.1-1.8-1.8-0.1-2.7-0.6-4-1.7-6.3-2.3-16.5 0.6-2.7 2.1-0.4 8.7 3.2 2.8-0.6 2.3-1.1 2.1-0.4 2.1 1.4 0.8 2.4 0.3 3.6-0.2 3.8-0.9 2.6-0.1 4.7 4.9 4.1 6.2 2.6 3.8 0.2-3-3.1-9.1-6.6 2.6-7.1 0.8-4.2-0.6-3-1.5-3.1-0.3-4.1 0.7-4 1.6-3.2-1.2-1.5-1.5 0.2-2.4 1.7-1.1-17.3 0.8-4.7 1.9-1.4 3-0.4 4-1.5 6.3-5.1 13.6-20.7 2.7-2.8 6.1-4.7 2.6-3.1 5.4-13.3 1.9-2.5 3.2 1.6 7.9 5 1.3 3.2 1.7 1.4 1.5 1.7 1.1 3.3 1.7 2.6 2-0.3 1.9 2 5.3 4.8 5.8 2.8 2-3.3 0.1-6.6 0.4-2 1.2-1.3 1.1 0.7 0.3 2 0.6 2 3.1 2.1 3.6-0.6 2.4-2.4 2.1-2.7 1.1-0.9 1.3-0.2 1.3 0.3 1.1 0.9-1.6 2.6-1.2 3.6 0.1 3.8 2.5 2.3 2.4 1.5 6.1 1.4 6.6-2.3 2.7 1.9 1-0.1 0.9-0.8 1.2-0.3 1.1 1 1.5 4.7 0.8 9.5 2 5.3 4 3 3.8-0.2 3.5 0.1 2.2 6 2.9 1.3 3.1 0.6 3.7 5.8-0.8 8.1-1.8 2.8-3.2 1.1-8.1 5.9 0.3 3.1 0.1 3.3-0.9 2.7 1.2 3.6 0.8 3.6-4.6 5.5 1.9 2.4 4.2-1.4-0.1 4.1-0.6 3.9-1.7 3.4-0.3 3.3 3.5 3 4.3-1.4 4.3 0.7 4 2.6 4 1.7 8.9 4.9 5.3 0.7 3.9 1.5 3.8 0.4 2.3 2 1.8 3.1-1.6 3.5-3.2 1.3-2.9 3.6-2.1 3.6 0.9 4.5-1.2 4.5-9.7 20.8-7.1 17.4-8.5 15.9zm-76.3-89.2-0.1-4.9-1.6-4.4-1.1-6.4-2.7-4.7-5.7-0.4-4.9 1.2-3.2 3.3-2.2 4.8-3.7 4.6-7.1 0.7-0.9 3.2-0.2 3.4-3.4 2.1-3.8 1.2-5-3.1-4.5-0.2-2.3 5.1 3.7 4.6 3.2 4.4 0.8 5.8 3.1 2 4.6 1.4 4.7 6.1 6.8 0.3 2.9-0.5 2.7-1.6 4-1.2 3.9-0.9 1.8 4.1 4.7-2.3 4.5-1.1 4.1-2.4 1.5-2.6 2.7-3.7-1.3-1.5v-3.6l2.4-1.6 2.2-1.1 0.4-3-1.2-2.9-3.2 0.1-3.7 1.3-4.4 0.1 1.5-5.7z"
+                name="Gyeonggi"
+              >
+                <title>Kjonggi</title>
+              </path>
+              <path
+                class="provincie"
+                id="prov_severni_colla"
+                d="m269 598.6 0.3 1.1-0.6 1.5-2.9 2.5-1.9 2.2-1.8 1.4-0.9 0.2-0.7-0.7-0.5-1.3 0.3-1.2 1.7-0.9-1-0.8 1.2-1 0.6-0.8 1.5-0.4-0.2-1.1 2.4 0.4 1.8-1.7 0.7 0.6zm207.6-80.7 1.3 1.6 1.5 1.4 1.3-0.3 1-1.4 2.7 1.6 2.4 2.8 7.1 2.4 1.4 1.8 2.6 0.7 5.1-3.1 5.8-2.6 2.3 2.2 2.3 1.2 2.1-1.8 2-2.2 6.5 11.1-0.8 12.5-5.8 6.2-1.5 4.1-7.9 4.2-3.9 1.2-2.1-0.2-1.6 1-3 6.4-3.4 3.6-3.6 3.2-1.8 5.1-0.4 6-2 4.4-2.5 4.6-1.8 5.9-1.4 6-2.2 4.6-0.1 4.9 4 1.7 0.6 2.1 0.3 2.5 1.8 4.6-0.3 4.9 1.6 3.7 2.3 1.5-1 5.4-6.6 7.9-1 5.2-0.3 4.8-3.3 3.4-9-7.3-10.1-3.7-5.8 3.2-4.6 5-4.9 0.7h-5.3l-5.7 0.8-5.9-0.1-2.7-1.6-2.4-1.9-2.7 0.7h-3.3l-4.8 0.8-4.5 2.7-5.9-0.9-3.8-4 0.2-6.4-3.3-3.7-0.9-3.6 1.4-5.6-3.2-4.9-4.7 0.3-1.1 2-1.6 1.5-1 2.6-0.4 2.7-4.8 0.1-7.5-10.1-4.8-4-2.8-1.1-2.8-0.2-2.7 3.1-5.3-0.5-4 3.5v2.7l0.1 2.6-1.4 2.2-2 1.5 0.1 2 0.3 2-1.3 2.8-2.1 1.8-2.6 1.3-2.7 0.7-2.3 1.4-2.1 1.6-5.3 0.8-5.1 1.8-4.7 1.2-3.9-1.3 0.2-5.3 1-5.2 0.9-7.1-4.5-1.2-15.4 4.3-3.3 1-2.2-2.5-0.7-2 1.1-4.6 2.7-5.7 4.3-10 3.6-5.3 5.2-1.8 5.9-1.2 5-0.3 2.3-1.9 2.3-3.2 3.1-0.8 2.8 3.2 2.9 3.6 2.1 0.7-2-7.3-1.5-3.3-2.4-1.4-22.4 3.7-7.8-4.9 0.6-7.3 3.7-1.9 3.2-3.2 3-3.4 4.7-2.8 5.9-3.2 4.4-6.2 0.7-5.8 4.2-2.6 1-0.8 5.6-0.6 5.6 0.7 3.5 2.7 2.5 0.6 1.7 3 0.7-1.6 0.5-2.2 0.2-2.3-3.5-2.8-3.1-1.5-3.4-2.3-2.8-2.1-1.4-0.8 0.4-1.7 1.3-1.8 1.3-1.1 1.4-0.3 8.9 0.6 1.9-0.2 1.4-0.7 1-1.8 0.4-1.4 0.7-1 2.2-0.4 0.7-0.6-0.8-1.5-1.7-1.4-1.9-0.7-0.5 0.4-11.6 4.7-3.9 0.2-7.7-0.5-7.5-0.6-0.1-3.4-0.5-4.6-1.5-1.3-4.7-1.6-6.9 1.1-0.7-5.9 14.3-1.6 7.8-1 7.9-0.4 2.6-1.6 2.7 0.8 3.3-1.7 5.8-4.4 7.4-3 3.2-2.2 0.3-2.8-9.3 2.8 7.1-8.8 7.6-0.8 8.9-1.9 16.4-5.2 5.8 1.2-1.4 8.6 3.4 5.3 4.6-0.9 4.5-1.7 8.7-1.7 2.3-0.8 2.2-1 3.3-0.7 2.2-3.3 2.6-2.7 5.1 4.5 7.1 12.8 5.2 2.6 2.1 0.6 0.9 1.9-1.1 2.2 0.6 1.6 9.2 1.2 3.4-0.8 4.7-0.2 4.7-1.3 3.8-3.4 3.8-3.8z"
+                name="North Jeolla"
+              >
+                <title>Severní Čolla</title>
+              </path>
+              <path
+                class="specialni_mesto"
+                id="mesto_kwangdzu"
+                d="m368.2 668.9 8.1 3.1 3.2 8.9-6.2 8.3-9.8-1.6-8.6-5.2-4.3-9.5 3.4-3.2 5.7 1.5 4.1-1 4.4-1.3z"
+                style="fill: #002f6c; fill-opacity: 1"
+                name="Gwangju"
+              >
+                <title>Kwangdžu</title>
+              </path>
+              <path
+                class="provincie"
+                id="prov_jizni_cchungcchong"
+                d="m284.4 429.5-0.3 2.2 0.4 1.9 1.2 3.6 2.2 3.3 0.9 3.1-1.6-0.7-7 0.4-2.3-0.4-0.4-2.9 0.8-1 1.2-1.2 0.6-1.7-3.7 2.4-1.8-0.9 0.5-2.9 2.8-4-1-1.2-2.2 2.6-0.7-1.8-1.7 0.9 0.9-4.7-0.6-7.3-0.8-4.3-1.6-5.5 1.4-1.8 2.8-2.6 3-1.1 2.1 3.4 0.3 1.2-0.7 1.5-1.2 0.9 0.1 1.4 2.7 6 0.4 2-0.7 1.6 0.8 1.4 1.8 1.1 1.4 2.4h-3.3v1.2l1.1 0.2 2.2 1.3zm88.1-84 7.5 1.5h6.2l13.1-5.6 6.9 3.1 6.1 5.1 7.4 1 1.3 3 1.9 1.9 2.1 1.3 2.7 5.5 2.1 1.4-0.2 4.1 1.3 1.2 1.1 2 0.3 2.2-0.4 2.3-0.8 2-0.4 2.2-0.3 1.7-0.8 1.5-1.4 0.4-1.5-0.2-1.4 1.4-3.3 5.8-4.4 6.4-22.5-9-3.7 10.2 0.5 29.9-2.4 2.3-1.4 4.1 14.4 2.9 10.8-3 8.4 13.3 2.9 5.6 0.8 14.3 3.3 10.7 7.8-2.1 6.9-5.1 2.3-0.8 4.1-3.3 2.3-8.5 2.1-3.4 0.7-4.6 2.1-2.8 2.7-2 2.2 1 2 0.7-0.6 3.4-2.6 2-1.6 2.9-1.5 3.3-3.5 6.5-1.9 7.6-0.3 5.4 0.4 5.6 5.1-1.1 4.7 1.5 4.9 3 1.6 5.9-0.2 6.7 1.3 6.8 3.3 5.7 3.6 5.6-3.8 3.8-3.8 3.4-4.7 1.3-4.7 0.2-3.4 0.8-9.2-1.2-0.6-1.6 1.1-2.2-0.9-1.9-2.1-0.6-5.2-2.6-7.1-12.8-5.1-4.5-2.6 2.7-2.2 3.3-3.3 0.7-2.2 1-2.3 0.8-8.7 1.7-4.5 1.7-4.6 0.9-3.4-5.3 1.4-8.6-5.8-1.2-16.4 5.2-8.9 1.9-7.6 0.8-7.1 8.8-3.3 1-3.2 2.2-2.7 2.6-2.9 1.4-3.5 0.6-3.4 1.5-2.4-1.2-0.8-1.3-0.2-1.8-0.9-2.5-1.3-2.1-2.6-3.5-1.5-2.4 2.2-1.8-1-1.2-4.1-1.6-3.7-6.2-2.7-1.2-2.1 1.2h-1l-0.1-2.2-3.6-2.3-3.1 0.5-0.9 3.7-0.6 1.3-1-1 0.6-5.8 5.4-2.7 4.7-1.5 6.6 1.9-2.3-3.9-1.3-1.5-1.8-1.3-1.1-0.2-1.2 0.7-0.9-0.5-1.2-1.3-1-1.4 3.3-9.1 1.9-4.1 2.4-1.5-1.8-2.2-6.7-2-2.4-1.3 2.4-2.2 7-1.7 1.5-2.1-1.1-2.6-2.5-0.6-5.2-0.1-1-0.7-1.9-2.3-1.3-1.1v-1.4h2.1l-2.4-4.4 2.9-1.6 3.2-1 3.1-4.4 6.5-1.8 3.1-1.7h-9.3l-2.2 1.3-3.4 5.1-2.5 0.5-1.6-1.9-1.4-3.7-0.9-3.7 0.1-2.2 3.3-3.9 1.5-2.4-0.5-1.1-3 1.1-1.4-1.2-1.3-0.9-0.7-0.1-0.7-1.8 0.7-1.7-0.2-1.8-0.8-3.4-0.9-1.4-0.1-0.9 2.2-0.1 3.1-1.5 3.3 0.1 0.3-2.4 0.9-2.1-1.3-1.7-1.8-0.4-2.6-2.5 1.6-2.3 2.3-1.8-1.5-2.8-3.8-0.7-0.8-3.3 1.2-2.4 3.7-0.6-2.1-2.4-0.7-1.2-0.5-1.8-1.4 1.2-2.2 2.4-2.5 1.1-0.5 1.4 0.1 1.4 1.1 1.7 0.2 3.3-1.2 3.9 0.7 5.2-1.7 4.4-1.4 1.8-2.9-2.3-3.1-0.1-3-2.1 0.7-10.6 1-3.9-1.8-0.8 0.5-5-1.7-2.1-2.5 0.5-1.5 2.5-0.4 3.2-1.1 2.3-3.6 0.1 1.5 3 2.9 4.6 1 3.3-1.7 1.5 0.2 1.6 2.7 3.6-2.5 0.5-2 1.2-1.7 1.6-1.4 2.1v-1.5l-0.5-2.8-0.6-1.1 2.2-4.8-4.6-7.7 1.4-3.8-1.2-5.4-3 1.7-4.1 5.3-3.1 1.1-1.9 0.4-1.6 0.6-1.6 0.1-1.9-1.1-1.1-2.8-0.3-1.8 0.8-0.8 6.5 0.1 1.7-1.2-0.1-2.9-1.7-3.1-2.4-1.2-2.5-0.8-2.1-1.7-0.8 2.4-0.5 4.9-0.9 2.3-1.8 1.7-0.6-1.6 0.2-5-0.3-4.8 0.4-1.3 4.1-5.2 0.8-1.8 0.6-2.5 0.5 1.9 1.5 3.4 1.1 1.6 0.8-0.8 1.1 0.1 2.5 0.7-1.6-2.4-1.7-3 4.5 1.3 1.9-0.5 1.2-2.3-4.1-0.3-2.5-1.1-0.3-2.5 2.6-4.2-3.5-3 0.2-2.7 2.7-2.3 3.9-1.4-1 4.9 0.4 1.3 2.1 0.5 4-0.1 1-0.7 1.1-1.8 0.2-4.5-0.4-5.9 0.8-4.9 3.7-1.2-0.5 2.8 0.1 4.2 0.7 4.4 2 5.2-1 1.8-1.5 1.7-1 1.7v1.8l1 2.9 0.2 0.8-0.9 1-3.4 2.3 0.1 1.7 0.5 1.8 0.9 1.1 1.1-0.5 2.7-2.5h2l4.5 3.1-3.3-7.1-1.1-4.4 1.7-2 2.5 3.3 1.6 1 0.7-2.2 0.7-0.6 1.6-0.7 3.2-0.8v-1.2l-1.3-0.2-3-1.3v-1.2l3.8-0.9 2.2-3.7 0.6-4.4-1.2-3.3-1.4-0.5-4.2-0.1-2-0.8-1.5-1.9-0.5-1.8 0.7-0.6 2.3 1.6 1-3.1-1.1-1.8-2.4-0.7-2.9 0.2 1.2-1.5 1.5-1.1 1.7-0.3 1.6 0.9 1.5 1.1 1.3 0.3 0.6-0.6-0.7-1.5v-1.5l5.9-0.1 2.8 1 1.1 2.6-0.8 1.6-1.5 1.7-0.9 2.3 1 3.2 1.4-1.4 1.8-1 1.5 0.1 0.7 1.6 0.2 1.4 0.7 1.3 0.2 1.3-1.8 2.3-0.4 1.2v8.8l0.5 2.6 1.2 1.8 1.1 0.7 0.6-1 0.6-4.9 2.9-9.5 0.7-4.6 0.8-1.1 1.9 1.3 2.8 3 1.1 2.2 0.8 2 1.2 1.3 2.3 0.1v-1.3l-1.2-1.5-1.3-4-1.3-2-9.7-10.3-0.6-0.5 0.5-2.2 1.3 0.3 1.7 1.5 2.5 3.2 1.3 1.1 1.7 0.8h1.9l1.5-0.9 0.1-1.3-1-1.3-2.3-0.6-3-1.4-3.3-3.1-1.4-4.6-0.4-3.1h2.9l2.5 1.2 2.3 2 6.2 4.3 1.2 1.3 2.4 1.7 2.3 1.2 1.6 2.7-0.7 2.7-1.6 1.8 0.4 1.5 1.5 3 0.2 1.8-0.6 3.3 1.8-1.2 0.7-1.5 0.4-1.6-0.6-4.9 0.6-1.6 2.5-4.5 2.6-1.2h2.5l2.7 0.3 3 1.2 3.9 1 2.7 1.8 3.4 3.4 0.2 4.3-2.5 8.5 1.9-1.2 3-3.9 1.6-0.3 1.1 1.7 0.7 2.9 0.3 5.6-0.1 1.2-0.8 2.7-0.1 1.6 0.3 1.6 1.4 2.4 1.3 6.1-0.4 1.8-2.6 0.8 0.5 1.7 0.6 1.1 0.9 0.8 1.3 0.6 0.9-4.5 1.6-2.6 0.8-2.8-1.3-5 3.2 1 3.3 0.4-5.4-6.1-1.6-3.3 3.2-1.4 2.9-0.5 6.9-2.8 3-2.3z"
+                name="South Chungcheong"
+              >
+                <title>Jižní Čchungčchong</title>
+              </path>
+              <path
+                class="specialni_mesto"
+                id="mesto_tedzon"
+                d="m434.4 429.6-0.4 1.5 0.6 1.5 1.1 1.2 1.4 0.7 0.9 2.2-0.6 3.4 4.8 1.4 5.1-1.2 1.8-2.6 2.2 0.5-0.2 2.2 1.9 1.1 0.3 3.5 1.6 5.2-0.7 4.6-2.1 3.4-2.3 8.5-4.1 3.3-2.3 0.8-6.9 5.1-7.8 2.1-3.3-10.7-0.8-14.3-2.9-5.6-8.4-13.3 17.5-4.8 3.6 0.3z"
+                style="fill: #002f6c; fill-opacity: 1"
+                name="Daejeon"
+              >
+                <title>Tedžon</title>
+              </path>
+              <path
+                class="specialni_mesto"
+                id="mesto_tegu"
+                d="m656.6 550.7-2.5 2.6-1.1-0.4-1.5 0.1v1.3l-0.2 1.7-1.5 3.9v1.2l-0.4 1.9-3.6 2.1-9.1-2.4-5.1-0.5-2.3 1.8-2.2 4-1.3 1-1.4-1.2-2-1.3-2.8-2.3-1.8-3.6-2.3-2.3-2.5-0.9-0.9-3.6 2.1-3.1h2.4l2.6-0.4 0.6-1.9 0.3-1.9-1.4-0.5-1.5-0.3 1.7-3.8 2.8-3-1-8.9 7.4-6.2 10.1-1.4 8.3-0.5 6.4 4.6 2 3.5-0.1 1.6-0.8 1.3 0.1 4.9 1.3 2 1.7 1.4 0.3 3.1 0.1 3.3-0.9 3.1z"
+                style="fill: #002f6c; fill-opacity: 1"
+                name="Daegu"
+              >
+                <title>Tegu</title>
+              </path>
+              <path
+                class="provincie"
+                id="prov_jizni_kjongsang"
+                d="m579.8 789.2h0.7l3-1.4 0.4 0.4-0.3 1-1.5 1.9-1.7 0.6-1.5-0.3-1.2 0.2-1.7 0.8-0.8 0.8-1 0.2-0.1-0.7 0.5-1.3-0.1-1-0.7-0.7-1.3-0.6 0.5-1.9v-1l0.7-0.6 1-0.3 5.1 2.7v1.2zm17-36.8 1.1 0.6 1.5-0.6 2.4-0.7 2.8-0.1 1.6 1.5 0.4 2.5-0.9 1.5 0.6 0.9-0.7 1.2-1.6-0.6-0.6 0.8 1.3 0.3 1.3 1.1-0.6 1.1-1.6 2-2.6 0.1-1.2-1.5-0.6-1.5-1.3-0.1 0.3-1.2-0.4-1.3-2.1-0.3-0.7-0.6 1.5-1.2 0.3-1.4-1.5-1.3-2.9-0.9-1.8 0.5h-1.1l-0.3-1.3 1.3-1.4 1.8-0.5 2.5 1 1.8 1.4zm-21.7 4.5-0.5 0.5-2.4-0.8-1.8-1.2-1-1.6 0.2-1 1.1-1.8 2.1-1.6 2 0.5 2.4 2.6 0.9 1.5-0.7 1.1h-1.7l-0.8 0.4 0.2 1.4zm-36.1-13.4 0.8 0.6 0.9-2.1 1.9-3 1.5-0.2 0.5 1.3 1.6 1.3 0.3 2.3 0.9 3.2 1.6 1.8 0.9 1.3-1.7 0.4-7.2-1.9-3.9 1.3-2.3-0.3-2.3-1.4-1.4-2.8 1.1-3 2.1-2.8 1.4-2.6 1.5-1.9 2.5-0.6 0.8 2.1-1.1 3.1-0.6 2.1 0.2 1.8zm-10.1 8.6 1.9 3.4 3.1-0.5 3.9-1.6 3.6-0.7 5.4 0.9 1.1 0.4 0.8 2.2-0.5 1.9-0.9 2-0.4 2.5 0.4 4-0.1 2.3-0.9 1-1.3 0.7 1.4 3.9-0.7 2-2.4 0.4-2.4-1.4-2.5-1.1-2.9 1.4-2.6 0.3-1.5-3.7-1.8-7.8-2.6-1.4-2.1 1.5-1.4 3.2-0.5 4-1 1.7-2.2 0.1-2.4-0.8-1.4-1-1-1.7-0.3-3.1-0.3-2.5-4.4-14.2-0.6-3.5 0.4-3.3 1.9-3.5 1.2-0.9 1.2-0.2 1-0.7 0.7-4.2 0.9-1.3 2.6-2 2.1-1 2.4 0.8 2.1 1.8 1.2 2.5-0.2 2.5-1.4 2.4-3.6 3.8 0.7 1.3 0.7 3.4 0.9 1.7 1.3 1 3.4 1.1zm122.5-25.1 1 1.8 0.7 1.9-0.1 2.6-0.6 2.3-2.5 6.5 3.2-1.1 1.5-1.1 0.5 0.4 0.2 3.3-0.2 2.2-0.7 2.5-1.4 1.3-2.1-0.9 0.8 2.6 2.1 4.4 0.4 2.9-1.2 0.5-2.8-0.9-2.9-1.6-1.8-1.3-0.5 2.7-0.5 1.4-2.8 3.2-0.9 2.6 1.9 1.4 2.6 1.1 1.3 1.5-2.4 2.1-11.5 3.6-3.4 0.2 5.4-3.9-2.3-1.1-0.8-1.7 0.1-2.3 0.8-2.8-4.9 2.5-1.5-1-0.7-2.2 0.1-2.2 1-1 4-0.8 1.1-2.2 0.1-3 0.8-3.4-2.2-1.3-1.6 2-5.7 2.5-2.5 2.1-1.8-2.8-2.2-2.5-1.9-2.8-0.5-3.6 1.1-2.3 2-2 2.4-1.6 2.1-0.9 5.9-1.2h1.7l2.6 1.1 2 1.4 2.2 1.1 2.9 0.2v-1.2l-2.9-2-1.7-2.9-0.8-3.3-0.1-3 2.1 0.2 11-6.3-1.9-3.6 0.9-3.5 2.5-1.9 2.8 1.1 0.7 1.6v1.8l-1 7.2 0.1 1.2 0.7 2.2zm17.1-7.6-0.8 0.3-0.4-0.8-0.8-3.4-1.2-1.3-0.4-1 0.2-1.3-0.6-1.6-0.8-1.6 0.4-1.4 1.7-0.9 1.8-0.2 1.6 0.5 1.1 2.4-0.1 4.9-0.7 4-1 1.4zm27.9-113.6 0.7 7.7-4 8 2.4 4.8 9.8 1.5 4.1 3.2 6.8 7.8 8.1 4.5 3.7 2.8 1 5.4 3.5 3.4 4.5 1.6 0.6 0.6-0.7 2.6-0.3 3.5-0.9 1.9-1.1 1.6 0.9 2.6v1.1l-1.7 3.6-2.6 5.4-2.8 3.4-1.8 3.8-0.3-0.7-3.2-3.3-2.8-3.7-3.7-2.9-2.8-4-0.9-4.2-3.1-2-4-0.2-3.7 1.5-3 2.2-2.3 2.8-1.6 11.5-2.3 3.4-2.4 3-1.3 2.4-0.8-0.7-1.4 2.2-4.8 8.5-2.2 0.1-0.2-3.9 0.2-3.7-1.1-0.1-1.3 3-1.2 4.7-3.9-0.5-10.4 0.2-0.6-3.6-1.1-1.9-1.4 5.4-1.6 0.8-3.7-1.7-1.7-3.2-1.9-0.2-2.4 1.8v-8.4l-0.7-0.7-1.3 0.5-1.2 1.8-0.1 3-2.5-2-1.9-2.8-2.2-1.8-3.2 1.3 0.7-2.7-1.3-3.9 0.6-1.5-1.6-5-0.9-0.6-1.8 1.7-2 3.1v2.1l2 4.2 1.1 5.1 0.7 1.8 1.3 2.3 2.7 3.6 0.4 1.8-0.8 2.5 1.3 0.2 3 1.2-1.4 0.9-1.3 0.4h-3.3l-1.6-0.4-0.5-1-0.1-1.3-0.5-1.3-1.5-1.6-1.1-0.9-8.6-3-2.4-0.1-5.2 1-1.4 0.7 0.1 1.3 1.8 2.6-2.9 0.6-5.5 2.8-6.2 1.7-0.8 2.4-0.3 2.7-1.7 1.7v1.3l15.8-8.4 2.7-0.2 0.5 3.4 1 2.5 0.3 2.3-1.3 2.5-2 1.2-3.1 0.5-3.1-0.2-2-0.8-1.1 1.9 0.7 0.9 1.5 0.8 1 1.7 0.2 2.4-0.2 4.1-1.1 7.9 1.4 1.3 1.4-0.4 1.1-1.6 0.5-1.9 2.1 2.6-2.2 3.9-4 5.2-3.5 1.1-4.8-0.3 0.1-3h3.1l1.3-0.3 0.8-1.2-9.9-1.2-2-0.8-2.3-3.1-0.3-1.6 1.6-1 3.7-1.5-3.6-7.2-2.6 2.6-2.6 5-3.7 0.2-3.3-4.5-1.8-1.1-3.6-0.4-1.6 1-0.8 2.3-0.4 3 0.1 2.9-3.3-0.6-7.4 0.3-2.9-1.6-0.3-1-0.1-2.9-0.1-0.7-0.8-0.2-1.7 0.3-2.3-0.5-3.7-0.3-1.3-0.7-0.8-1.6 0.1-1.5 0.7-2.8-0.3-14.3 0.3-2.3 1.2-2.5 0.7-1.8 0.2-2.4-2.5 3-2 3.4-2.5 2.6-3.8 0.3 2.9 6.9-2 1.3-4.3-0.1-4.1 2.6-1.6-4.6-1-1.9-1.8-1.4-0.5 6.2-1.7 5-3.3 2.9-4.2 0.4-3.2-1-1.2 0.1-1 0.9-2.4-1.9-1.6-0.5-0.4-0.8v-3.6l-2.1-5.3-9.9-10.7-1.7-3.6-1.4-4.1-3.5-3.7-3.9-2.8-2.1-3.9-0.7-10.3-1.6-5-3.2-3.8 0.8-4.2 3.3-3.4 0.3-4.8 1-5.2 6.6-7.9 1-5.4-2.3-1.5-1.6-3.7 0.3-4.9-1.8-4.6-0.3-2.5-0.6-2.1-4-1.7 0.1-4.9 2.2-4.6 1.4-6 1.8-5.9 2.5-4.6 2-4.4 0.4-6 1.8-5.1 3.6-3.2 3.4-3.6 3-6.4 1.6-1 2.1 0.2 3.9-1.2 7.9-4.2 1.5-4.1 5.8-6.2 1.3 4.3 3.2 1.9 2.9 2.3 0.2 1.6 0.6 1.6 2.6 1 4.8 0.4 2 1.7 2.6 1.7 4.5 0.4h4.5l4.1 1.3 3 3.3 2.1 4 3.5 2.5 0.9 1.8 0.6 1.7 2.4 1.5 2.1 2.5-0.1 4.6-1.9 4.4 2.5 9 9.8 0.4 4.7-0.6 4.6 0.7 4.3 2.1 4 3 4.5 0.9 8.5-4.3 4.3 0.9 3.9-5.6 3.7-2.9 1.3 10.8 4 4.9 4.9 3.1 5.8-0.6 5.9-1.1 5.2 1.6 4.9 2.6 5.9 0.2 5.2-4.1 2.2-0.8 2.3-0.3 2.2-1.9 1.8-2.4 5.7-2.3 6.1 1.5 4.7 2.2 4.4-1.5z"
+                name="South Gyeongsang"
+              >
+                <title>Jižní Kjongsang</title>
+              </path>
+              <path
+                class="provincie"
+                id="prov_jizni_colla"
+                d="m274.6 918.7-0.6 0.7 0.3 1-0.7 0.5h-1.5l-0.3 1.3v1.2l-1.1-0.2-2.4-4 1.9-0.4 1.5 0.5 2.9-0.6zm93.8-3.3-3.6 0.6-0.4-3 1.3-0.8 1.2 0.2 1.5 3zm59.7-16.2 1 0.5 1-0.1 0.4 2.4 0.7 0.4 0.4 1.3-0.7 0.4-1.9-0.8-0.9-1.4-0.9-1.8 0.2-1.2 0.7 0.3zm-2.7-0.5 0.4 0.8-0.6 1.8 0.3 1.9 2 3.4 0.9 0.8 1.2 0.3 0.4 0.7-0.2 0.9-2.2-1.1-2.2-0.5-0.9-1.9-0.4-1.6-1.1-1-0.3-1.3 0.2-2.5 1.1 0.1 1.4-0.8zm-341.5 1.9-0.5 0.9-1.8-0.9-3.1-2.8-1.8-1.1-0.4-1.5 0.8-2 1.2-1.1 1.8 0.6 1.4 1.7 2.2 4.7 0.2 1.5zm232.1-9.1-3.6-0.5 1-1.2-0.5-1.1 0.5-0.5 1.1 0.2 1 1.6 0.5 1.5zm-5.8-13.3 1 0.1 1.3-0.4h1.8l2.2 0.9 1.3 1.6-0.3 0.9-1.3-0.7-0.2 0.7-2.1-1h-1.5l-0.8 0.9-0.6 1-1.7 1.2-1.6 1.4-2.4 1.4-3-0.1-1.7-2.2-0.1-2.9 1.4-2.9 2.8-1.9h2.4l3.1 2zm15.5 9.5-1.6 0.4-0.8-0.5-0.3-0.9-1.6-0.8-0.3-2.5 1-4.5 0.3-2.4-1-1-0.3-0.9 1.3-1.2 0.1-0.7h1.3l2.7 1.4 0.4 1.9-1.5 1.3-0.3 1.4 1.6 2.4 0.6 0.4 0.6 0.9-1.2 0.7-0.2 1.1v2l-0.8 1.5zm15.2-12.4-0.4 1.3-1-1.6-0.9-0.8 0.4-1.5-0.1-1 2.3-1.9 1 2.6-0.2 1.6-1.1 1.3zm25 3.2-1 1.8-1.8 1-2.4 0.2-1.7-0.9-1.4-1.3-1.1 0.1-0.5 1-0.6-0.4-0.7-2.9 1-2 0.3-1.8 0.6-1.5 1.1-1.1 2.3-1.1 2.7 0.7 1.6 2.3 2.4 2.5-0.4 2.4-0.4 1zm-52.3-2.3-0.8 0.6-2.4-0.6-1.3-1.2-0.3-0.8-1.4-0.4-0.2-0.6 1.3-3.1-0.1-1.5 0.9-0.7-0.9-1.9 0.5-0.4 2.5 1 3.3 0.6 2.5 1.5 0.7 0.9 0.1 1.7-1.1 0.9-0.5 2.2-2.3 0.1-1.3 0.3 0.8 1.4zm-100.3-12-1.7 1.8-1.2 0.4h-1.4v-0.9l0.6-1.7 0.8-0.7 2.9 1.1zm206.6 4.7-0.4 1-2.9-0.6-2.8 0.7 1.3-4.1 1.6-1.5 0.5-1 1.6-0.9 0.7 0.1 0.7 1.7-0.2 2.1-0.9 1.6 0.8 0.9zm-102.7-6.5 1.4 0.6 0.8 1.6-0.8-0.1-1.1 1-0.7-0.2-1.7 0.5-1-1.6 1.3-1.2 1.8-0.6zm-88.3-0.6 0.9 0.6 0.6-0.2 0.2 2-1.4 2.9-1.1-0.4-0.9-1-0.8 1.8-0.6-1.4-1.8-0.9 1.1-1 1.4 0.2 1-0.2 1-0.8-0.1-1 0.5-0.6zm-20.4-0.9 0.2 2.4-0.4 0.5-0.6-1.5-1.2 0.4-0.5 1.1-1.7-1.1 1.3-1.7 1.5-0.5 1.4 0.4zm255.3-0.9-0.7 0.5-1.3-1.4 1.3-0.6 0.7 0.2v1.3zm-154-4.1 0.9 0.8-2.1 1.1-1.5-0.3-1.4 0.2v-1.8l1.5 0.5 2.6-0.5zm132 0.4-1.5 0.9-0.5-3.1 2.2-0.1-0.2 2.3zm-7.6-2.5 0.6 1.3 1.9-0.8 0.6 0.8-0.7 0.5-0.4 1-2.4 2.5 0.4-5.3zm-208.6-3.6 5.5 1.1 2.3-0.4 1 0.6-0.1 2.1 0.2 1.4-0.7 1.1-1.6 0.2-0.9 0.7-0.6-0.3-0.7-1-0.8 0.9-1 0.2-3.3-1.4-1.1-1.6-0.1-1 0.7-0.9v-1l1.2-0.7zm150.4 1.4-1.2 0.5-1.1-0.1-0.5-0.8-0.8-0.5-0.8-0.9 0.1-1.7 0.5-1.2 2.1-1.2 3.9-0.1 2.5 1.3 0.1 1.3-0.8 1.1-3.1 2.3h-0.9zm-156.2-6.6 2.1 0.9 1.3-0.8 3 0.4 3.2 1.8 0.3 1.1-0.8 0.3-3.7-1-3.2 0.6-2.2-0.5-0.7-2.3 0.7-0.5zm75.7 0.9-0.7 0.5-0.9-1.2 0.2-1.1 1.6 0.7-0.2 1.1zm58.3-2.5 1.2 0.3 1.3-0.2 1.8 0.2 2.2 0.6 1.4 0.8-0.3 1.4-0.9 1.1-0.4 2-1 1.1-1.3-0.3-1.5 0.3-1.5 1.4-1.4 0.3-0.8-1.1-0.3-1.5-0.9-1.2-1.2-0.5-1.6 0.2-1.9 0.7h-1.5l-1.2-0.7-3.5-1.6-0.2-0.6 1.6-0.2 1.6-0.5 1.2-0.7 1.3 0.2 1.4 0.7 1.8-0.7 2.1-1.8 1.6-0.4 0.9 0.7zm32.1-1.5 1.2 0.6 2.2-0.7 1.6-0.2 0.7 0.7 2.3 3.5-0.9 0.2-1.4-0.7-1.5-0.4-1.2 0.5 1.4 1.1-1.1 1.1-2.8 2.2-1.6 0.7-0.2-1.7 0.8-1.2 1-0.6-0.6-0.8-3.4-0.7 0.4-0.8-0.4-0.9-1-0.7-2.7-0.2-1-0.4-0.1-0.6 1.2-0.3 0.9-0.6 1.5-1.8 1.9-1.6 1.2 1.1 1 1.5 0.6 1.7zm-273.6-5.4-1.6 0.5-0.6-0.4-1 1-2.1-3.5 1-0.2 1.4 0.5 2.9 2.1zm226.1 11.9 2.9 2.8 0.3 1.2 0.9 2.2-0.6 0.5-1.5-0.4-2.7-1.4-0.6 0.2-0.2 1.1-0.7 0.4-1.4-0.6-2.4-0.6-3-1v-1.2l1.4-1.2-0.3-1.4-1.4-0.3-1.7 0.4-2-0.6-1.9-1.2-1.1-1.4-0.4-2.1-0.2-2.4 0.1-2.4 0.7-2.4 1.2-1.9 1.7-0.8 3.7-0.5 1.8 0.6 1.7 1.2 1.9 2.2 1.5 3.7 0.4 3 0.5 1.5 0.9 1.1 0.5 1.7zm31.7-15.4-0.8 3.1-0.6 0.6 0.6 2.1-1.2 1.2h-1.3l-0.7 1.1-1 0.8-1.2 0.5-2-0.6-1.1-0.9-0.8-1.6 0.4-1.9-0.3-0.7-1 0.6-1 1.2-0.7 0.1 0.1-5.1-0.6-0.8 1.1-0.3 1.1 0.8 3.6 0.2 1.3 0.3 1 0.9 1.4 0.4 1.3-0.1 1.1-1.3 0.7-1.8 0.5-0.2 0.1 1.4zm51.3 4.4-0.6 0.2-2.3-0.7-0.6-0.9 0.2-2.5-1.3-0.7-0.3-1.6 0.5-0.4 0.8 0.2 0.7 1.2 1 0.8 0.4 1.1 1.7 2.7-0.2 0.6zm-64.9-3.4 0.1 1.2-1.1 0.2-3.3-1-1.3 0.3-0.8 1.2-4.2 2-1.5 1.9-0.4 2.1-0.9 0.6-1-1.2v-2l-0.3-1.6-1.5-0.7-0.7-0.7 1.3-2.2 1.1-2.5 2.2-2.9 3.1-1.7 3.3-0.8 2 0.3 0.7 1.2 0.2 1.2-0.9 0.9 0.2 0.4 1.4 0.9 1.2 1.4 1.1 1.5zm-247.4-8.3-2.2 1.5-0.3-0.8 1.5-2.5 0.8 0.3 0.2 1.5zm276.2-3.1 1.6 0.8 0.5-0.4 1.2 1.3 1.8 4.7-0.7 0.9v1.4l-0.7 0.7-0.8 0.2-0.7-3.1-1.4 1.5-0.8-0.6-2.7-6.2 0.8-0.8 1.9-0.4zm120.5 9.3-0.2 0.3-1.9-1.5-0.6-1.2 0.8-0.9-0.8-0.8 0.9-1.6 0.4-1v-1.3l0.2-1.2 0.8-0.3 0.5 0.9 1.3 1-1 4.5v1.8l-0.4 1.3zm-50.2-10.3 0.8 0.3 1.4-1.4 1.5-0.1 3.5 3.7 0.7 1.9v1.1l-1.2 1.3-2.9 1.9-2.5 0.8-0.9-0.5-0.1-1.7-1.1-1.1-1.6-0.5-0.7-1 0.4-0.8-2.7-1.9 0.5-1.4-0.3-1.9 0.7-0.5 2.3 1.2 2.2 0.6zm-43.7 7.6-6.6 1.2-2.5-0.3-1.8-0.9-3.8-2.6v-1.4l0.8-1.1 0.2-0.9-0.6-0.8-1.5-1 2.2-1.7 2.5-1 5.2-1 4.9-0.5 2.6 0.2 2.2 1 1.7 3.1-0.5 3.6-2.1 2.9-2.9 1.2zm-182.5-11.7 1.7 0.6-0.4 0.8-1.8 1.3-1.3 1.5-1.1 0.5-0.3-2.3-0.7-1.4 2.1-2.1 0.4-1.2 1.4 0.3 0.9 0.8-0.9 1.2zm279.4 1-0.9 0.7h-1.1l-0.9-0.4-1.1 0.6v-1.9l1.1-1.7 1.5-0.7 1.3-0.2 0.4 0.4-0.9 1.1 0.4 0.9 0.2 1.2zm-109.1-6.4-1.1 1.4-2.1 0.8-0.7-1.1-0.9-0.3-0.1-1.5 1.1 0.1 0.5-1 1.9 1.1 0.4-1.6 1.1 0.4-0.1 1.7zm53.9-0.6-0.9 1.1 5 1.6 0.8 1.7-0.3 0.6-1.3 0.9-1.5-0.1-3.4 0.9-1.2 0.5-1.9-1.9-0.1-1.2 1.3-0.8 1.2 0.1-1-1.5-0.4-1.5-2.3-0.6 0.7-0.7-0.2-0.8 0.5-1.4 1.3-1.5 2.5-0.2 1.6 1.4-2 1.5 1.1 0.8 0.5 1.1zm48.3 5.3-1.3 0.1-0.8-1.1-1.5-0.8-2.3-0.8-1.5-1.2-0.7-1.7-0.8-1.1-1.3-0.7-1.1-1.4 0.8-1.6 2.7-1.3 2.9-0.4 2 1.5 2.4 4.7-0.2 2 1.3 0.3 1 0.6 0.7 1.1-0.3 1.2-2 0.6zm-231.6-9.5 1.1 0.8 0.7-0.2 3.6-2.3 0.1 1.7 4.7 7.6 0.3 2.7-0.5 2.9-0.8 2.9-3.1 6.7-1.3 2-1.6 1.1-0.2-0.6-2.7-2.6-1.3-0.8v1.2l-0.6 3.1-15.1 8.2-1.8 0.7-6.7 0.5-1.8-0.5-0.4-1.6 0.9-1.4 1.2-1.2 0.4-1-0.8-1.2-4.6-2.8v4l-3.3-3.9 2-6.4 4.5-5.2 4.4-0.3 1.4-4.2 1-1.5 1.4-1.6 1.7-1 1.5-0.2 1.2-0.9 0.4-2.7 1.9 2.3 2.5 0.3 2.2-1.5 1-2.9-1.2-2.4-4.1-3.3 1.1-1.6 2.5-0.1 2.7 1.4 2.2 1.8 1.7 0.9 1.6 3.1zm214-7.2 0.5 0.3h1.9l0.5-0.5 1.1 0.4 0.7 1.3-0.6 0.9-0.9 0.4-0.8-1.6-1 1.9-0.9 0.7-2.7 0.4-1.7-2.4-1-0.3 0.8-1.8 0.8-0.8 1.7-0.8 0.7 0.2 0.7 0.7 0.2 1zm-89.2-4.3-0.9 0.4-1-2.4 1-0.6 1.4 1.3-0.5 1.3zm72-3.6 1 1 0.1 1-1.9 0.5-0.7 1.8-1.1-0.3-0.6-1.3-2.3-0.4-0.4-1.1 0.7-1.4 1.8 0.9 0.6-0.7 1.4-0.5 1.4 0.5zm-237.6 16.2-1.7 0.2-1.9-0.5-0.5-1 1.9-0.4 1.7-1.5-0.2-0.6-3.5-0.8 0.9-1 2.2-0.4h2.3l1.8-1.4 0.7-1.9-0.7-1.9-1.6-2.6-1-3.2 1.2-0.9 1.9 1.5 1.2 1.2 1.9 1.1 0.1 1.7 0.7 1.4-0.2 1.9-0.5 2.2-0.1 1.8-0.9 1-2.6 2.2-3.1 1.9zm-31.7-17.1 0.4 2-0.3 0.8-0.9 0.7-2.4 0.8-1.3-0.1-1.3 0.6-1.1-0.5v-1.1l1.1-0.2v-0.5l-3-2.5 0.9-0.3 1.3 0.7 1.6 0.3 3.5-2.1h1.1l0.4 1.4zm28.6 10-1.5 0.7-1.3-1.1-0.6-6.7 0.6-3.7 1.3-1.7 2 4.4 1.7 2.5 1.3 2.7-0.4 2.3-1.4 0.4-1.7 0.2zm-9.7-11.5v2l-1.4-0.6-0.6-1.1-0.6 0.3-1.5-0.3-0.8-1.7 1.9-1.5 1.6 0.3 0.5 1.5 0.5 0.1 0.4 1zm-79.8-2.7-1.1 1.1-1.6-1.2 0.5-1.1 0.9-0.3 0.3-0.9 2.4-0.1-0.4 1-1 1.5zm108.3-2.8 0.2 0.8 2.5-2 1.8 1.9 0.3 2.6 1.8-0.1 0.3 0.7-3 1.5-0.8 1.1h-1.1l-1.2-0.4-0.9 0.4-0.5 0.7-1.5 0.2-1.8 1-1.1-0.4 0.6-4.9-1.2-0.6-0.9-0.9 0.6-0.7 1.1-0.6 0.6-0.8 3-2.2 0.7-0.1 1.1 0.5 0.1 1.1-0.7 1.2zm-123.6-3-0.8 1.3-1.4-1.9 1.9-1 1.2 0.8-0.9 0.8zm9.2-4.3 0.5 1.4h1.4l1.8-0.5 0.3 0.8-2.1 2.2-0.4 1.1-2.5 2.9-0.5 1.4-1.1 1.7-1.4 1.9-1.6-0.7-1-2.7 0.2-2.6 0.9-2.3 1-2.1 1.2-1.8 1.3-1 1.3-0.3 0.7 0.6zm106.7-1.1-0.9 0.9-1.3-1.1 0.5-1.2 1.6-0.9 0.1 2.3zm-143.1-2.8 0.4 0.5 1.2-0.4v3.1l-1 2.2-2.2 1.5 0.5 1.6-1.4 0.7-0.3 1.1-1.1-1.4 0.2-0.9-0.3-1.4 1.1-0.9 0.5 0.3 1.8-3.6 0.1-1.9 0.5-0.5zm410.5 26.2-1.8 0.1-1.8-0.9-5.6-5.7-0.7-2.3 1-3.5 0.7-0.9 3-2.3 0.5-1.1 1.2-4.9-2.4-2.6 0.3-1.5 1.7-0.8 2-0.3 1.7 0.8 0.4 1.8-0.8 2.1-1.9 1.8 1.6 0.4 1.5 2.3 1.1 2.8 1.3 4.9 0.2 2.8-0.5 2.7-1.2 2.7-1.5 1.6zm-8.8-24.4-1.6 1.3-1.3-0.7-1.2-1.8 1-1.2 1.2 1.4 1.9 1zm-275.9 5.6-2.4 3.2-1.1 0.8h-2.7v-0.6l-2.3-1.4-2.5-1-0.7 0.2-1.4-3.2 1.1-1.5 4.6-1.9 2.9-3.9 1-0.5 0.6 0.4 1.3 2.5 1.9 1.7 0.5 0.8 0.2 1.5-0.3 1.5-0.7 1.4zm18.8-17.9 1.5 0.7 0.9 1 1.4 0.7 1.9 0.2 1.6 0.3 1 1 0.6 1.1v2.2l0.6 1.7v2.1l-0.9 1.8-2 0.2-1.9-1.8-1.4-2.2h-1.7l-1.4 1-1.2 0.1-1.1-0.8-0.3-1.6-1.4-2.7-3.2-3.3-0.6-1.6 1.5 0.4h1.3l1.1-0.6 1.7-0.2 2 0.3zm31.8 1.9-0.6 0.1-1.4-3.8 1.2-0.7 0.6-0.9 0.7 0.3 1.1 1.1-0.9 1.1-0.9 0.5-0.1 0.8 0.4 0.5-0.1 1zm-49.3-4 0.1 4.1-2.6-0.8-0.8-0.5-1.3 1.8h-2.2l-2-0.4-0.8 0.5-0.4 2.6-0.8 2.3-1.4 1.7-1.9 0.8-1.8-0.2-1.4-1.3-0.8-2-0.3-2.6 0.5-2.4 1.2-1.7 1.8-1.1 1.9-0.7 2.2 0.8 2.8-0.6 5.2-2h1.8l0.6 0.5 0.4 1.2zm231-3.8-0.2 2.1-1.7 1.1-0.6 1.3-1-0.3-0.6-0.6 0.7-0.7-0.1-1.2 0.9-0.8 1.4 0.3 1.2-1.2zm-207.1 7-1.9 0.5-1.8-1-2.1-1.8-2.6-1-2-1.1 1.6-1.4 3.9-0.6 2.3-1 1.2-1 1.5 0.7 1.6 2.3-1.1 1.8 0.4 2.6-1 1zm-2.5-22.1 0.8 0.4 0.7 1.1 0.2 1.2-2.1 1.4 0.7 3-0.3 1.8-1.2 0.7-1.5-0.1-1 1.2v2.1l-0.5 1.9-1.7 0.9-1.4-0.1-0.3-1.9-2.4-2.7-1.3-1.8-1.1-2.1 0.5-1.5 2.3-1.2 1.9-0.2 1.5 0.9h1.5l0.4-1.2-0.3-2.3 1.5-1.4 3.1-0.1zm249.9-3.5 1.3 0.7 1.5-0.2 0.9 0.5-3.5 4.1-1.7 0.3-1.2-0.4-1.5-1.5-0.2-0.8 0.9-1.3 1.7-1.3 1.8-0.1zm-215.5 7.5 0.3 4-3.1 2.9-1.7-0.6 1-1.2 0.5-1.1-0.4-0.7-5.1-2.8-4.7 0.7-2 1.1-2.4 0.3-1.9-0.6-0.9-1.3 0.8-1 2.5-0.1 3.3-1.2 1-1.3 0.2-0.8 2-0.6 0.7-1.2 0.1-1.4-1.3-1.7-0.5-1.9 1.7-0.9 2.8 0.6 2.8 1.5 2 2-0.2 1.1-1.4 0.2-2.4 1.6-0.3 0.9 0.3 2 1 0.4h2.3l3 1.1zm-42.8-10.2 0.4 2.8-0.5 2.6-1.2 2.4-1.9 1.6-2.3 0.6-1.3-0.5-1-0.9-1.4-0.4-5.1 1.1-2 0.1v-1.2l1.6-1.4 2.8-4.6 2.2-2 2.5 0.5h1.3l0.6-1.2 0.7-2.5 1.6-0.4 1.7 1.2 1.3 2.2zm24.9-1-1.4 0.6h-2l-0.8-1.8 0.4-1.8 1.2-0.7h2.7l0.9 0.4 0.1 0.8-0.5 2-0.6 0.5zm4.7-10.2 0.6 0.8 1.3 0.7 1.9 4.5-0.6 1.1-2.5-0.9-0.6-2-1.4-2.6-1-1.3 2.3-0.3zm-9.9 0.6-0.3 2.5-0.8-0.5-1.2-2.7 0.7-1.7 2.1-1.4 0.2 0.8-0.7 3zm7.4-2-0.9 0.8-1-1.5 0.2-1.1-0.1-2.4-1-1.2 0.7-0.5 1 0.3 1.3 1.1 1.3 1.7 0.1 2.7-1.6 0.1zm-14.2-4.5 1.1 0.6 0.3 0.9-0.3 2.7-2 1.6-3 0.7-0.3 1.2 0.3 1.2-0.2 0.5-2.9 0.7 0.3-1.2 1.1-2.6 0.4-4.1 1.7-0.7-0.1-1.1-0.9 0.3-4.3 0.2-1.6-0.1-1.1-0.5-0.1-0.9 1.7-0.9 0.8-1.2 1.5-0.9 0.7-0.8 1.1-0.4 2.8 0.6 1.4 1.4 0.4 2.1 1.2 0.7zm-4.3-11.2 1.4 0.6 2-0.1 1.4 0.4 1.1 1.7 0.1 2.9-1.4 1.1-0.9-0.4-1.4-1.5-0.7-0.5-1.6 0.4-0.2-0.9-1.4-0.2-0.2-0.5 1.1-0.8-1.8-0.4 0.3-0.9 1.2-0.8 1-0.1zm-18.7-6.9v3.4l-1.6-1.1-0.9-1.4 0.1-1.6 1.7-0.6 0.7 1.3zm25.9-1.7 1.5 0.9 1.3-0.4 1.6-0.8 0.9 0.5 0.4 0.8 1.7-0.3 0.4 1.3-1.1 1.1-1.4 0.1-0.6 0.7v1l1.7 1.8 1.5 0.7 1.6 0.1 0.9 1.3 0.5 1.7 0.8 1.1 0.3 1.5-0.6 1.9-2.9-0.5-1.4-2.2v-1.7l0.3-0.9-1-0.3-4.1-0.7-0.9-0.8-2.1-0.3-1.6-1.1-0.8-1-1.7-4 1-1.6 2-0.6 1.8 0.7zm-11.8 8.3-0.6 1.5-0.9 0.3-4.2-1.2-1.5 0.3-1.4-1.2-0.7-0.1 1.3-6.2 0.8-1.8 1.1-0.6 1.9-0.6 1.7-0.9 0.8-1.2 1.2-2.7 2.9-1.8 3.2-0.8 2.4 0.7-4.8 2.8-1.1 1.6-0.1 1.9 0.7 2 2.1 3.5-1.7 0.7-1.8 1.7-1.3 2.1zm5.5-41.7-1.4 1.1-1.6-3.1v-0.6l1.2-1.9 1 0.5 0.8 0.9 0.3 1.8 0.5 0.9-0.8 0.4zm-17.8-14.5 0.4 1.2-1.5 1.4-2.6 0.7 0.4-1-1.5-1.4 1.7-1-1.3-1 2-1.6 1 0.9 0.3 0.7 0.8 0.3 0.3 0.8zm250.1 14.1-0.8 4.2 3.2 3.8 1.6 5 0.7 10.3 2.1 3.9 3.9 2.8 3.5 3.7 1.4 4.1 1.7 3.6 9.9 10.7 2.1 5.3v3.6l0.4 0.8-1-0.3-6.5 0.1-2.1-0.4-0.8-1-0.4-1.4-1-1.9-1.8-1.4-0.4 1.4 0.3 2.4 0.3 1-1.1 3.5-0.7 1.3-1.4 1.7-6 4.7-3.3 1.5-2.4-2-3-6.1-2.5-1-1.7 2.5-0.9 3.8 0.2 3.3 1.5 3.4 2.4 4.4 2.8 3.8 2.6 1.7 1.7 2.3 1.7 0.8 2-1.3 4.9-4.6 3.4-0.5 2.9 0.6 2.7 0.2 2.9-1.6-0.1 3.8-0.5 2.7-1.6 5.5-1.8 9.6-1.3 2.2-5.6 1.9-4.4-2.2-3.5-0.8-2.9 6.4-1-0.6-1.2 0.6 1.2 2.5 1 2.7 1.1 8.6-0.7 1.6-1.6-0.9-2.6-2.7-3.8-0.5-2.8-1.5-1.9-2.9-0.7-4.3 0.9-4.1 2.1-4 1.5-3.8-0.7-3.2-1.3-1.8-2.5-5.5-0.7-0.4-1.8-0.2-0.8-0.8v-1l0.7-1.9-2.4-5-0.4-1.9 0.1-1.2 0.7-1.9 0.2-0.9-0.4-1.1-0.7-0.9-0.7-0.2-0.9 1.2-2.7 6.9-1.1 1.5-6.7 2.3-3.2 0.4-6.8-0.1-2.6 0.7 2.1 1.7 4.1 1.8 3.3 1v1.2l-6.7 2.2-3.4 1.9-0.6 2.6 1.4 1.1 3-1.2 1.6 0.7 1.1 1.9-0.4 0.6-1.2 0.8 2.2 7.6 4.5 4.1 5 3.2 3.4 4.9-1.7-0.3h-2.7l-1.2 0.3 6.8 2.6 0.8 2.1 0.5 4.1-3.1 2.8-3.1-0.2-1.9 0.5-7.2-4.5-2.3-0.7-2.1 0.4-2.5 1.2-2.2 1.5-0.9 1.5 2.2 4.6 2.3 0.5 1.3 0.9 6-1.6 3.3 2.8-7.5 6.9-2.7 3.8-2.9-1.3-4.5 3.4 0.5 3.4 2 2.2h-4.4l-6.5-8.6-2.2-4.5-5.9-6.5-1.8 0.4-6.3 3.3 0.6 2 0.5 0.8-2.6-0.9-2.5-0.5-2.1-1.1-1.5-2.8-0.2-2.8 1-1.7 3.5-2.1 1.2-1 3.2-4.2 1.9-4.2 1.2-1.4 2.3-1.1-0.2 3.2-0.8 3.1-2.3 5.6 4.7-0.3 3.8-1.4 2.4-3.2-0.1-5.7-0.9-2.2-1.2-1.3-1-1.5-0.1-2.9 0.8-1.5 4.6-5.1 1.6 0.9 1.1 1.2 0.3 1.5-0.9 1.8 1 2.5 1.4 1.8 1.8 0.6 2.4-0.9 1-1.4 2.2-4.6 1.2-2-2.2-3.3-0.8-3.4-1.1-1.6-3 2.3-3.5 1.5-2.8-2.4-3.9-6.3-2.3 3.5-3.2 8.3-2.2 2.7-2.3 0.9-1.9-0.1-4-0.8-1.8 0.6-1.8 1.6-2.8 3.8-1.3 1.1-5.8 3.4-3.1 2.4-2 1.2-2 0.5-1.2 0.6-0.2 1.6v2.1l-0.3 2.2-1 1.6-1.5 1.7-0.7 2.1 1.2 2.5-8.7 8.6 0.2 7.9-1.4 1.4-4.3-2.1-1.3 1.6-0.7 1.9 0.1 2.1 0.9 2.2-2.1-0.6-4.4-3.2-6.1-1.8-1.4-0.8-1.2-3.7 0.6-9.7-0.6-3.8 0.9-2.4-0.2-3-1-2.6-1.8-1.3-1.7 0.5-1.8 1.6-1.3 2.1-0.5 1.8 0.6 2.7 1 2.3 0.1 1.6-4.9 1.7 0.6 2.3 3.6 4.5-6.1 3.5-2.3 2.1 2.4 1 0.5 0.4v1.9l-0.5 0.4-1-0.2-1.5-0.9-0.7-0.2-2.1 0.3-0.4 0.9-0.1 1.4-0.8 1.9-1.2 0.9-4.7 1.2-1.8 1.4-0.6 1.3-3.8 12.9-0.4 1.9v2.2l-3.8-0.8-7.3 2.4-1.8-0.4-0.3-2.2 1.5-4.7-0.3-2.1-1.4-1.3-2-0.4-4.1 0.2v-1.2l1.1-1.8 0.3-3 1.2 0.1 0.7-0.5 2.3-4.1 0.4-1.9-0.6-2-0.8-0.6-1.2-0.4-2.3-0.3-1.7-0.5-0.3-1 0.9-1.2v-2.5l0.6-2.4-0.3-1.2-2.5 0.8 0.7-4.6 3.1-2.3 4.3-0.9h3.9l-0.7-1.5-1-1.2-1.2-0.8-1.5-0.5 2.5-1.7 1.5-2.1 0.1-1.8-2-1.1-0.7 0.3-1.4 1.8-1 0.7h-1.3l-2.1-1.3h-1l-1 0.8-0.7 1.4-0.5 1.7-1.4 0.3-2.9-0.3-3.4 0.1-1.8 0.3-2.4 0.9-0.3-3-1.3-1.8-3.8-1.9 0.1-0.6-0.8-1.5-1-1-0.9 2-1.1 0.7-1.3 0.2-1-0.4-3.3-3.1-0.4-0.2-0.5-1.9 0.9-0.9 0.6-1 0.6 0.9h1.6l1.1-0.9-0.6-2-4.2-2.1-3.3-2.4-0.3-5.5 1.4-6.2 1.6-4.3 0.2-1.5-0.1-1.7 0.2-1.5 1.3-0.7 2.4 0.5 0.9 0.6 1.1 2.3 4.8 7.3-1.5 2-0.5 1.9 0.3 2 0.5 2.1 3.3 9.2 2 1.2 7.8 1.3 3.4 2.3 1.8-0.2 1.3-3.3-1.8 0.3-0.9-0.5-3.3-0.7-1.5-2.4-2-2 0.5-4.5-2.1 0.4-1 2.7-1.6 0.2-1-3.6-0.5-4.8 1.2-2.8-0.9-3.3 4.3-0.4 6.6 1.4 0.9 1.5-0.4 2.5v1.6l0.3 1.1 1.7 1.1 0.9 1.3 2.1 1.3 2.8 1.2 1.8 1.6 3.8 2.7 0.7-0.8-3.3-4.4 2-0.4 6.7 3.7 4.5 1.5 3.4-0.9-3.4-0.5-2.7-1.8-4.7-4.1 1.1-1.5-3.4-2.5-5.2-6.6-2.9-1.4-3.9-0.8-4.7 0.3-3.2-2.1-4 1.1-3.6-1.2-0.5-1.8 2.2-2.9 2.3-0.9 4.7 0.7 6-2.6 7.2 5.3 2.5-0.5 1.4 1.2 0.7 0.3-0.7-3.7 0.3-3.4 1.9-2.5 3.9-1 7.3 2.2 3.7 0.3-1.2-2.5 2.5-1.2 1.3-0.3 1.6 0.1-2.3-2.7-3.6-0.7-8.2 0.8 0.6-1.9-0.6-2.6v-2l0.6-1.3 1.5-2.1v-2l-1.2-2.9-2.2-0.6-2.4 1.1-1.7 2.4-0.2 1.6 1.1 3.2 0.2 1.8-0.3 0.3-1.9 3.8-1.8 6.5-1.6 2.3-3.1 0.3v-0.5l-1-0.7 0.6-1.1 0.9-2 0.6-1-2.1-1.1-1.5 0.6-1.4 1.3-2.1 0.6-4.2-0.9-1.3 0.6-0.3 2h-2.1l-3.5 1.1-1.6-0.9-0.6-2 1.2-1.9 3.2-3.2 1.2-1.8 0.6-1.4 0.4-2.8-0.5-2.9 0.6-1.4 2-1.8-1.9-1.6-1.8-3.2-0.9-3.8 0.3-3.2 2.2-2 3-2.1 0.9-1.7-3.9-0.9-1.8 0.3-1.9 1.9-2.8 1.2 0.3 1.9 0.7 2.2 0.1 1.8-2.2 2.1-2.9 0.2-2.8-0.9-1.9-1.4 2.1-1.3-1.4-1-1.2-1.2-0.9-1.4-0.8-1.8 1.8-0.9 1.8 0.1 3.9 0.8-0.4-4.1 4.4-4.4-1.2-4.1-4.5-6.2-2.8-2.6-3-1 1.2 4.3-1.1 2.5-2.2 0.1-2.2-3 1.4-2-4-5.4-0.6-3.2 2.3-2.7 3.2-0.4 2.9 1.4 1.3 3.1 2-1.3 1.1-2.2 1.3-4.4 1.1 2.2 0.2 1.8-0.4 3.6-0.8 1.8-0.1 1.1 0.3 1.2 1.3-0.3 0.5 0.3 0.8 3.7 0.6 0.6 1.9 1.1 1.5 0.6 2.7 0.1 1.2 0.7-0.9 2.2 0.2 2.1 1.1 2 1.7 1.7 4-9 0.4-3.1v-3.5l-0.8-1.2-3-0.8-1.2-0.7-1.1-1-1.6-4.4-5.2-6.1-1.2-2.7 0.3-1 1.5-1.8 0.4-1.8-1.7-1.2-0.8-1.6 0.3-2.6-2 0.8-2.1 0.3-4.5 0.1 1.7-2.2 2.9-0.7 3.3-0.2 2.9-0.7-1-0.3-1-0.9-1.3-0.2 0.8-1.8 3-2.9 0.5-1.5-1-3.8 0.5-3 1.4-3 3.5-5.3 0.9 0.9 2.3 3 2.8 0.9 1.4-0.1-0.4-1.4-3-3.5 3.3-1 15.4-4.3 4.5 1.2-0.9 7.1-1 5.2-0.2 5.3 3.9 1.3 4.7-1.2 5.1-1.8 5.3-0.8 2.1-1.6 2.3-1.4 2.7-0.7 2.6-1.3 2.1-1.8 1.3-2.8-0.3-2-0.1-2 2-1.5 1.4-2.2-0.1-2.6v-2.7l4-3.5 5.3 0.5 2.7-3.1 2.8 0.2 2.8 1.1 4.8 4 7.5 10.1 4.8-0.1 0.4-2.7 1-2.6 1.6-1.5 1.1-2 4.7-0.3 3.2 4.9-1.4 5.6 0.9 3.6 3.3 3.7-0.2 6.4 3.8 4 5.9 0.9 4.5-2.7 4.8-0.8h3.3l2.7-0.7 2.4 1.9 2.7 1.6 5.9 0.1 5.7-0.8h5.3l4.9-0.7 4.6-5 5.8-3.2 10.1 3.7 9 7.3zm-108.1 4.2-4.4 1.3-4.1 1-5.7-1.5-3.4 3.2 4.3 9.5 8.6 5.2 9.8 1.6 6.2-8.3-3.2-8.9-8.1-3.1z"
+                name="South Jeolla"
+              >
+                <title>Jižní Čolla</title>
+              </path>
+              <path
+                class="specialni_mesto"
+                id="mesto_pusan"
+                d="m710.4 706.9-1.3 1.6-1-0.8-1.1-1.4-3-1.7-1.5-1.7 0.1-2.4 1.2-1.2 1.6 0.1 1.5 2.1 1.4 1.5 1.1 0.6-1 0.8-0.2 1.4 2.2 1.1zm16.2-20.3-0.8 1.5-4.2-0.1-2.2 0.4-1.7-0.1-1.7 0.8-1.9 0.2-0.1 2.7 1.2 1.9 0.2 2.3-0.8 2.5-3.5 1.7-4.6-4-1.3-1.5-4.2 4.4-1.9 3.6-0.6 3.7-1.2 0.9-0.8-1.9-1.9-2 0.5 5.7h-1.2l-0.5-1.3-0.7-0.3-3.1 2.1-1.1-1.3-1.3-4.4 0.6-3.9 1.2-5 0.2-2.8 1.3-2.4 2.4-3 2.3-3.4 1.6-11.5 2.3-2.8 3-2.2 3.7-1.5 4 0.2 3.1 2 0.9 4.2 2.8 4 3.7 2.9 2.8 3.7 3.2 3.3 0.3 0.7z"
+                style="fill: #002f6c; fill-opacity: 1"
+                name="Busan"
+              >
+                <title>Pusan</title>
+              </path>
+              <path
+                class="specialni_mesto"
+                id="mesto_ulsan"
+                d="m767.7 599.7 1.3 2.2-0.6 4.2-0.3 5-1.1 7.6-1.6 3.2-2.6 3.5-2.4 1.3-1-3.4-1-4.5-2-3.3-2.2-0.6-1.3 3.8 2.1 0.5 1.3 1.6 0.6 2.4 0.2 2.8-0.7 2.6-1.6 0.6-1.8 0.2-1.3 1.2 0.2 1.4 0.2 3.6 0.7 3.8-2.8 4.8 1.3 1.8 1 1.1-0.2 2.6-3.2 1.1-3.1 1.8-4.4 4.4-3.7-0.1-0.1 0.2-0.6-0.6-4.5-1.6-3.5-3.4-1-5.4-3.7-2.8-8.1-4.5-6.8-7.8-4.1-3.2-9.8-1.5-2.4-4.8 4-8-0.7-7.7 3.8-3.1 4.1-2.4h2.4l1-2-1.5-2.5-0.8-2.7 5.3-4.1 6.7-2.4 5.5-0.8 5.3 1.1 5.6 2.4 1.4 2.4 0.1 2.9 0.4 2.6 2 1.4 2.6 0.7 14.8-2.6 12.5 3h0.1z"
+                style="fill: #002f6c; fill-opacity: 1"
+                name="Ulsan"
+              >
+                <title>Ulsan</title>
+              </path>
+              <path
+                class="provincie"
+                id="prov_severni_kjongsang"
+                d="m762 402.5 0.8 8.1 2.2 8.1 0.8 8.1-0.9 16.8-1 3.6-4.9 6-1.9 3.3-0.8 3.9-0.7 23.7 0.5 3.2 1 1.8 1 0.7 0.9 1 0.9 6.7 1.2 5.1 1.3 0.9 0.8 1.1-0.6 3.1-1.3 1.7-1.6 0.8-1.6 0.5-2.6 2.2-0.2 2.7 3.4 3.1 2.4 2.7 2.5 3.1 3.2 0.5 4.1-3.2 10-11 2-3.3 2.6 2.1 0.6 3.4 1.1 3.5 0.8 3.9-2.5 3.9-5.7 11.3-0.4 5.1-1.7 13.4-4.1 11.6 0.2 7.3-4.2 12.6-3.1 6.1-1.3 3.1 1.3 3.4 1.2 1.5h-0.1l-12.5-3-14.8 2.6-2.6-0.7-2-1.4-0.4-2.6-0.1-2.9-1.4-2.4-5.6-2.4-5.3-1.1-5.5 0.8-6.7 2.4-5.3 4.1 0.8 2.7 1.5 2.5-1 2h-2.4l-4.1 2.4-3.8 3.1-4.4 1.5-4.7-2.2-6.1-1.5-5.7 2.3-1.8 2.4-2.2 1.9-2.3 0.3-2.2 0.8-5.2 4.1-5.9-0.2-4.9-2.6-5.2-1.6-5.9 1.1-5.8 0.6-4.9-3.1-4-4.9-1.3-10.8-3.7 2.9-3.9 5.6-4.3-0.9-8.5 4.3-4.5-0.9-4-3-4.3-2.1-4.6-0.7-4.7 0.6-9.8-0.4-2.5-9 1.9-4.4 0.1-4.6-2.1-2.5-2.4-1.5-0.6-1.7-0.9-1.8-3.5-2.5-2.1-4-3-3.3-4.1-1.3h-4.5l-4.5-0.4-2.6-1.7-2-1.7-4.8-0.4-2.6-1-0.6-1.6-0.2-1.6-2.9-2.3-3.2-1.9-1.3-4.3 0.8-12.5-6.5-11.1 3.8-1.8 4-1.4 2.4-4.8 1.4-5 1.2-2.2 1.5-1.8 0.4-3.3-0.1-2.6-0.9-5.3 3.9-3.3 3.8 0.7 3.3 0.2-1.8-10.2-3.5-2.7-8.1 2-3.1-1.5-4.5-3.7-3.8-1.3-6.4 1.5-0.9-9.3 3.5-3.1 2.3-4.5-1.8-3.1-1-3.4 1-4.7 0.6-10.7 1.6-4.5 2.8-2.8-7.7-11.3-6.2-1.1-1.8-4.5 2.4-1.1 2.3-0.4 2.3-2.5 3.5-4.8 0.9-2-0.1-1.8 0.4-2.4 4.9-3.3 5.6-2.6 3.4-5.2 6 2.7 11.3 1.7-2.3-4.4-3.1-3.9 1.1-4.1 2-4.3 1.9-3.2 2.5 1.6 3.2-0.2 2.6-3.5 2.7-1.8 2.5 1.7 4.9 1.7 4.6 0.4 1.1-3.3 0.8-3.1 1.6-2.6 2.1-2 2 2.3 2.7 1.9 3.7 3.2 2.4 4.8 5.6 1.8 13.3-5.5 2.3-7.8-2.1-1.9-1.1-2 2-3.7 1.7-3.7 3.4-5 4.9-3.5 1.4-2.5 2-1.6 3.2-1.1 2.7-2.5 4-3.4 3.7-3.9 1.5-0.9 1.9 0.7 2.1-1.3 1.9-2.2 4.1 2.2 3.9 1.6 4.7 1.1 4.1 0.3 0.9-4.2 0.5-4.5-1-4.9 2.8-3.5 4.3-2.1 4.4 0.4 2.2 3.9 3 0.7 2.8 1.4-0.4 3.4 0.4 3.5 4.7-1.9 4.5-3.5 1.9 0.8 1.4 1.8 1.7 0.2 2.1-0.8 6.2 1 5.8 2.7 4.2-1.1 4.3-2.2 5.4 1.2 4.9 3 1.6 4.6-3.8 2.8-4.6-1.8-3 1.1-2.7 2-1.1 4.9 0.7 6.5 3.3 4.9 5.2 2.5 1.1 4.2 1.5 3.6 3.7 1.6 3.4 1.9 11.6 0.9-0.7 4.5 1.4 1.3 1.2 1.5-1.7 4.9-2.1 5.3 0.4 5.5 1.4 4.9 0.5 4.4-1.7 4.7 10.9 4.1 5.1-2.3 5.3 1.2 1.6 0.1zm-105.4 148.2 0.9-3.1-0.1-3.3-0.3-3.1-1.7-1.4-1.3-2-0.1-4.9 0.8-1.3 0.1-1.6-2-3.5-6.4-4.6-8.3 0.5-10.1 1.4-7.4 6.2 1 8.9-2.8 3-1.7 3.8 1.5 0.3 1.4 0.5-0.3 1.9-0.6 1.9-2.6 0.4h-2.4l-2.1 3.1 0.9 3.6 2.5 0.9 2.3 2.3 1.8 3.6 2.8 2.3 2 1.3 1.4 1.2 1.3-1 2.2-4 2.3-1.8 5.1 0.5 9.1 2.4 3.6-2.1 0.4-1.9v-1.2l1.5-3.9 0.2-1.7v-1.3l1.5-0.1 1.1 0.4 2.5-2.6zm338.6-316.2-3 1.6-4-0.8-3.9-2.4-2.6-3.1-0.9-4.1 1.4-3 2.8-1.9 5.6-1 3.8-1.4 1.9-0.4 2.7 2.1-0.2 5-1.7 5.7-1.9 3.7z"
+                name="North Gyeongsang"
+              >
+                <title>Severní Kjongsang</title>
+              </path>
+              <rect
+                id="m_kangnung"
+                x="640.5"
+                y="160.55"
+                width="23.586"
+                height="23.586"
+                fill="#002f6c"
+                fill-rule="evenodd"
+              >
+                <title>Kangnung</title>
+              </rect>
+              <rect
+                id="m_pchjongcchang"
+                x="564.76"
+                y="214.9"
+                width="23.586"
+                height="23.586"
+                fill="#002f6c"
+                fill-rule="evenodd"
+              >
+                <title>Pchjongčchang</title>
+              </rect>
+              <path
+                class="provincie"
+                id="prov_cedzu"
+                d="m350.7 994.4 1.8 2.8 2.4 1.8 7.6 3.1 2.3 2.3 1.6 5.7 1.5 2.2 1.8-1.7 0.4-0.8 1.2 2.5-0.8 0.8-1.5 0.5-1.1 1.3 0.1 1.1 1 1.8v1l-0.5 1-1.7 2.3-2.8 3.4-5.4 4.3-1.7 3.5-2.3 4.2-0.2 1.7-1 2.5-3.9 0.4-1.5 0.8-4.2-0.3-6 4.8-16 2.9-5.4 4.6-6.5 1.4-7.1-0.7-8 1.5-6.6-2-15.1 0.2-4.7 2.2-2.7 5-2.6 0.5-2.5-1.2-3.6-5.9-4.8-1.6-4.7-4.9-1.6-5.9 2.8-7.8 2.7-4.7 1.6-1.7 5.5-3.3 4.7-8.2 4.3-1.1 2-4.3 7.4-2.6 16.2-4.6 4-3.5 15.4-1.6 10.5-4.6 2.6 0.7 12.7-2 7.5-0.7 4.9 0.9z"
+                name="Jeju"
+              >
+                <title>Čedžu</title>
+              </path>
+              <path
+                class="specialni_mesto"
+                id="mesto_sedzong"
+                d="m417.6 396.7-3.1 6.7 0.3 3.3-2 5.7-0.7 6.1 11.7-2.4 12 0.8-0.1 2.1-0.8 1.9-0.3 1.5 0.5 1.2 0.3 2-0.3 2.1-0.7 1.9-3.6-0.3-17.5 4.8-10.8 3-14.4-2.9 1.4-4.1 2.4-2.3-0.5-29.9 3.7-10.2 22.5 9z"
+                style="fill: #002f6c; fill-opacity: 1"
+                name="Sejong"
+              >
+                <title>Sedžong</title>
+              </path>
+              <g fill="#002f6c" fill-rule="evenodd">
+                <rect
+                  id="m_cchuncchon"
+                  x="488.1"
+                  y="142.17"
+                  width="23.586"
+                  height="23.586"
+                >
+                  <title>Čchunčchon</title>
+                </rect>
+                <rect
+                  id="m_cchongdzu"
+                  x="437.29"
+                  y="385.21"
+                  width="23.586"
+                  height="23.586"
+                >
+                  <title>Čchongdžu</title>
+                </rect>
+                <rect
+                  id="m__andong"
+                  x="623.82"
+                  y="417.2"
+                  width="23.586"
+                  height="23.586"
+                >
+                  <title>Andong</title>
+                </rect>
+                <rect
+                  id="m__condzu"
+                  x="391.26"
+                  y="552.48"
+                  width="23.586"
+                  height="23.586"
+                >
+                  <title>Čondžu</title>
+                </rect>
+                <rect
+                  id="m__cchangwon"
+                  x="609.06"
+                  y="638.79"
+                  width="23.586"
+                  height="23.586"
+                >
+                  <title>Čchangwon</title>
+                </rect>
+                <rect
+                  id="m__cedzu"
+                  x="297.56"
+                  y="1010.7"
+                  width="23.586"
+                  height="23.586"
+                >
+                  <title>Čedžu</title>
+                </rect>
+                <rect
+                  id="m_suwon"
+                  x="383.85"
+                  y="259.69"
+                  width="23.586"
+                  height="23.586"
+                >
+                  <title>Suwon</title>
+                </rect>
+              </g>
+              <circle
+                style="fill: #c8102e; fill-opacity: 1"
+                id="bulguksa_a_seokguram"
+                cx="745.87573"
+                cy="563.80792"
+                r="12.045198"
+                inkscape:label="Jeskyně Sokkuram a Klášter Pulguksa"
+              >
+                <title id="title1148">
+                  Jeskyně Sokkuram a Klášter Pulguksa
+                </title>
+              </circle>
+              <circle
+                style="fill: #c8102e; fill-opacity: 1"
+                id="haeinsa"
+                cx="559.5"
+                cy="567.29999"
+                r="12.045198"
+                inkscape:label="Klášter Heinsa"
+              >
+                <title id="title1148-1">Klášter Heinsa</title>
+              </circle>
+              <circle
+                style="fill: #c8102e; fill-opacity: 1"
+                id="jongmyo"
+                cx="398.39999"
+                cy="211.39999"
+                r="12.045198"
+                inkscape:label="Svatyně Čongmjo"
+              >
+                <title id="title1148-1-3">Svatyně Čongmjo</title>
+              </circle>
+              <circle
+                style="fill: #c8102e; fill-opacity: 1"
+                id="changdeokgung"
+                cx="366.93457"
+                cy="225.25531"
+                r="12.045198"
+                inkscape:label="Čchangdokkung"
+              >
+                <title id="title1148-1-7">Čchangdokkung</title>
+              </circle>
+              <circle
+                style="fill: #c8102e; fill-opacity: 1"
+                id="hwaseong"
+                cx="407.436"
+                cy="259.69"
+                r="12.045198"
+                inkscape:label="Pevnost Hwaseong"
+              >
+                <title id="title1148-1-7-7">Pevnost Hwaseong</title>
+              </circle>
+              <circle
+                style="fill: #c8102e; fill-opacity: 1"
+                id="gyeongju"
+                cx="709.74017"
+                cy="569.83057"
+                r="12.045198"
+                inkscape:label="Historické oblasti Kjongdžu"
+              >
+                <title id="title1148-1-7-7-4">
+                  Historické oblasti Kjongdžu
+                </title>
+              </circle>
+              <circle
+                style="fill: #c8102e; fill-opacity: 1"
+                id="jeju"
+                cx="339.11865"
+                cy="1009.4803"
+                r="12.045198"
+                inkscape:label="Sopečný ostrov Čedžu a lávové trubice"
+              >
+                <title id="title1148-1-7-7-4-6">
+                  Sopečný ostrov Čedžu a lávové trubice
+                </title>
+              </circle>
+              <circle
+                style="fill: #c8102e; fill-opacity: 1"
+                id="Joseon"
+                cx="552.68927"
+                cy="271.01697"
+                r="12.045198"
+                inkscape:label="Královské hrobky dynastie Čoson"
+              >
+                <title id="title1148-1-7-7-4-6-8">
+                  Královské hrobky dynastie Čoson
+                </title>
+              </circle>
+              <circle
+                style="fill: #c8102e; fill-opacity: 1"
+                id="yangdong"
+                cx="716.22601"
+                cy="517.01697"
+                r="12.045198"
+                inkscape:label="Lidová vesnice Jangdong"
+              >
+                <title id="title1148-1-7-7-4-6-8-4">
+                  Lidová vesnice Jangdong
+                </title>
+              </circle>
+              <circle
+                style="fill: #c8102e; fill-opacity: 1"
+                id="hahoe"
+                cx="575.38989"
+                cy="428.06781"
+                r="12.045198"
+                inkscape:label="Lidová vesnice Hahö"
+              >
+                <title id="title1148-1-7-7-4-6-8-4-0">
+                  Lidová vesnice Hahö
+                </title>
+              </circle>
+              <circle
+                style="fill: #c8102e; fill-opacity: 1"
+                id="namhansanseong"
+                cx="427.60452"
+                cy="228.39549"
+                r="12.045198"
+                inkscape:label="Namhansanseong"
+              >
+                <title id="title1148-1-7-7-4-6-8-4-0-8">Namhansanseong</title>
+              </circle>
+              <circle
+                style="fill: #c8102e; fill-opacity: 1"
+                id="baekj"
+                cx="379.42377"
+                cy="428.99438"
+                r="12.045198"
+                inkscape:label="Historická území království Pekče"
+              >
+                <title id="title1148-1-7-7-4-6-8-4-0-8-7">
+                  Historická území království Pekče
+                </title>
+              </circle>
+              <circle
+                style="fill: #c8102e; fill-opacity: 1"
+                id="seowone"
+                cx="666.96552"
+                cy="383.93103"
+                r="12.045198"
+                inkscape:label="Seowone, Korejské neokonfuciánské akademie"
+              >
+                <title id="title1148-1-7-7-4-6-8-4-0-8-7-0">
+                  Seowone, Korejské neokonfuciánské akademie
+                </title>
+              </circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3" id="info"></div>
     </main>
-      <footer class="py-5 bg-dark">
-            <p class="m-0 text-center text-white">Karolína Říčná, SŠPU Opava, IT2 &copy; 2021</p>
-        </footer>
+    <footer class="py-5 bg-dark">
+      <p class="m-0 text-center text-white">
+        Karolína Říčná, SŠPU Opava, IT2 &copy; 2021
+      </p>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="../js/mapa.js"></script>
-  <script src="../js/geografie.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/mapa.js"></script>
+    <script src="../js/geografie.js"></script>
   </body>
 </html>

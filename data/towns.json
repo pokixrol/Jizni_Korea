@@ -1,0 +1,121 @@
+[
+    {
+       "id":"mesto_soul",
+       "city":"Soul",
+       "peoples":10197604,
+       "img":"znak_soul.png",
+       "text":"Soul je hlavní město Jižní Koreje (Korejské republiky). Protéká jím řeka Hangang a rozprostírá se na ploše 605 km². Žije zde přes 10 milionů obyvatel (v aglomeraci přes 24 milionů). První zmínky o osídlení jsou z roku 18 př. n. l. a za celou svou historii město změnilo mnohokrát název. Město hostilo v roce 1988 letní olympijské hry a roku 2002 mistrovství světa ve fotbale. V 90. letech 20. století sem proudilo velké množství zahraničních pracovníků, převážně ze sousedních zemí, ale také z USA. Rozmach dopravy začal již za Korejského Impéria a dnes je zde k vidění např. rychlovlak KTX nebo 12 linek metra. V blízkosti města se nacházejí dvě letiště, Inčchon a Kimpcho."
+    },
+    {
+       "id":"mesto_incchon",
+       "city":"Inčchon",
+       "peoples":3002645,
+       "img":"incchon.jpg",
+       "text":"Metropolitní město Inčchon je významný jihokorejský námořní přístav. Leží na západním pobřeží korejského poloostrova, nedaleko hlavního města Soulu. Je třetím největším městem Korejské republiky. Protože je Inčchon metropolitní město, nepatří do žádné provincie. K jeho území patří mnoho ostrovů ve Žlutém moři, mezi ty největší patří ostrov Kanghwa a ostrov Čung, na kterém se nachází mezinárodní letiště Inčchon, které je největším mezinárodním letištěm v Jižní Koreji a má přímou linkou do Prahy. Z ostrova Čung vede most do centra města. Ve městě existuje metro, které je napojeno na metro v Soulu. Město vzhledem ke své čtyřicetikilometrové vzdálenosti od metropole plní funkci obytného předměstí Soulu."
+    },
+    {
+      "id":"mesto_sedzong",
+      "city":"Sedžong",
+      "peoples":281120,
+      "img":"vlajka_sendzong.png",
+      "text":"Sedžong je město v Jižní Koreji, které je de facto druhé hlavní město státu (po Soulu). V roce 2007 byl jihokorejskou vládou vytvořen jeho distrikt ze sousedních provincií Jižní Čchungčchong a Severní Čchungčchong a jako jedinému městu v Jižní Koreji mu byl udělen status Speciálního autonomního města. V rámci plánu bylo do Sedžongu přesunuto devět ministerstev a čtyři úřady. S úplným přesunutím všech úřadů ze Soulu se však prozatím nepočítá."
+   },
+   {
+      "id":"mesto_tedzon",
+      "city":"Tedžon",
+      "peoples":1539154,
+      "img":"tedzon.jpg",
+      "text":"Tedžon je město ve střední části Korejské republiky. V roce 2010 mělo populaci 1,5 mil. obyvatel a bylo pátým největším městem Jižní Koreje. Průmysl ve městě je především strojírenský (výroba dopravních prostředků), textilní, chemický a potravinářský. Město také plní úlohu dopravní křižovatky; má také univerzitu (založena 1952) a další vysoké školy."
+   },
+   {
+      "id":"mesto_tegu",
+      "city":"Tegu",
+      "peoples":2501673,
+      "img":"vlajka_tegu.png",
+      "text":"Tegu je město v Jižní Koreji, čtvrté největší podle počtu obyvatel. Leží v provincii Severní Kjongsang, ale není její součástí, má status metropolitního města. Od 27. srpna do 4. září 2011 se zde konalo 13. mistrovství světa v atletice na stadiónu Daegu World Cup Stadium. Na území města je mezinárodní letiště Tegu vzdálené od centra přibližně pět kilometrů na severovýchod, které odbaví více než 1 milion cestujících ročně. Přes Tegu vede železniční trať Soul – Pusan. Ve městě také funguje metro, které má 3 linky."
+   },
+   {
+      "id":"mesto_ulsan",
+      "city":"Ulsan",
+      "peoples":1163690,
+      "img":"ulsan.jpg",
+      "text":"Ulsan je město v Jižní Koreji. Se svým 1,1 milionem obyvatel jde o sedmé největší město v Jižní Koreji podle počtu obyvatel. Není součástí žádné provincie, ale má statut metropolitního města. Na jihu sousedí s metropolitním městem Pusan. Doprava je v Ulsanu na velmi dobré úrovni. Funguje zde městská hromadná doprava, která jezdí včas. Na okraji města také funguje městské letiště, na rozdíl od mezinárodního letiště Kimpcho přepraví o 20 spojů více. Ve městě působí řada středních škol a vysokoškolské vzdělání zajišťuje University of Ulsan, která je známá především díky sportovním akcím, které zde hostí. Zejména pak Korejskou basketbalovou ligu (KBL)."
+   },
+   {
+      "id":"mesto_pusan",
+      "city":"Pusan",
+      "peoples":3635389,
+      "img":"znak_pusan.png",
+      "text":"Pusan je přímořské metropolitní město v Jižní Koreji. S rozlohou 763 km² a počtem obyvatel přesahujícím 3,6 milionu je druhé největší město v Koreji. Město je důležitým dopravním uzlem v lodní přepravě, nachází se zde velký přístav (v roce 2014 byl šestým největším kontejnerovým přístavem na světě). Pusan je známý hlavně v oblasti kulturního a společenského života. Každoročně zde probíhá mezinárodní filmový festival. Pusan leží v jihovýchodní části Korejské republiky, přibližně 420 kilometrů od hlavního města Soul. Ze severu ho obklopují pohoří, z jihu Japonské moře. Městem protékají dvě řeky, Nakdong a Sujong. Pusan byl v roce 2002 hostitelským městem Asijských her a APEC 2005. Byl také jedním z hostitelských měst Mistrovství světa ve fotbale 2002."
+   },
+   {
+      "id":"mesto_kwangdzu",
+      "city":"Kwangdžu",
+      "peoples":1463464,
+      "img":"kwangdzu.jpeg",
+      "text":"Kwangdžu je město v Jižní Koreji, šesté největší podle počtu obyvatel. Leží v provincii Jižní Čolla, ale není její součástí, má statut metropolitního města. V roce 1980 se ve městě odehrálo povstání v Kwangdžu. Přes Kwangdžu vede železniční trať Tedžon – Mokpcho a vysokorychlostní trať Tedžon – Mokpcho. Přibližně jedenáct kilometrů jihozápadně od centra leží letiště Kwangdžu."
+   },
+   {
+      "id":"m_cchuncchon",
+      "city":"Čchunčchon",
+      "peoples":281725,
+      "img":"cchuncchon.jpg",
+      "text":"Čchunčchon je jihokorejské město a zároveň hlavní město provincie Kangwon. Na území o rozloze 1 116 km² zde žije přibližně 259 000 obyvatel (údaj z roku 2007). U města pramení řeky Hangang a Sojanggang. Čchunčchon je obklopen množstvím jezer, z nichž nejznámější jsou Sojang a Uiam. Čchunčchon je známý dlouholetou tradicí každoročního pořádání různých festivalů a kulturních akcí. V jarním období se zde koná Mezinárodní festival mimů a klaunů. Během letních dnů město pořádá Mezinárodní festival animace a Festival panenek a maňásků. Každý podzim je Čchunčchon dějištěm běžeckého maratonu."
+   },
+   {
+      "id":"m_cchongdzu",
+      "city":"Čchongdžu",
+      "peoples":839626,
+      "img":"cchongdzu.jpg",
+      "text":"Čchongdžu je město v Jižní Koreji. Je hlavním městem provincie Severní Čchungčchong. Čchongdžu má dlouhou historii, v průběhu Imdžinské války, kdy Hidejoši Tojotomi napadl Koreu, se tu odehrála bitva u Čchongdžu. Přibližně osm kilometrů severně od centra města leží mezinárodní letiště Čchongdžu."
+   },
+   {
+      "id":"m__andong",
+      "city":"Andong",
+      "peoples":167942,
+      "img":"andong.jpg",
+      "text":"Andong je město v Jižní Koreji v provincii Severní Kjongsang. Městem protéká řeka Nakdong. Od 70. let se Andong rychle rozvíjel, ačkoli jeho populace poklesla o téměř 70 000 obyvatel, kteří se odstěhovali do Soulu nebo jiných velkoměst. Je centrem kultury a navštěvuje ho mnoho turistů."
+   },
+   {
+      "id":"m__condzu",
+      "city":"Čondžu",
+      "peoples":649500,
+      "img":"condzu.jpg",
+      "text":"Čondžu je město v Jižní Koreji, šestnácté největší podle počtu obyvatel. Je hlavním městem provincie Severní Čolla. Město se nachází v úrodné Honamské nížině a je významným regionálním centrem. Průmysl je zde hlavně potravinářský a hedvábnický a město je vyhlášené svým pibimbapem."
+   },
+   {
+      "id":"m__cchangwon",
+      "city":"Čchangwon",
+      "peoples":1107955,
+      "img":"cchangwon.jpg",
+      "text":"Čchangwon je město v Jižní Koreji a hlavní město provincie Jižní Kjongsang. Je to osmé nejlidnatější město v Jižní Koreji s populací přesahující milion obyvatel. Je to průmyslové město. Místo bylo osídleno po dlouhou dobu a v roce 1408 bylo králem Tedžongem přejmenováno na Čchangwon. V roce 2009 se zde konalo první kolo světového poháru ve sportovní střelbě."
+   },
+   {
+      "id":"m__cedzu",
+      "city":"Čedžu",
+      "peoples":408364,
+      "img":"cedzu.jpg",
+      "text":"Čedžu je město v Jižní Koreji. Nachází se na ostrově Čedžu a zároveň je to hlavní město stejnojmenné provincie. Katastr města zabírá celou severní polovinu ostrova a zahrnuje i souostroví Čchudža několik desítek kilometrů severně od hlavního ostrova. Žije zde více než 400 000 obyvatel. Klima je zde vzhledem k jižní poloze ostrova subtropické a město proto slouží jako turistický resort, nachází se zde mnoho hotelů a kasin. Každoročně město navštíví přes 4 miliony turistů z Jižní Koreje, Japonska a Číny. Zdejší mezinárodní letiště Čedžu ležící na pobřeží severozápadně od centra města je druhým nejrušnějším letištěm v Jižní Koreji."
+   },
+   {
+      "id":"m_suwon",
+      "city":"Suwon",
+      "peoples":1170878,
+      "img":"suwon.jpg",
+      "text":"Suwon je město v Jižní Koreji. Je hlavním městem provincie Kjonggi. Nachází se přibližně 30 km na jih od Soulu. Počet obyvatel přesahuje 1,1 milionu. Suwon je jediným městem v Jižní Koreji s kompletně zachovalými hradbami a nachází se zde také pevnost Hwasong, což z něj činí častý cíl turistů. Město je také centrum vzdělání, nachází se zde 14 univerzitních kampusů. Přes Suwon vede železniční trať Soul – Pusan. Ve městě sídlí Samsung Electronics, velká dceřiná společnost konglomerátu Samsung Group. Je to největší světový výrobce tzv. chytrých telefonů (smartphones)."
+   },
+   {
+      "id":"m_pchjongcchang",
+      "city":"Pchjongčchang",
+      "peoples":43666,
+      "img":"pchjongcchang.jpg",
+      "text":"Pchjongčchang je jihokorejský okres v provincii Kangwon. V okrese k roku 2013 žilo 43 666 obyvatel. Nachází se v horách Tchebek ve vzdálenosti 180 km východně od Soulu. V okrese Pchjongčchang se nachází Lyžařské středisko Jongpchjong, kde se konají závody Světového poháru v alpském lyžování. V roce 2018 se zde konaly Zimní olympijské hry 2018 a Zimní paralympijské hry 2018."
+   },
+   {
+      "id":"m_kangnung",
+      "city":"Kangnung",
+      "peoples":229869,
+      "img":"Kangnung.JPG",
+      "text":"Kangnung je město na východním pobřeží Korejského poloostrova v Jižní Koreji. Je ekonomickým centrem regionu Jongdong na východě provincie Kangwon. Má mnoho turistických atrakcí jako např. Jongdongdžin, což je jedna z nejslavnějších turistických atrakcí v Koreji. Jongdongdžin je malebné městečko, kam se Korejci sjíždějí na korejský nový rok pozorovat východ slunce. Jižně od města se nachází letecká základna jihokorejského letectva, která dříve sloužila i jako civilní letiště. Ve městě sídlí jihokorejský prvoligový fotbalový klub Kangneung City FC."
+   }
+ ]
