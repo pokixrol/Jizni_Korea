@@ -18,26 +18,29 @@ $(function () {
   function townsBlock(towns) {
     let fillMesto = $("rect, .specialni_mesto").css("fill");
     $("rect, .specialni_mesto").on("click", function () {
-      $("rect, .specialni_mesto").css("fill", fillMesto);
-      $(this).css("fill", "rgb(51, 204, 255)");
-      console.log($(this).children("title").text());
-      let id = $(this).attr("id");
-      let mesto = towns.find((item) => {
-        return item.id == id;
-      });
-      console.log(mesto);
-      $("#info").fadeOut(1000, function () {
-        $("#info").html(
-          `<div class="col-12"><h2>${
-            mesto.city
-          } <small class="text-small">${new Intl.NumberFormat("cs-CS").format(
-            mesto.peoples
-          )} obyvatel</small></h2></div><div class="col-2"><img src="../geografie/images/${
-            mesto.img
-          }" class="img-fluid"></div><div class="col-10">${mesto.text}</div>`
-        );
-      });
-      $("#info").fadeIn(1000);
+      if ($("#mesta:checked").val()) {
+        $("rect, .specialni_mesto").css("fill", fillMesto);
+        $(this).css("fill", "rgb(51, 204, 255)");
+        console.log($(this).children("title").text());
+        let id = $(this).attr("id");
+        let mesto = towns.find((item) => {
+          return item.id == id;
+        }); 
+        console.log(mesto);
+        $("#info").fadeOut(1000, function () {
+          $("#info").html(
+            `<div class="col-12"><h2>${
+              mesto.city
+            } <small class="text-small">${new Intl.NumberFormat("cs-CS").format(
+              mesto.peoples
+            )} obyvatel</small></h2></div><div class="col-2"><img src="../geografie/images/${
+              mesto.img
+            }" class="img-fluid"></div><div class="col-10">${mesto.text}</div>`
+          );
+        });
+        $("#info").fadeIn(1000);
+      }
+
     });
   }
 
